@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" rx="24" fill="#2A2A2A" />
+  <rect x="60" y="60" width="520" height="60" rx="10" fill="#F8F1FA" opacity="0.9" />
+  <rect x="60" y="140" width="520" height="160" rx="12" fill="#F0F5FF" opacity="0.85" />
+  <text x="80" y="100" font-family="'Playfair Display', serif" font-size="28" fill="#2A2A2A">WIRED</text>
+  <text x="80" y="190" font-family="'Inter', sans-serif" font-size="20" fill="#5A6FAF">Inside the Civic Labs Stress-Testing AI Safety Claims</text>
+</svg>

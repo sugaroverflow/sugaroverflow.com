@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" rx="24" fill="#C49FD3" />
+  <circle cx="320" cy="180" r="110" fill="#F8F1FA" opacity="0.8" />
+  <text x="320" y="190" text-anchor="middle" font-family="'Playfair Display', serif" font-size="40" fill="#6F8F7B">Award</text>
+  <text x="320" y="230" text-anchor="middle" font-family="'Inter', sans-serif" font-size="20" fill="#6F8F7B">DevRel Excellence 2024</text>
+</svg>

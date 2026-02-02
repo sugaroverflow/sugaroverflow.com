@@ -1,0 +1,27 @@
+{
+  "awards": [
+    {
+      "id": "award-devrel-excellence-2024",
+      "title": "DevRel Excellence Award",
+      "organization": "DevRel Con",
+      "year": 2024,
+      "date": "2024-09-15",
+      "citation": "For outstanding contribution to developer community building and innovative approaches to technical advocacy.",
+      "ceremonyPhoto": "/images/awards/devrel-excellence-2024.jpg",
+      "context": "Awarded at DevRel Con for community programs and Developer Show series."
+    }
+  ],
+  "press": [
+    {
+      "id": "press-techcrunch-ai-governance",
+      "publication": "TechCrunch",
+      "title": "How Developer Advocates Are Shaping AI Policy",
+      "date": "2024-08-20",
+      "year": 2024,
+      "screenshot": "/images/press/techcrunch-ai-governance.png",
+      "pullQuote": "Khalid argues that developers are on the front lines of AI governance, whether they realize it or not.",
+      "url": "https://techcrunch.com/example"
+    }
+  ]
+}
+

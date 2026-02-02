@@ -1,0 +1,32 @@
+---
+import type { ContentType } from '@/lib/types';
+
+interface Props {
+  type: ContentType;
+}
+
+const { type } = Astro.props as Props;
+
+const styles: Record<ContentType, string> = {
+  'field-notes': 'bg-lilac-100 text-lilac-700 border-lilac-300',
+  tutorial: 'bg-mist-100 text-mist-700 border-mist-300',
+  'deep-dive': 'bg-sage-100 text-sage-700 border-sage-300',
+  'research-update': 'bg-sage-300 text-sage-900 border-sage-500',
+  talk: 'bg-violet-100 text-violet-700 border-violet-300',
+  project: 'bg-teal-100 text-teal-700 border-teal-300',
+};
+
+const labels: Record<ContentType, string> = {
+  'field-notes': 'field notes',
+  tutorial: 'tutorial',
+  'deep-dive': 'deep dive',
+  'research-update': 'research update',
+  talk: 'talk',
+  project: 'project',
+};
+---
+
+<span class={`inline-block px-3 py-1 rounded-full text-xs font-medium border ${styles[type]}`}>
+  {labels[type]}
+</span>
+

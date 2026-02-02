@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" rx="24" fill="#6F8F7B" />
+  <path d="M120 260 L240 120 L320 220 L420 140 L520 260" fill="none" stroke="#F3F6F4" stroke-width="6" />
+  <text x="50%" y="80" text-anchor="middle" font-family="'Playfair Display', serif" font-size="32" fill="#F3F6F4">GitLab Commit</text>
+  <text x="50%" y="120" text-anchor="middle" font-family="'Inter', sans-serif" font-size="18" fill="#F3F6F4">Humans, AI, and the New Dev Workflow</text>
+</svg>

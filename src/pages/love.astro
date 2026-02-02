@@ -1,0 +1,25 @@
+---
+import Layout from '@/components/Layout.astro';
+import { getAllLove } from '@/lib/content-db';
+
+const love = getAllLove();
+---
+
+<Layout title="Kind Words — sugaroverflow">
+  <h1 class="text-4xl font-serif text-sage-900 tracking-tight">Kind Words</h1>
+  <p class="mt-4 text-lg text-neutral-900/80">
+    Things people have said about my talks and work.
+  </p>
+
+  <div class="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+    {love.map((item) => (
+      <img
+        src={item.screenshot}
+        alt={`Testimonial from ${item.author || 'attendee'}`}
+        class="rounded-lg shadow-md border border-neutral-300"
+        loading="lazy"
+      />
+    ))}
+  </div>
+</Layout>
+

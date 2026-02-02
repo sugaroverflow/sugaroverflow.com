@@ -1,0 +1,70 @@
+---
+import Layout from '@/components/Layout.astro';
+import IdeaCard from '@/components/IdeaCard.astro';
+import FiltersBar from '@/components/FiltersBar.astro';
+import { getIdeasByAffiliation } from '@/lib/content-db';
+
+const researchIdeas = getIdeasByAffiliation('newspeak');
+const typeOptions = Array.from(new Set(researchIdeas.map((idea) => idea.contentType))).sort();
+---
+
+<Layout title="Research — sugaroverflow">
+  <h1 class="text-4xl font-serif text-sage-900 tracking-tight">Research & Fellowship</h1>
+
+  <div class="mt-6 prose prose-lg">
+    <p>
+      I'm a Research Fellow at Newspeak House, exploring the intersection of AI, compute governance, and political technology.
+      My work examines how infrastructure decisions shape democratic participation and policy outcomes.
+    </p>
+  </div>
+
+  <section class="mt-12">
+    <h2 class="text-2xl font-serif text-sage-900">Key questions</h2>
+    <ul class="mt-4 space-y-2 text-neutral-900/80">
+      <li>• How does compute access create new governance layers?</li>
+      <li>• What role do developers play in shaping AI policy?</li>
+      <li>• How can we make infrastructure decisions more democratic?</li>
+    </ul>
+  </section>
+
+  <section class="mt-16">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      <h2 class="text-2xl font-serif text-sage-900">Updates & Field Notes</h2>
+      <p class="text-sm text-neutral-900/60 italic">
+        Research is a process—from observations to analysis
+      </p>
+    </div>
+
+    <FiltersBar
+      types={typeOptions}
+      affiliations={['newspeak']}
+      targetId="research-grid"
+      emptyStateSelector="#research-empty"
+      showSort={false}
+    />
+
+    <div id="research-grid" class="mt-8 grid gap-6 md:grid-cols-3">
+      {researchIdeas.map((idea) => (
+        <div
+          data-filterable
+          data-content-type={idea.contentType}
+          data-affiliations={idea.affiliation.join(',')}
+          data-topics={idea.topics.join(',')}
+          data-date={idea.date}
+          data-featured={idea.featured ? 'true' : 'false'}
+        >
+          <IdeaCard item={idea} />
+        </div>
+      ))}
+    </div>
+
+    <p
+      id="research-empty"
+      class="mt-8 text-sm text-neutral-900/70 hidden"
+      data-empty-state
+    >
+      No research notes match those filters yet.
+    </p>
+  </section>
+</Layout>
+

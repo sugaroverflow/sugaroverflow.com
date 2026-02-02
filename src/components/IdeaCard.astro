@@ -1,0 +1,109 @@
+---
+import ContentTypeLabel from '@/components/ContentTypeLabel.astro';
+import type { Idea } from '@/lib/types';
+
+interface Props {
+  item: Idea;
+}
+
+const { item } = Astro.props as Props;
+
+const formattedDate = new Date(item.date).toLocaleDateString('en-US', {
+  month: 'short',
+  day: 'numeric',
+  year: 'numeric',
+});
+
+const primaryLink =
+  'file' in item
+    ? `/blog/${item.slug}`
+    : item.contentType === 'project'
+      ? item.deepDiveSlug
+        ? `/blog/${item.deepDiveSlug}`
+        : item.links?.demo ?? item.links?.repo ?? null
+      : item.links?.video ?? item.links?.slides ?? null;
+---
+
+<article class="bg-neutral-50 rounded-2xl p-6 border border-neutral-300 hover:border-lilac-300 transition-colors">
+  {item.image && (
+    <img
+      src={item.image}
+      alt={item.title}
+      class="w-full h-48 object-cover rounded-lg mb-4"
+      loading="lazy"
+    />
+  )}
+
+  <div class="flex items-center gap-3 mb-3">
+    <ContentTypeLabel type={item.contentType} />
+    <time class="text-sm text-neutral-900/60" dateTime={item.date}>
+      {formattedDate}
+    </time>
+  </div>
+
+  <h3 class="text-xl font-serif text-sage-900">
+    {primaryLink ? (
+      <a href={primaryLink} class="hover:text-lilac-700">
+        {item.title}
+      </a>
+    ) : (
+      item.title
+    )}
+  </h3>
+
+  <p class="mt-2 text-neutral-900/80">{item.description}</p>
+
+  {item.contentType === 'project' && 'tech' in item && item.tech.length > 0 && (
+    <div class="mt-4 flex flex-wrap gap-2">
+      {item.tech.map((tech) => (
+        <span class="px-2 py-1 bg-teal-100 text-teal-700 text-xs rounded">{tech}</span>
+      ))}
+    </div>
+  )}
+
+  {item.contentType === 'talk' && 'event' in item && (
+    <p class="mt-3 text-sm text-mist-700">
+      {item.event} · {item.location}
+    </p>
+  )}
+
+  {item.topics.length > 0 && (
+    <div class="mt-4 flex flex-wrap gap-2">
+      {item.topics.map((topic) => (
+        <span class="px-2 py-1 bg-neutral-300 text-neutral-900 text-xs rounded">{topic}</span>
+      ))}
+    </div>
+  )}
+
+  {item.links && (
+    <div class="mt-4 flex flex-wrap gap-3 text-sm">
+      {item.links.demo && (
+        <a href={item.links.demo} class="text-lilac-700 hover:text-lilac-900">
+          Demo →
+        </a>
+      )}
+      {item.links.repo && (
+        <a href={item.links.repo} class="text-lilac-700 hover:text-lilac-900">
+          Code →
+        </a>
+      )}
+      {item.links.slides && (
+        <a href={item.links.slides} class="text-lilac-700 hover:text-lilac-900">
+          Slides →
+        </a>
+      )}
+      {item.links.video && (
+        <a href={item.links.video} class="text-lilac-700 hover:text-lilac-900">
+          Video →
+        </a>
+      )}
+    </div>
+  )}
+
+  {item.contentType === 'project' && 'deepDiveSlug' in item && item.deepDiveSlug && (
+    <a href={`/blog/${item.deepDiveSlug}`} class="mt-4 inline-block text-sage-700 hover:text-sage-900 text-sm">
+      Read more about this →
+    </a>
+  )}
+</article>
+

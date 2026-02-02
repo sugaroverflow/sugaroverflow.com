@@ -1,0 +1,253 @@
+---
+interface Props {
+  types?: string[];
+  affiliations?: string[];
+  targetId?: string;
+  showSort?: boolean;
+  showTypes?: boolean;
+  showAffiliations?: boolean;
+  emptyStateSelector?: string;
+}
+
+const {
+  types = [],
+  affiliations = [],
+  targetId = 'idea-grid',
+  showSort = true,
+  showTypes = true,
+  showAffiliations = true,
+  emptyStateSelector,
+} = Astro.props as Props;
+
+const formatLabel = (value: string) =>
+  value
+    .split('-')
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+---
+
+<section
+  class="mt-8 rounded-2xl border border-neutral-300 bg-neutral-50 p-6"
+  data-filter-bar
+  data-target={targetId}
+  data-default-sort="newest"
+  data-empty-state={emptyStateSelector}
+>
+  <div class="space-y-6">
+    {showTypes && types.length > 0 && (
+      <div>
+        <label class="block text-sm font-medium text-sage-900 mb-2">Type</label>
+        <div class="flex flex-wrap gap-2">
+          <button
+            type="button"
+            class="filter-pill"
+            data-filter-reset="type"
+          >
+            All
+          </button>
+          {types.map((type) => (
+            <button
+              type="button"
+              class="filter-pill"
+              data-filter-button
+              data-filter-group="type"
+              data-filter-value={type}
+              aria-pressed="false"
+            >
+              {formatLabel(type)}
+            </button>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {showAffiliations && affiliations.length > 0 && (
+      <div>
+        <label class="block text-sm font-medium text-sage-900 mb-2">Affiliation</label>
+        <div class="flex flex-wrap gap-2">
+          <button
+            type="button"
+            class="filter-pill"
+            data-filter-reset="affiliation"
+          >
+            All
+          </button>
+          {affiliations.map((affiliation) => (
+            <button
+              type="button"
+              class="filter-pill"
+              data-filter-button
+              data-filter-group="affiliation"
+              data-filter-value={affiliation}
+              aria-pressed="false"
+            >
+              {formatLabel(affiliation)}
+            </button>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {showSort && (
+      <div>
+        <label class="block text-sm font-medium text-sage-900 mb-2">Sort</label>
+        <div class="flex flex-wrap gap-2">
+          <button
+            type="button"
+            class="filter-pill"
+            data-sort-button
+            data-sort-value="newest"
+            aria-pressed="true"
+          >
+            Newest
+          </button>
+          <button
+            type="button"
+            class="filter-pill"
+            data-sort-button
+            data-sort-value="oldest"
+            aria-pressed="false"
+          >
+            Oldest
+          </button>
+          <button
+            type="button"
+            class="filter-pill"
+            data-sort-button
+            data-sort-value="featured"
+            aria-pressed="false"
+          >
+            Featured
+          </button>
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+<script>
+  (() => {
+    const root = document.currentScript?.closest('[data-filter-bar]');
+    if (!root) return;
+    const targetId = root.dataset.target;
+    const list = targetId ? document.getElementById(targetId) : null;
+    if (!list) return;
+
+    const items = Array.from(list.querySelectorAll('[data-filterable]'));
+    if (!items.length) return;
+
+    const emptySelector = root.dataset.emptyState;
+    const emptyState = emptySelector ? document.querySelector(emptySelector) : document.querySelector('[data-empty-state]');
+
+    const state = {
+      type: new Set(),
+      affiliation: new Set(),
+      sort: root.dataset.defaultSort || 'newest',
+    };
+
+    const sortButtons = Array.from(root.querySelectorAll('[data-sort-button]'));
+    const filterButtons = Array.from(root.querySelectorAll('[data-filter-button]'));
+
+    function updateButtonStates() {
+      filterButtons.forEach((button) => {
+        const group = button.dataset.filterGroup;
+        const value = button.dataset.filterValue;
+        if (!group || !value) return;
+        const pressed = state[group].has(value);
+        button.setAttribute('aria-pressed', String(pressed));
+      });
+
+      sortButtons.forEach((button) => {
+        const value = button.dataset.sortValue;
+        if (!value) return;
+        button.setAttribute('aria-pressed', String(state.sort === value));
+      });
+    }
+
+    function sortItems() {
+      const sorted = [...items].sort((a, b) => {
+        const dateA = a.dataset.date || '';
+        const dateB = b.dataset.date || '';
+        if (state.sort === 'featured') {
+          const featuredA = a.dataset.featured === 'true' ? 1 : 0;
+          const featuredB = b.dataset.featured === 'true' ? 1 : 0;
+          if (featuredA !== featuredB) {
+            return featuredB - featuredA;
+          }
+          return dateB.localeCompare(dateA);
+        }
+        if (state.sort === 'oldest') {
+          return dateA.localeCompare(dateB);
+        }
+        return dateB.localeCompare(dateA);
+      });
+
+      sorted.forEach((item) => list.appendChild(item));
+    }
+
+    function applyFilters() {
+      let visibleCount = 0;
+      items.forEach((item) => {
+        const type = item.dataset.contentType || '';
+        const affiliations = (item.dataset.affiliations || '')
+          .split(',')
+          .map((value) => value.trim())
+          .filter(Boolean);
+
+        const matchesType = state.type.size === 0 || state.type.has(type);
+        const matchesAffiliation =
+          state.affiliation.size === 0 || affiliations.some((value) => state.affiliation.has(value));
+
+        const shouldShow = matchesType && matchesAffiliation;
+        item.toggleAttribute('hidden', !shouldShow);
+        if (shouldShow) visibleCount += 1;
+      });
+
+      if (emptyState) {
+        emptyState.toggleAttribute('hidden', visibleCount !== 0);
+      }
+
+      sortItems();
+    }
+
+    root.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof HTMLElement)) return;
+      const button = target.closest('button');
+      if (!button) return;
+
+      if (button.dataset.sortValue) {
+        state.sort = button.dataset.sortValue;
+        updateButtonStates();
+        sortItems();
+        return;
+      }
+
+      if (button.dataset.filterReset) {
+        const group = button.dataset.filterReset;
+        if (state[group]) {
+          state[group].clear();
+          updateButtonStates();
+          applyFilters();
+        }
+        return;
+      }
+
+      const group = button.dataset.filterGroup;
+      const value = button.dataset.filterValue;
+      if (!group || !value || !state[group]) return;
+
+      if (state[group].has(value)) {
+        state[group].delete(value);
+      } else {
+        state[group].add(value);
+      }
+
+      updateButtonStates();
+      applyFilters();
+    });
+
+    applyFilters();
+  })();
+</script>
+

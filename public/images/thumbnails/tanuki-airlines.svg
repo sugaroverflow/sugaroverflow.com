@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" rx="32" fill="#5A6FAF" />
+  <path d="M80 220 L260 160 L420 200 L560 150" fill="none" stroke="#F8F1FA" stroke-width="6" stroke-linecap="round" />
+  <circle cx="260" cy="160" r="12" fill="#F8F1FA" />
+  <circle cx="420" cy="200" r="12" fill="#F8F1FA" />
+  <text x="320" y="310" text-anchor="middle" font-family="'Playfair Display', serif" font-size="32" fill="#F8F1FA">Tanuki Airlines</text>
+</svg>

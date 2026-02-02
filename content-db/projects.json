@@ -1,0 +1,61 @@
+{
+  "projects": [
+    {
+      "id": "contributors-garden",
+      "slug": "contributors-garden",
+      "title": "Contributors Garden",
+      "description": "Collaborative 2D pixel art garden built live during The Developer Show. Community shapes features through real-time participation.",
+      "contentType": "project",
+      "date": "2024-11-15",
+      "year": 2024,
+      "image": "/images/thumbnails/contributors-garden.svg",
+      "affiliation": ["gitlab", "personal"],
+      "tech": ["JavaScript", "HTML5 Canvas", "GCP Cloud Run", "GitLab CI/CD"],
+      "links": {
+        "demo": "https://contributors.garden",
+        "repo": "https://gitlab.com/sugaroverflow/contributors-garden"
+      },
+      "topics": ["devrel", "community", "live-coding"],
+      "featured": true,
+      "deepDiveSlug": "building-contributors-garden"
+    },
+    {
+      "id": "tanuki-airlines",
+      "slug": "tanuki-airlines",
+      "title": "Tanuki Airlines Demo",
+      "description": "Full-stack demo showing GitLab-powered CI/CD and AI-assisted workflows for enterprise DevSecOps.",
+      "contentType": "project",
+      "date": "2023-07-10",
+      "year": 2023,
+      "image": "/images/thumbnails/tanuki-airlines.svg",
+      "affiliation": ["gitlab"],
+      "tech": ["React", "GitLab", "Kubernetes", "Terraform"],
+      "links": {
+        "demo": "https://tanuki-airlines.example.com",
+        "repo": "https://gitlab.com/sugaroverflow/tanuki-airlines"
+      },
+      "topics": ["devrel", "demo", "ci-cd"],
+      "featured": true
+    },
+    {
+      "id": "civic-signal-map",
+      "slug": "civic-signal-map",
+      "title": "Civic Signal Map",
+      "description": "Interactive map that tracks how AI and compute policy proposals move through civic institutions and who influences them.",
+      "contentType": "project",
+      "date": "2024-08-01",
+      "year": 2024,
+      "image": "/images/thumbnails/civic-signal-map.svg",
+      "affiliation": ["newspeak"],
+      "tech": ["Svelte", "Node.js", "Mapbox"],
+      "links": {
+        "demo": "https://civic-signal-map.example.com",
+        "repo": "https://gitlab.com/sugaroverflow/civic-signal-map"
+      },
+      "topics": ["governance", "research", "data-viz"],
+      "featured": false,
+      "deepDiveSlug": "civic-signal-map"
+    }
+  ]
+}
+

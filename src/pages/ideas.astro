@@ -1,0 +1,50 @@
+---
+import Layout from '@/components/Layout.astro';
+import IdeaCard from '@/components/IdeaCard.astro';
+import FiltersBar from '@/components/FiltersBar.astro';
+import { getAllIdeas } from '@/lib/content-db';
+
+const ideas = getAllIdeas();
+const typeOptions = Array.from(new Set(ideas.map((idea) => idea.contentType))).sort();
+const affiliationOptions = Array.from(
+  new Set(ideas.flatMap((idea) => idea.affiliation ?? [])),
+).sort();
+---
+
+<Layout title="Ideas — sugaroverflow">
+  <h1 class="text-4xl font-serif text-sage-900 tracking-tight">Ideas</h1>
+  <p class="mt-4 text-lg text-neutral-900/80">
+    Everything I make—talks, posts, projects, and research—in one place.
+  </p>
+
+  <FiltersBar
+    types={typeOptions}
+    affiliations={affiliationOptions}
+    targetId="ideas-grid"
+    emptyStateSelector="#ideas-empty"
+  />
+
+  <div id="ideas-grid" class="mt-12 grid gap-6 md:grid-cols-3">
+    {ideas.map((idea) => (
+      <div
+        data-filterable
+        data-content-type={idea.contentType}
+        data-affiliations={idea.affiliation.join(',')}
+        data-topics={idea.topics.join(',')}
+        data-date={idea.date}
+        data-featured={idea.featured ? 'true' : 'false'}
+      >
+        <IdeaCard item={idea} />
+      </div>
+    ))}
+  </div>
+
+  <p
+    id="ideas-empty"
+    class="mt-8 text-sm text-neutral-900/70 hidden"
+    data-empty-state
+  >
+    No ideas match those filters yet. Try resetting your selections.
+  </p>
+</Layout>
+

@@ -1,0 +1,48 @@
+---
+import type { Project } from '@/lib/types';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props as Props;
+---
+
+<article class="project-card bg-neutral-50 rounded-2xl p-6 border border-neutral-300 hover:border-lilac-300 transition-colors">
+  {project.image && (
+    <img
+      src={project.image}
+      alt={project.title}
+      class="w-full h-48 object-cover rounded-lg mb-4"
+      loading="lazy"
+    />
+  )}
+
+  <h3 class="text-xl font-serif text-sage-900">{project.title}</h3>
+  <p class="mt-2 text-neutral-900/80">{project.description}</p>
+
+  <div class="mt-4 flex flex-wrap gap-2">
+    {project.tech.map((tech) => (
+      <span class="px-2 py-1 bg-mist-100 text-mist-700 text-xs rounded">{tech}</span>
+    ))}
+  </div>
+
+  <div class="mt-4 flex flex-wrap gap-3 text-sm">
+    {project.links?.demo && (
+      <a href={project.links?.demo} class="text-lilac-700 hover:text-lilac-900">
+        Live Demo →
+      </a>
+    )}
+    {project.links?.repo && (
+      <a href={project.links?.repo} class="text-lilac-700 hover:text-lilac-900">
+        GitHub →
+      </a>
+    )}
+    {project.deepDiveSlug && (
+      <a href={`/blog/${project.deepDiveSlug}`} class="text-sage-700 hover:text-sage-900">
+        Read more →
+      </a>
+    )}
+  </div>
+</article>
+

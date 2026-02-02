@@ -1,0 +1,29 @@
+---
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import '@/styles/global.css';
+
+const { title = 'sugaroverflow', description } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+  </head>
+  <body class="bg-sage-100 text-neutral-900 font-sans">
+    <div class="min-h-screen md:flex">
+      <Header />
+      <main class="flex-1 md:ml-64">
+        <div class="max-w-4xl mx-auto px-4 py-10 md:py-12">
+          <slot />
+        </div>
+        <Footer />
+      </main>
+    </div>
+  </body>
+</html>
+

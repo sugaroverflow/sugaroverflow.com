@@ -1,0 +1,20 @@
+{
+  "love": [
+    {
+      "id": "love-twitter-001",
+      "screenshot": "/images/social/twitter-001.svg",
+      "platform": "twitter",
+      "author": "Jane Developer",
+      "date": "2024-09-20",
+      "context": "GitLab Commit keynote"
+    },
+    {
+      "id": "love-linkedin-002",
+      "screenshot": "/images/social/linkedin-002.svg",
+      "platform": "linkedin",
+      "date": "2024-10-15",
+      "context": "Contributors Garden project"
+    }
+  ]
+}
+

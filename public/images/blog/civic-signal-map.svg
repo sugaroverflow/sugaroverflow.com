@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="grad-civic" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8BA4D9" />
+      <stop offset="100%" stop-color="#C49FD3" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#grad-civic)" />
+  <g stroke="#F3F6F4" stroke-width="2.5" opacity="0.8">
+    <polyline points="80,420 200,360 320,400 440,260 560,300 680,180 800,220" fill="none" />
+    <circle cx="200" cy="360" r="10" fill="#F3F6F4" />
+    <circle cx="440" cy="260" r="10" fill="#F3F6F4" />
+    <circle cx="680" cy="180" r="10" fill="#F3F6F4" />
+  </g>
+  <text x="80" y="120" font-family="'Playfair Display', serif" font-size="46" fill="#F3F6F4">Civic Signal Map</text>
+  <text x="80" y="170" font-family="'Inter', sans-serif" font-size="22" fill="#F3F6F4">Tracking policy signals across institutions</text>
+</svg>

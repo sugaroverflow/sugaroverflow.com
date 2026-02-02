@@ -1,0 +1,113 @@
+---
+import Layout from '@/components/Layout.astro';
+import { getAllAwards, getKeynotes, getAllPress, getAllLove } from '@/lib/content-db';
+
+const awards = getAllAwards();
+const keynotes = getKeynotes();
+const press = getAllPress();
+const love = getAllLove().slice(0, 3);
+---
+
+<Layout title="Recognition — sugaroverflow">
+  <h1 class="text-4xl font-serif text-sage-900 tracking-tight">Recognition & Press</h1>
+
+  <section class="mt-12 space-y-12">
+    <h2 class="text-2xl font-serif text-sage-900">Awards</h2>
+    {awards.map((award) => (
+      <article class="grid gap-8 md:grid-cols-[1fr,2fr] items-start">
+        {award.ceremonyPhoto && (
+          <img
+            src={award.ceremonyPhoto}
+            alt={award.title}
+            class="w-full rounded-lg shadow-md"
+          />
+        )}
+        <div>
+          <h3 class="text-xl font-serif text-sage-900">{award.title}</h3>
+          <p class="mt-1 text-mist-700">{award.organization} · {award.year}</p>
+          {award.citation && (
+            <blockquote class="mt-4 border-l-4 border-lilac-300 pl-4 italic text-neutral-900/80">
+              {award.citation}
+            </blockquote>
+          )}
+          {award.context && (
+            <p class="mt-4 text-neutral-900/80">{award.context}</p>
+          )}
+        </div>
+      </article>
+    ))}
+  </section>
+
+  <section class="mt-20 space-y-12">
+    <h2 class="text-2xl font-serif text-sage-900">Keynotes</h2>
+    {keynotes.map((talk) => (
+      <article class="grid gap-8 md:grid-cols-[1fr,2fr] items-start">
+        {talk.image && (
+          <img
+            src={talk.image}
+            alt={talk.title}
+            class="w-full rounded-lg shadow-md"
+          />
+        )}
+        <div>
+          <h3 class="text-xl font-serif text-sage-900">{talk.title}</h3>
+          <p class="mt-1 text-mist-700">{talk.event} · {talk.location} · {talk.year}</p>
+          <p class="mt-4 text-neutral-900/80">{talk.description}</p>
+          {talk.links?.video && (
+            <a href={talk.links?.video} class="mt-4 inline-block text-lilac-700 hover:text-lilac-900">
+              Watch recording →
+            </a>
+          )}
+        </div>
+      </article>
+    ))}
+  </section>
+
+  <section class="mt-20 space-y-12">
+    <h2 class="text-2xl font-serif text-sage-900">Featured In</h2>
+    {press.map((item) => (
+      <article class="space-y-4">
+        <div class="grid gap-8 md:grid-cols-[1fr,2fr]">
+          <img
+            src={item.screenshot}
+            alt={item.title}
+            class="w-full rounded-lg border border-neutral-300"
+          />
+          <div>
+            <p class="text-sm text-mist-700">{item.publication} · {item.date}</p>
+            <h3 class="mt-2 text-xl font-serif text-sage-900">{item.title}</h3>
+            {item.pullQuote && (
+              <blockquote class="mt-4 border-l-4 border-lilac-300 pl-4 italic text-neutral-900/80">
+                {item.pullQuote}
+              </blockquote>
+            )}
+            {item.url && (
+              <a href={item.url} class="mt-4 inline-block text-lilac-700 hover:text-lilac-900">
+                Read article →
+              </a>
+            )}
+          </div>
+        </div>
+      </article>
+    ))}
+  </section>
+
+  <section class="mt-20" id="testimonials">
+    <h2 class="text-2xl font-serif text-sage-900">Testimonials</h2>
+    <p class="mt-2 text-neutral-900/70">Kind words from organizers and attendees.</p>
+    <div class="mt-6 grid gap-4 md:grid-cols-3">
+      {love.map((item) => (
+        <img
+          src={item.screenshot}
+          alt={`Testimonial from ${item.author || 'attendee'}`}
+          class="rounded-lg border border-neutral-300"
+          loading="lazy"
+        />
+      ))}
+    </div>
+    <a href="/love" class="mt-4 inline-block text-lilac-700 hover:text-lilac-900">
+      View all testimonials →
+    </a>
+  </section>
+</Layout>
+

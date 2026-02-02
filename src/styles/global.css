@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #2A2A2A;
+  background-color: #F3F6F4;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #F3F6F4;
+  background-image: linear-gradient(135deg, #F3F6F4 0%, #F0F5FF 45%, #F8F1FA 100%);
+  background-attachment: fixed;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', 'DM Serif Display', serif;
+}
+
+a,
+button {
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hover-link:hover {
+  color: #9A6BAC;
+}
+
+.tilted-card {
+  transform: rotate(-0.75deg);
+}
+
+.tilted-card:nth-child(even) {
+  transform: rotate(0.4deg);
+}
+
+@layer components {
+  .filter-pill {
+    @apply rounded-full border border-neutral-300 px-3 py-1 text-xs text-neutral-900/80 transition-colors;
+  }
+
+  .filter-pill[aria-pressed='true'] {
+    @apply border-lilac-500 bg-lilac-500 text-white;
+  }
+}

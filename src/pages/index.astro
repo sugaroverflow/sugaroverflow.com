@@ -1,0 +1,101 @@
+---
+import Layout from '@/components/Layout.astro';
+import ProjectCard from '@/components/ProjectCard.astro';
+import BlogPostCard from '@/components/BlogPostCard.astro';
+import { getFeaturedContent, getAllPosts, getFeaturedProjects, getAllTalks } from '@/lib/content-db';
+
+const featured = getFeaturedContent().slice(0, 3);
+const latestPosts = getAllPosts().slice(0, 3);
+const featuredProjects = getFeaturedProjects();
+const featuredTalks = getAllTalks().filter((talk) => talk.featured);
+---
+
+<Layout title="sugaroverflow — Fatima Sarah Khalid">
+  <section class="grid gap-8 md:grid-cols-[2fr,1fr] items-center">
+    <div>
+      <p class="text-sm uppercase tracking-[0.2em] text-mist-700">Fatima Sarah Khalid · sugaroverflow</p>
+      <h1 class="mt-4 text-4xl md:text-5xl font-serif text-sage-900 tracking-tight">
+        Developer advocacy, AI, and political technology.
+      </h1>
+      <p class="mt-4 text-lg text-neutral-900/80">
+        I build stories, systems, and communities where humans and AI collaborate—and explore how that shapes civic and political tech.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="/ideas" class="px-4 py-2 rounded-full bg-lilac-500 text-white text-sm hover:bg-lilac-600 transition-colors">
+          Explore my ideas
+        </a>
+        <a href="/research" class="px-4 py-2 rounded-full border border-mist-500 text-mist-700 text-sm hover:bg-mist-50 transition-colors">
+          Research & fellowship
+        </a>
+        <a href="/blog" class="px-4 py-2 rounded-full border border-sage-300 text-sage-700 text-sm hover:bg-sage-50 transition-colors">
+          Read my writing
+        </a>
+      </div>
+    </div>
+    <div class="justify-self-center">
+      <img
+        src="/images/headshots/main.svg"
+        alt="Portrait of Fatima"
+        class="w-40 h-40 rounded-3xl object-cover border-4 border-lilac-300 shadow-md"
+      />
+    </div>
+  </section>
+
+  <section class="mt-20">
+    <h2 class="text-2xl font-serif text-sage-900">Currently exploring</h2>
+    <div class="mt-6 grid gap-4 md:grid-cols-3">
+      {featured.map((item) => (
+        <div class="p-4 bg-neutral-50 rounded-lg border border-neutral-300">
+          <h3 class="font-medium text-sage-900">{item.title}</h3>
+          <p class="mt-2 text-sm text-neutral-900/70">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mt-20">
+    <h2 class="text-2xl font-serif text-sage-900">Featured work</h2>
+    <div class="mt-6 grid gap-6 md:grid-cols-2">
+      {featuredProjects.map((project) => (
+        <ProjectCard project={project} />
+      ))}
+    </div>
+
+    {featuredTalks.length > 0 && (
+      <div class="mt-10 space-y-4">
+        <h3 class="text-xl font-serif text-sage-900">Featured talks</h3>
+        {featuredTalks.map((talk) => (
+          <article class="rounded-2xl border border-neutral-300 bg-neutral-50 p-6">
+            <p class="text-sm text-mist-700">{talk.event} · {talk.location}</p>
+            <h4 class="mt-2 text-lg font-serif text-sage-900">{talk.title}</h4>
+            <p class="mt-2 text-neutral-900/80">{talk.description}</p>
+            {talk.links?.video && (
+              <a href={talk.links?.video} class="mt-3 inline-block text-lilac-700 hover:text-lilac-900 text-sm">
+                Watch recording →
+              </a>
+            )}
+          </article>
+        ))}
+      </div>
+    )}
+  </section>
+
+  <section class="mt-20">
+    <h2 class="text-2xl font-serif text-sage-900">Latest writing</h2>
+    <div class="mt-6 space-y-6">
+      {latestPosts.map((post) => (
+        <BlogPostCard post={post} />
+      ))}
+    </div>
+  </section>
+
+  <section class="mt-20 p-6 bg-lilac-100 rounded-2xl">
+    <h3 class="text-xl font-serif text-sage-900">Want me to speak at your event?</h3>
+    <p class="mt-2 text-neutral-900/80">
+      I speak about AI & developer experience, DevRel best practices, and political technology. I’m available for keynotes, workshops, and panels.
+    </p>
+    <a href="/about#speaking" class="mt-4 inline-block text-lilac-700 font-medium hover:text-lilac-900">
+      View topics & speaker requirements →
+    </a>
+  </section>
+</Layout>

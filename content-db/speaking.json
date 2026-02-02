@@ -1,0 +1,60 @@
+{
+  "talks": [
+    {
+      "id": "gitlab-commit-keynote-2024",
+      "slug": "gitlab-commit-keynote-2024",
+      "title": "Humans, AI, and the New Dev Workflow",
+      "event": "GitLab Commit",
+      "location": "San Francisco, CA",
+      "date": "2024-06-12",
+      "year": 2024,
+      "type": "keynote",
+      "contentType": "talk",
+      "affiliation": ["gitlab"],
+      "description": "Keynote on human–AI collaboration in modern DevSecOps workflows and what it means for developer experience.",
+      "topics": ["ai", "devrel", "developer-experience"],
+      "links": {
+        "slides": "https://example.com/slides",
+        "video": "https://example.com/video"
+      },
+      "image": "/images/speaking/gitlab-commit-2024.svg",
+      "featured": true
+    },
+    {
+      "id": "devrel-summit-field-notes-2024",
+      "slug": "devrel-summit-field-notes-2024",
+      "title": "Designing Programs for the Agentic Era",
+      "event": "DevRel Summit",
+      "location": "London, UK",
+      "date": "2024-10-18",
+      "year": 2024,
+      "type": "talk",
+      "contentType": "talk",
+      "affiliation": ["personal"],
+      "description": "Shared frameworks for running education cohorts and workshop series that help developers adopt AI responsibly.",
+      "topics": ["devrel", "ai", "education"],
+      "links": {
+        "slides": "https://example.com/devrel-summit-slides"
+      },
+      "image": "/images/speaking/devrel-summit-2024.svg",
+      "featured": false
+    }
+  ],
+  "speakerInfo": {
+    "bio": "Fatima Sarah Khalid is a Developer Advocate at GitLab and Research Fellow at Newspeak House. She focuses on AI and developer experience, open source communities, and the intersection of technology and governance.",
+    "topics": [
+      "AI and Developer Experience",
+      "Developer Advocacy Best Practices",
+      "Open Source Communities",
+      "Political Technology and Governance"
+    ],
+    "rider": {
+      "travel": "Will travel internationally. Prefer direct flights when possible.",
+      "accommodation": "Hotel room for night before and night of event.",
+      "av": "HDMI connection, lapel mic preferred, confidence monitor helpful.",
+      "accessibility": "Please provide accessibility info for venue in advance.",
+      "other": "Happy to do meet-and-greets or workshops. Need 24hr notice for slides review."
+    }
+  }
+}
+

@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": "building-contributors-garden",
+      "slug": "2024-11-15-building-contributors-garden",
+      "title": "Building Contributors Garden: Community-Driven Development",
+      "description": "How we built a collaborative pixel art garden live on stream, and what I learned about community engagement.",
+      "contentType": "deep-dive",
+      "date": "2024-11-15",
+      "affiliation": ["gitlab", "personal"],
+      "topics": ["devrel", "community", "live-coding"],
+      "featured": true,
+      "file": "2024-11-15-building-contributors-garden.mdx"
+    },
+    {
+      "id": "devrel-summit-notes",
+      "slug": "2024-10-20-devrel-summit-notes",
+      "title": "DevRel Summit 2024: Field Notes",
+      "description": "Quick observations from three days of talks, hallway conversations, and emerging patterns in developer advocacy.",
+      "contentType": "field-notes",
+      "date": "2024-10-20",
+      "affiliation": ["personal"],
+      "topics": ["devrel", "conferences"],
+      "featured": false,
+      "file": "2024-10-20-devrel-summit-notes.mdx"
+    },
+    {
+      "id": "ai-governance-layers",
+      "slug": "2025-01-10-ai-governance-layers",
+      "title": "Mapping AI Governance: Three Layers",
+      "description": "Progress update on research into how compute access, infrastructure, and policy create governance layers.",
+      "contentType": "research-update",
+      "date": "2025-01-10",
+      "affiliation": ["newspeak"],
+      "topics": ["ai-policy", "governance", "political-tech"],
+      "featured": false,
+      "file": "2025-01-10-ai-governance-layers.mdx"
+    },
+    {
+      "id": "civic-signal-map",
+      "slug": "2024-08-01-civic-signal-map",
+      "title": "Civic Signal Map: Visualizing Policy Momentum",
+      "description": "How I'm mapping AI policy momentum across civic institutions to spot windows of opportunity faster.",
+      "contentType": "deep-dive",
+      "date": "2024-08-01",
+      "affiliation": ["newspeak"],
+      "topics": ["governance", "data-viz", "research"],
+      "featured": false,
+      "file": "2024-08-01-civic-signal-map.mdx"
+    }
+  ]
+}
+

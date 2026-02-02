@@ -1,0 +1,61 @@
+---
+import Layout from '@/components/Layout.astro';
+import ContentTypeLabel from '@/components/ContentTypeLabel.astro';
+import FiltersBar from '@/components/FiltersBar.astro';
+import TagChip from '@/components/TagChip.astro';
+import { getAllPosts } from '@/lib/content-db';
+
+const posts = getAllPosts();
+const contentTypes = Array.from(new Set(posts.map((post) => post.contentType)));
+const affiliations = Array.from(new Set(posts.flatMap((post) => post.affiliation)));
+---
+
+<Layout title="Writing — sugaroverflow">
+  <h1 class="text-4xl font-serif text-sage-900 tracking-tight">All Writing</h1>
+  <p class="mt-4 text-lg text-neutral-900/80">
+    From field notes to deep dives—exploring DevRel, AI, and political technology.
+  </p>
+
+  <FiltersBar
+    types={contentTypes}
+    affiliations={affiliations}
+    targetId="post-list"
+    emptyStateSelector="#blog-empty"
+    showSort={false}
+  />
+
+  <div class="mt-12 space-y-6" id="post-list">
+    {posts.map((post) => (
+      <article
+        class="p-6 bg-neutral-50 rounded-lg border border-neutral-300"
+        data-filterable
+        data-content-type={post.contentType}
+        data-affiliations={post.affiliation.join(',')}
+        data-topics={post.topics.join(',')}
+        data-date={post.date}
+        data-featured={post.featured ? 'true' : 'false'}
+      >
+        <div class="flex items-center gap-3">
+          <ContentTypeLabel type={post.contentType} />
+          <time class="text-sm text-neutral-900/60">{post.date}</time>
+        </div>
+        <h2 class="mt-3 text-2xl font-serif text-sage-900">
+          <a href={`/blog/${post.slug}`} class="hover:text-lilac-700">
+            {post.title}
+          </a>
+        </h2>
+        <p class="mt-2 text-neutral-900/80">{post.description}</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          {post.topics.map((topic) => (
+            <TagChip label={topic} />
+          ))}
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <p class="mt-8 text-sm text-neutral-900/70 hidden" id="blog-empty" data-empty-state>
+    No posts match those filters yet. Try adjusting your selection.
+  </p>
+</Layout>
+
