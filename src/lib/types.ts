@@ -95,3 +95,19 @@ export interface SpeakerInfo {
   };
 }
 
+export interface CommunityItem {
+  id: string;
+  type: 'fellowship' | 'community-role' | 'working-group';
+  title: string;
+  organization: string;
+  location: string | null;
+  date: string;
+  year_start: number;
+  year_end: number | null;
+  description: string;
+  topics: string[];
+  verified: boolean;
+  evidence_url: string | null;
+  verification_status: string;
+}
+

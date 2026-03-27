@@ -1,0 +1,58 @@
+---
+import Layout from '@/components/Layout.astro';
+import { getAllCommunity } from '@/lib/content-db';
+
+const community = getAllCommunity();
+const fellowships = community.filter((item) => item.type === 'fellowship');
+const roles = community.filter((item) => item.type !== 'fellowship');
+---
+
+<Layout title="Community — sugaroverflow" description="Fellowships, community roles, and working groups">
+  <h1 class="text-4xl font-serif text-sage-900 tracking-tight">Community</h1>
+
+  <section class="mt-6 prose prose-lg max-w-none">
+    <p>Fellowships, community roles, and working groups I've been part of.</p>
+  </section>
+
+  {fellowships.length > 0 && (
+    <section class="mt-12">
+      <h2 class="text-2xl font-serif text-sage-900">Fellowships</h2>
+      <div class="mt-6 space-y-6">
+        {fellowships.map((item) => (
+          <article class="rounded-2xl border border-neutral-300 bg-neutral-50 p-6">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <h3 class="text-xl font-serif text-sage-900">{item.title}</h3>
+                <p class="mt-1 text-mist-700">
+                  {item.organization}
+                  {item.location && ` · ${item.location}`}
+                  {` · ${item.year_start}`}{item.year_end && item.year_end !== item.year_start ? `–${item.year_end}` : ''}
+                </p>
+              </div>
+            </div>
+            <p class="mt-4 text-neutral-900/80">{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {roles.length > 0 && (
+    <section class="mt-16">
+      <h2 class="text-2xl font-serif text-sage-900">Community Roles</h2>
+      <div class="mt-6 space-y-6">
+        {roles.map((item) => (
+          <article class="rounded-2xl border border-neutral-300 bg-neutral-50 p-6">
+            <h3 class="text-xl font-serif text-sage-900">{item.title}</h3>
+            <p class="mt-1 text-mist-700">
+              {item.organization}
+              {item.location && ` · ${item.location}`}
+              {` · ${item.year_start}`}{item.year_end && item.year_end !== item.year_start ? `–${item.year_end}` : ''}
+            </p>
+            <p class="mt-4 text-neutral-900/80">{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+</Layout>

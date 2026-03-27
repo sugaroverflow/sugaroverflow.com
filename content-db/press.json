@@ -1,27 +1,78 @@
 {
   "awards": [
     {
-      "id": "award-devrel-excellence-2024",
-      "title": "DevRel Excellence Award",
-      "organization": "DevRel Con",
-      "year": 2024,
-      "date": "2024-09-15",
-      "citation": "For outstanding contribution to developer community building and innovative approaches to technical advocacy.",
-      "ceremonyPhoto": "/images/awards/devrel-excellence-2024.jpg",
-      "context": "Awarded at DevRel Con for community programs and Developer Show series."
+      "id": "award-devops-dozen-top-evangelist-2023",
+      "title": "Top DevOps Evangelist",
+      "organization": "DevOps Dozen",
+      "year": 2023,
+      "date": "2023",
+      "citation": "Recognized as Top DevOps Evangelist in the DevOps Dozen 2023 awards.",
+      "ceremonyPhoto": null,
+      "context": "DevOps Dozen annual awards recognizing top contributors to the DevOps community.",
+      "verified": true,
+      "evidence_url": "https://devops.com/meet-the-devops-dozen%C2%B2-2023-honorees/"
+    },
+    {
+      "id": "award-google-open-source-peer-bonus-2020",
+      "title": "Google Open Source Peer Bonus",
+      "organization": "Google",
+      "year": 2020,
+      "date": "2020",
+      "citation": "Awarded Google Open Source Peer Bonus for contributions to open source.",
+      "ceremonyPhoto": null,
+      "context": "Google Open Source Peer Bonus program recognizing external contributors to open source projects.",
+      "verified": true,
+      "evidence_url": null
+    },
+    {
+      "id": "award-wct-rising-star-2018",
+      "title": "WCT Canada Rising Star Award",
+      "organization": "Women in Communications and Technology Canada",
+      "year": 2018,
+      "date": "2018",
+      "citation": "Rising Star Award recognising emerging women leaders in technology.",
+      "ceremonyPhoto": null,
+      "context": "Awarded by WCT Canada for contributions to technology and community.",
+      "verified": true,
+      "evidence_url": "https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417"
     }
   ],
   "press": [
     {
-      "id": "press-techcrunch-ai-governance",
-      "publication": "TechCrunch",
-      "title": "How Developer Advocates Are Shaping AI Policy",
-      "date": "2024-08-20",
-      "year": 2024,
-      "screenshot": "/images/press/techcrunch-ai-governance.png",
-      "pullQuote": "Khalid argues that developers are on the front lines of AI governance, whether they realize it or not.",
-      "url": "https://techcrunch.com/example"
+      "id": "press-cbc-rising-star-2018",
+      "publication": "CBC News",
+      "title": "London woman wins award for making tech industry more inclusive",
+      "date": "2018-03-13",
+      "year": 2018,
+      "screenshot": null,
+      "pullQuote": null,
+      "url": "https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417",
+      "verified": true,
+      "evidence_url": "https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417"
+    },
+    {
+      "id": "press-drupaleasy-podcast-205",
+      "publication": "DrupalEasy Podcast",
+      "title": "DrupalEasy Podcast Episode 205",
+      "date": "2018-02-12",
+      "year": 2018,
+      "screenshot": null,
+      "pullQuote": null,
+      "url": null,
+      "verified": true,
+      "evidence_url": null
+    },
+    {
+      "id": "press-talking-drupal-297",
+      "publication": "Talking Drupal",
+      "title": "Talking Drupal Episode 297",
+      "date": "2021",
+      "year": 2021,
+      "screenshot": null,
+      "pullQuote": null,
+      "url": null,
+      "verified": true,
+      "evidence_url": null
     }
   ]
 }
-

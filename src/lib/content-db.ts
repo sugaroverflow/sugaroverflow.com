@@ -11,6 +11,7 @@ import type {
   Idea,
   ContentType,
   SpeakerInfo,
+  CommunityItem,
 } from './types';
 
 const ROOT = path.resolve(process.cwd(), 'content-db');
@@ -72,6 +73,12 @@ export function getAllPress(): PressItem[] {
 
 export function getAllLove(): LoveItem[] {
   return readJSON<{ love: LoveItem[] }>('love.json').love;
+}
+
+export function getAllCommunity(): CommunityItem[] {
+  return readJSON<{ community: CommunityItem[] }>('community.json').community
+    .slice()
+    .sort((a, b) => b.year_start - a.year_start);
 }
 
 export function getAllIdeas(): Idea[] {

@@ -17,7 +17,10 @@
       },
       "topics": ["devrel", "community", "live-coding"],
       "featured": true,
-      "deepDiveSlug": "building-contributors-garden"
+      "deepDiveSlug": "building-contributors-garden",
+      "verified": true,
+      "evidence_url": "https://gitlab.com/sugaroverflow/contributors-garden",
+      "verification_status": "verified"
     },
     {
       "id": "tanuki-airlines",
@@ -35,7 +38,12 @@
         "repo": "https://gitlab.com/sugaroverflow/tanuki-airlines"
       },
       "topics": ["devrel", "demo", "ci-cd"],
-      "featured": true
+      "featured": true,
+      "verified": false,
+      "evidence_url": null,
+      "verification_status": "inferred",
+      "confidence": "low",
+      "curator_note": "Demo URL is a placeholder. Repo unverified. Flagged by portfolio-researcher."
     },
     {
       "id": "civic-signal-map",
@@ -54,8 +62,92 @@
       },
       "topics": ["governance", "research", "data-viz"],
       "featured": false,
-      "deepDiveSlug": "civic-signal-map"
+      "deepDiveSlug": "civic-signal-map",
+      "verified": false,
+      "evidence_url": null,
+      "verification_status": "inferred",
+      "confidence": "low",
+      "curator_note": "No external evidence found. Flagged by portfolio-researcher."
+    },
+    {
+      "id": "drone-companion-app",
+      "slug": "drone-companion-app",
+      "title": "Drone Companion App",
+      "description": "Drone safety app built with Code for Canada and Transport Canada to help drone operators understand regulations.",
+      "contentType": "project",
+      "date": "2018",
+      "year": 2018,
+      "image": null,
+      "affiliation": ["personal"],
+      "tech": ["React", "Node.js"],
+      "links": {
+        "repo": "https://github.com/sugaroverflow/drone-companion-app"
+      },
+      "topics": ["civic-tech", "government", "open-source"],
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://github.com/sugaroverflow/drone-companion-app",
+      "verification_status": "verified"
+    },
+    {
+      "id": "terminus-build-tools",
+      "slug": "terminus-build-tools",
+      "title": "Terminus Build Tools Plugin",
+      "description": "Pantheon CLI plugin for integrating build tools workflows with the Terminus command-line interface.",
+      "contentType": "project",
+      "date": "2020",
+      "year": 2020,
+      "image": null,
+      "affiliation": ["personal"],
+      "tech": ["PHP"],
+      "links": {
+        "repo": "https://github.com/pantheon-systems/terminus-build-tools-plugin"
+      },
+      "topics": ["open-source", "ci-cd", "php"],
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://github.com/pantheon-systems/terminus-build-tools-plugin",
+      "verification_status": "verified"
+    },
+    {
+      "id": "boston-311",
+      "slug": "boston-311",
+      "title": "City of Boston 311",
+      "description": "Open source contribution to the City of Boston 311 service request application.",
+      "contentType": "project",
+      "date": "2016",
+      "year": 2016,
+      "image": null,
+      "affiliation": ["personal"],
+      "tech": [],
+      "links": {
+        "repo": "https://github.com/CityOfBoston/Boston311"
+      },
+      "topics": ["civic-tech", "open-source", "government"],
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://github.com/CityOfBoston/Boston311",
+      "verification_status": "verified"
+    },
+    {
+      "id": "analytics-usa-gov",
+      "slug": "analytics-usa-gov",
+      "title": "analytics.usa.gov",
+      "description": "Contributor to analytics.usa.gov, the public dashboard showing US federal government web traffic.",
+      "contentType": "project",
+      "date": "2016",
+      "year": 2016,
+      "image": null,
+      "affiliation": ["personal"],
+      "tech": [],
+      "links": {
+        "repo": "https://github.com/18F/analytics.usa.gov"
+      },
+      "topics": ["civic-tech", "open-source", "government"],
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://github.com/18F/analytics.usa.gov",
+      "verification_status": "verified"
     }
   ]
 }
-
