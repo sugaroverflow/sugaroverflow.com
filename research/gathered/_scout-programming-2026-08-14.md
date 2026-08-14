@@ -84,6 +84,32 @@ Ran Wayback CDX + live curl to settle how to source Monday Merge editions honest
 
 Calls this step: 1 CDX collapse, 1 CDX 200-filter (timed out), 1 Wayback snapshot HEAD, 1 Wayback body grep, ~6 live curls — all spaced ≥1s. No 429s hit.
 
+## UPDATE 2026-08-14 ~18:07 UTC — all Monday Merge ja-jp editions confirmed LIVE + bylines verified
+
+Extended the live check to the 6 search-surfaced editions not yet banked. **All 6 return HTTP 200 on the ja-jp mirror** (spaced 1.5s, no hammering):
+
+| Edition | ja-jp mirror |
+|---|---|
+| 2025-may-9 | 200 ✅ |
+| 2025-june-9 | 200 ✅ |
+| 2025-december-08 | 200 ✅ |
+| 2026-march-9 | 200 ✅ |
+| 2026-june-22 | 200 ✅ |
+| 2026-aug-10 | 200 ✅ |
+
+Combined with april-7 + july-14 (confirmed earlier), that's **8 distinct Monday Merge editions we can honestly evidence live** via `/ja-jp/blog/monday-merge-<date>/`.
+
+**In-body byline re-verified** on two of the newly-confirmed editions (grep for 'Fatima'):
+- dec-08 2025 → 'Fatima Sarah Khalid' present in body ✅
+- aug-10 2026 → 'Fatima Sarah Khalid' present in body ✅
+→ Consistent with the april-7/july-14 finding: ja-jp meta author = GitLab Japan Team (translators), in-body byline/signoff = Fatima. She is the credited series author across the run.
+
+**The Developer Show YT episodes reachable**: both Fatima-hosted episodes (`9AzNcmrl_FU` Specialized Agents & Skills; `ybbt2Qnx7fE` Multi-Agent Episode) return HTTP 302 = normal YouTube consent redirect, i.e. live/reachable.
+
+**Batch-readiness state**: Monday Merge is now fully evidence-settled — 8 live-verified editions with a consistent honest `evidence_url` + `verification_status` scheme decided. Resume claims ~12 editions; we can evidence 8 today (the other ~4 are neither search-surfaced nor Wayback-held → leave the '~12 / 235K / 26K' stats as resume-only, do NOT self-attest). Still holding the full `programming.json` batch write for Lotus's ping per rotation rule.
+
+Calls this step: 6 spaced ja-jp status curls + 2 body-grep fetches + 2 YT status curls, all ≥1.5s apart. No 429s.
+
 ## Next-batch plan (on Lotus ping)
 1. Enumerate Monday Merge full run via about.gitlab.com author/tag page → count editions, capture canonical en URLs, confirm ~12 + stats claim.
 2. Enumerate The Developer Show via GitLab YouTube channel → list Fatima-hosted episodes only; capture view counts where public (supports the ~26K claim, but that stat is Monday Merge per resume L14 — keep separated).
