@@ -13,8 +13,9 @@ for deletion, not a candidate for rescue.
 
 - **`gitlab-commit-keynote-2024`** — "Humans, AI, and the New Dev Workflow" at GitLab Commit SF 2024. Placeholder URLs (`example.com/slides`, `example.com/video`). No evidence GitLab Commit ran in 2024. Placeholder image `/images/speaking/gitlab-commit-2024.svg`.
 - **`devrel-summit-field-notes-2024`** — "Designing Programs for the Agentic Era" at DevRel Summit London 2024. Placeholder URL. No public evidence this talk happened.
-- **`all-things-open-2022`** — "Speaker at All Things Open 2022" — title TBC, no evidence Fatima spoke that year.
-- **`all-things-open-2023`** — same shape as 2022 entry, title TBC.
+- **`all-things-open-2022`** — ✅ **Rescued 2026-08-14**: Glyphie found live speaker profile at 2022.allthingsopen.org confirming GitLab-era appearance; Wayback recovered session title "Lessons Learned Leading an OSS Diversity Team"; Fatima confirmed via attestation. Row upgraded in `content-db/speaking.json` on `research/merge-speaking-2026-08-14` (commit `32d1ad6`), `verification_status: verified-fatima-attested`.
+- **`all-things-open-2023`** — same shape as 2022 entry, title TBC. Not yet rescued.
+- **`drupalcon-vienna-2017-imposter`** — ✅ **Confirmed quarantine 2026-08-14**: Session existed but no accessible source attributes Fatima. Soren audit (`937a978`) marked FAIL; Glyphie's follow-up via `drupal.org/u/sugaroverflow` profile confirmed no Vienna session in her contributor record. Fatima confirmed quarantine. Row **removed** from `content-db/speaking.json` on `research/merge-speaking-2026-08-14` (commit `32d1ad6`). Not for restoration without new evidence (attributed source naming Fatima on Vienna 2017 panel).
 
 ### From `projects.json`
 
