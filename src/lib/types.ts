@@ -4,7 +4,9 @@ export type ContentType =
   | 'deep-dive'
   | 'research-update'
   | 'talk'
-  | 'project';
+  | 'project'
+  | 'essay'
+  | 'recap';
 
 export type Affiliation = 'gitlab' | 'newspeak' | 'personal';
 
@@ -39,7 +41,12 @@ export interface Project extends BaseIdea {
 }
 
 export interface Post extends BaseIdea {
-  file: string;
+  // Local MDX-backed posts have `file`; external bylines (e.g. GitLab blog)
+  // have `external_url` + `byline` instead.
+  file?: string;
+  external_url?: string;
+  byline?: string;
+  year?: number;
 }
 
 export interface Talk extends BaseIdea {
