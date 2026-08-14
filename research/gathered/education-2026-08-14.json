@@ -1,0 +1,124 @@
+{
+  "category": "education",
+  "batch": "education-2026-08-14 (batch 1 — full category, scaffold fill)",
+  "gathered_by": "glyphie",
+  "gathered_at": "2026-08-14",
+  "source_of_truth": "research/seed/resume--fatimasarahkhalid.md ('## Education' section) + research/seed/linkedin-full-2026-08-14.md ('## Education' section). New file education.json for formal degrees + exchange was EXPLICITLY CONFIRMED by Fatima 2026-08-14 (see RESEARCH-SCOPE.md 'New file education.json?': 'Confirmed 2026-08-14 by Fatima: add education.json for formal degrees + exchange. Leave fellowships in community.json. High school + CTY optional — Fatima's call at merge time.').",
+  "scope_note": "Formal degrees + the Hanyang engineering exchange. Per Fatima's confirmed scope: fellowships (Newspeak House / London College of Political Technology) STAY in community.json and are deliberately NOT included here. High school (Benjamin N. Cardozo) and Johns Hopkins CTY are OPTIONAL and left OUT of the primary candidate set — captured in optional_flagged[] below for Fatima's call at merge time, not as active candidates. HONEST VERIFICATION STATE: the two degree-granting institutions and the exchange consortium are ALL independently web-verifiable as real (NYU/NYU-Poly/Tandon and the Global E3 engineering-exchange network, HTTP 200 today), but degrees for a private individual have no public per-person verify page (no public degree registry / NSC lookup is scrapeable without auth), so each individual degree is 'personal-record-only', sourced to Fatima's CV+LinkedIn with the institution page cited as corroborating context for WHAT the credential is. This is the honest ceiling for a private person's education; institution pages verify the school, not that she holds the degree.",
+  "coordination_note": "Category boundary: this batch does NOT touch the held programming.json batch (still gated on Lotus's rotation ping) and does NOT duplicate any community.json rows — fellowships remain community's job. One IMPORTANT NAMING NOTE for merge: Fatima's engineering degree was earned at what LinkedIn labels 'New York University - Polytechnic School of Engineering' (aka NYU-Poly). During her 2011–2015 enrollment the school carried the 'NYU Polytechnic School of Engineering' name and was RENAMED 'NYU Tandon School of Engineering' in 2015 (her graduation year) after the Tandons' $100M gift — verified on NYU's own institutional history page. Portfolio should present the name as it was during enrollment (NYU Polytechnic School of Engineering / NYU-Poly) with a note that it is now NYU Tandon, so a reader searching either name finds it. See curator_note on the CS-degree row.",
+  "candidates": [
+    {
+      "id": "nyu-poly-bs-computer-science-2015",
+      "degree": "Bachelor of Science, Computer Science",
+      "institution": "New York University Polytechnic School of Engineering",
+      "institution_aka": [
+        "NYU-Poly",
+        "New York University - Polytechnic School of Engineering",
+        "now NYU Tandon School of Engineering"
+      ],
+      "location": "Brooklyn, New York, USA",
+      "start_year": 2011,
+      "end_year": 2015,
+      "date_range": "2011–2015",
+      "field_of_study": "Computer Science",
+      "activities": [
+        "Society of Women Engineers",
+        "Poly Gaming Network",
+        "Muslim Students Association",
+        "Undergraduate Student Council"
+      ],
+      "description": "Fatima's primary technical degree — a BS in Computer Science from NYU's engineering school. Foundation for her subsequent software-engineering, Drupal/web-dev, and developer-advocacy career.",
+      "topics": [
+        "computer-science",
+        "software-engineering",
+        "higher-education"
+      ],
+      "institution_url": "https://engineering.nyu.edu/",
+      "evidence_url": "https://engineering.nyu.edu/about/history",
+      "verified": false,
+      "verification_status": "personal-record-only",
+      "curator_note": "Institution VERIFIED real; degree personal-record-only. Sourced to Fatima's CV ('New York University School of Engineering — BS, Computer Science | 2011–2015') and LinkedIn ('New York University - Polytechnic School of Engineering — Bachelor of Science, Computer Science, 2011–2015'). NAME-CHANGE FACT (independently verified on NYU's own history page, engineering.nyu.edu/about/history, HTTP 200 2026-08-14): the school was named 'NYU Polytechnic School of Engineering' during Fatima's 2011–2015 enrollment and was renamed 'NYU Tandon School of Engineering' in 2015 after Chandrika & Ranjan Tandon's $100M gift. (Minor source discrepancy: some pages date the NYU merger 'official' as 2014, the NYU-Poly naming ~2014, and the Tandon renaming 2015 — all within her enrollment window; presented as ranges, not asserted to the day.) RECOMMEND portfolio renders the enrollment-era name (NYU Polytechnic School of Engineering / NYU-Poly) with a 'now NYU Tandon' note. No public per-person degree-verify page exists for a private individual — do NOT fabricate a diploma URL or NSC/registry link. evidence_url points to the institution history page as corroboration of the SCHOOL, not proof she holds the degree."
+    },
+    {
+      "id": "nyu-ba-broadcast-journalism-2015",
+      "degree": "Bachelor of Arts, Journalism (Broadcast)",
+      "institution": "New York University",
+      "institution_aka": [
+        "NYU"
+      ],
+      "location": "New York, New York, USA",
+      "start_year": 2011,
+      "end_year": 2015,
+      "date_range": "2011–2015",
+      "field_of_study": "Broadcast Journalism",
+      "activities": [
+        "NYU Athletics – Tennis",
+        "Minetta Review"
+      ],
+      "description": "Fatima's second concurrent degree — a BA in Broadcast Journalism from NYU, earned alongside her CS degree. Explains the strong communication/storytelling thread across her later developer-advocacy, developer-education, and hosting work (The Developer Show, Monday Merge).",
+      "topics": [
+        "journalism",
+        "broadcast",
+        "communications",
+        "higher-education"
+      ],
+      "institution_url": "https://www.nyu.edu/",
+      "evidence_url": "https://www.nyu.edu/",
+      "verified": false,
+      "verification_status": "personal-record-only",
+      "curator_note": "Institution VERIFIED real (NYU). Degree personal-record-only, sourced to Fatima's CV ('New York University — BA, Journalism, Broadcast | 2011–2015') and LinkedIn ('New York University — Bachelor of Arts, Broadcast Journalism, 2011–2015'). Note: this is a SEPARATE degree from the CS/engineering degree above — CV+LinkedIn list both concurrently 2011–2015, a genuine dual-degree pattern (engineering school + main NYU). No public per-person degree-verify page for a private individual; do NOT fabricate a diploma/registry URL. The journalism BA is a notable and honest provenance detail for a technical portfolio — it grounds her DevRel/hosting/communication strengths in a real credential."
+    },
+    {
+      "id": "hanyang-global-e3-engineering-exchange-2014",
+      "degree": "Global E3 Engineering Exchange (semester exchange)",
+      "institution": "Hanyang University",
+      "institution_aka": [
+        "Hanyang University (Seoul campus)"
+      ],
+      "location": "Seoul, South Korea",
+      "start_year": 2014,
+      "end_year": 2014,
+      "date_range": "2014",
+      "field_of_study": "Engineering (exchange semester)",
+      "activities": [
+        "Journalism Award (per LinkedIn)"
+      ],
+      "description": "A semester engineering exchange at Hanyang University in Seoul via the Global E3 (Global Engineering Education Exchange) consortium — an international exchange network of engineering schools. Taken during Fatima's NYU-Poly enrollment.",
+      "topics": [
+        "engineering",
+        "study-abroad",
+        "exchange",
+        "south-korea"
+      ],
+      "institution_url": "https://www.hanyang.ac.kr/",
+      "program_reference_url": "https://www.abroad.pitt.edu/GE3Hanyang",
+      "evidence_url": "https://www.abroad.pitt.edu/GE3Hanyang",
+      "verified": false,
+      "verification_status": "personal-record-only",
+      "curator_note": "Institution + PROGRAM both VERIFIED real. Hanyang University (hanyang.ac.kr, HTTP 200 2026-08-14) is a real Seoul engineering university and a confirmed member of Global E3, the Global Engineering Education Exchange consortium — corroborated by multiple .edu study-abroad program pages (e.g. University of Pittsburgh's Global E3 Hanyang page abroad.pitt.edu/GE3Hanyang HTTP 200, and the official globale3.studioabroad.com program listing). Fatima's individual participation is personal-record-only, sourced to her CV ('Hanyang University — Global E3 Engineering Exchange, Seoul, South Korea | 2014') and LinkedIn ('Hanyang University — Engineering Exchange Program, 2014, Global E3 Engineering Exchange semester, Activities: Journalism Award'). evidence_url (Pitt Global E3 Hanyang page) is a stable, HTTP-200 corroboration of the PROGRAM+SCHOOL, not proof of her specific participation. The direct globale3.studioabroad.com program URL and hanyang.ac.kr/web/eng return 403 to a plain fetch (bot-gated), so the Pitt program page is used as the stable public reference. NOTE the LinkedIn 'Journalism Award' activity dovetails with her concurrent journalism BA — a nice cross-signal but self-attested."
+    }
+  ],
+  "optional_flagged": [
+    {
+      "id": "cardozo-hs-diploma-2011",
+      "note": "OPTIONAL — NOT an active candidate. Benjamin N. Cardozo High School, High School Diploma (Honors/Regents), 2009–2011 (LinkedIn). Activities: Arista Honors Society, Mock Trial, UNICEF Leadership team. Per Fatima's confirmed scope, high school is OPTIONAL and her call at merge time. Left out of primary candidates by default (professional portfolio typically omits HS). Include only if Fatima wants it. Personal-record-only; the school is real but there is no per-person verify path.",
+      "source": "linkedin-full-2026-08-14.md '## Education'"
+    },
+    {
+      "id": "johns-hopkins-cty-2002-2004",
+      "note": "OPTIONAL — NOT an active candidate. Johns Hopkins Center for Talented Youth (CTY), Gifted Summer Programs, 2002–2004 (LinkedIn). Per Fatima's confirmed scope, this tier is OPTIONAL and her call at merge time. Left out of primary candidates by default (early gifted-program, pre-professional). CTY (JHU) is a real, well-known program; personal participation is personal-record-only. Include only if Fatima wants it."
+    }
+  ],
+  "excluded": [
+    {
+      "id": "newspeak-house-fellowship",
+      "reason": "DELIBERATELY EXCLUDED from education.json per Fatima's confirmed scope: 'Leave fellowships in community.json.' The London College of Political Technology (Newspeak House) Fellowship / residency (Sep 2025–Present) is a fellowship, not a formal degree, and belongs in community.json — NOT duplicated here. Flagged so a merge reviewer does not mistake its absence for a miss."
+    }
+  ],
+  "followups": [
+    "MERGE (Lotus/Fatima): decide whether optional_flagged[] (Cardozo HS diploma, Johns Hopkins CTY) should be promoted into education.json or stay omitted — Fatima's confirmed 'her call at merge time'.",
+    "MERGE naming: render the CS degree under the enrollment-era name 'NYU Polytechnic School of Engineering' (NYU-Poly) with a 'now NYU Tandon' note so both names are searchable.",
+    "SOREN: confirm 'personal-record-only' is the acceptable ceiling for a private individual's degrees where the institution is web-verifiable but no public per-person degree-verify page exists (same standard applied to certifications-2026-08-14.json).",
+    "OPTIONAL browser upgrade (low value, low confidence): NYU/NSC do not expose scrapeable per-person degree verification without authorization, so unlike the Acquia cert there is NO realistic browser promotion path to verified-live for these degrees — do not spend browser budget chasing a per-person degree URL."
+  ]
+}
