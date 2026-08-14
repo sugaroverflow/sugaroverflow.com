@@ -1,0 +1,124 @@
+{
+  "_meta": {
+    "category": "speaking",
+    "gathered_by": "glyphie",
+    "gathered_at": "2026-08-14",
+    "supersedes_note": "Follow-up pass responding to Soren's audit research/audits/speaking-2026-08-14.md. Addresses the three send-backs (Vienna attribution, DrupalCon NA 2021 date, ATO 2022 session title) and surfaces net-new verified session data recovered from Fatima's own drupal.org contributor profile.",
+    "source_frame": [
+      "research/seed/resume--fatimasarahkhalid.md",
+      "research/seed/linkedin-full-2026-08-14.md",
+      "research/audits/speaking-2026-08-14.md"
+    ],
+    "primary_evidence": "Fatima's own drupal.org contributor profile (Wayback 20190930224616) lists her Sessions, Scholarship years, and events attended. This is the strongest primary source for the Drupal-era speaking record and is used to settle the Vienna question.",
+    "candidates_count": 4
+  },
+  "resolutions": [
+    {
+      "id": "drupalcon-vienna-2017-imposter-monologues",
+      "audit_verdict_confirmed": "FAIL",
+      "recommendation": "QUARANTINE the existing content-db entry drupalcon-vienna-2017-imposter (pending Fatima confirmation per quarantine rules).",
+      "finding": "Fatima's own drupal.org contributor profile is decisive. Under 'Sessions' it names ONLY: DrupalCon Nashville (OOP the Pokemon Journey + 2 Community Convos) and DrupalCon Baltimore (The Imposter Monologues part II). It does NOT list any DrupalCon Vienna session. Separately, the profile lists Vienna 2017 under 'Scholarship recipient' and under Drupal events attended. Conclusion: Fatima ATTENDED DrupalCon Vienna 2017 on scholarship but there is no public evidence she was a PANELIST on 'The Imposter Monologues, Vol. 3'. The Vienna session page (events.drupal.org, confirmed via Wayback 20231211123303 + 20250826105431, identical digest) carries only a generic panel description with no named speaker list. Rachel Lawson's retrospective (rachelnorfolk.me) confirms Lawson herself was a panelist and embeds a @sugaroverflow tweet from the same conference, but does not place Fatima on the panel. The most likely origin of the content-db Vienna entry is conflation with the confirmed Baltimore 'part II' appearance.",
+      "evidence_urls": [
+        "https://web.archive.org/web/20190930224616/https://www.drupal.org/u/sugaroverflow",
+        "https://web.archive.org/web/20231211123303/https://events.drupal.org/vienna2017/sessions/imposter-monologues-vol-3",
+        "https://rachelnorfolk.me/2017/all-feels-my-drupalcon-retrospective"
+      ],
+      "verification_status": "delete",
+      "curator_note": "Do NOT resurrect without Fatima's explicit confirmation. If Fatima recalls actually being on the Vienna panel, treat as personal-record-only and note that the public event page did not name any panelists."
+    },
+    {
+      "id": "drupalcon-na-2021-javascript-ate-the-web",
+      "audit_verdict_confirmed": "PASS-WITH-CAVEAT (date still unresolved)",
+      "finding": "Could not recover a Wayback snapshot of the specific session URL (events.drupal.org/northamerica2021/sessions/javascript-ate-web-key-lessons-drupal-community returns empty CDX). The events.drupal.org site is bot-gated on direct fetch. I was unable this pass to independently confirm the exact day (search index earlier suggested Wednesday 14 April; my gather note had claimed Friday 16 April). Until a clean primary snapshot of the speakers/schedule page is recovered, the date should be left as year-only (2021) rather than 2021-04-16.",
+      "recommendation": "Merge as NET-NEW but with date reduced to year-only '2021' and verification_status 'personal-record-only' for the exact day, OR hold until the schedule page is recovered via browser. The panel/panelists and description are corroborated by search index; only the precise date is unsettled.",
+      "evidence_urls": [
+        "https://www.drupal.org/association/supporters/blog/javascript-ate-the-web-key-lessons-for-the-drupal-community"
+      ],
+      "verification_status": "verified-partial",
+      "curator_note": "Attribution + description OK; exact day unresolved. Needs a browser fetch of the DrupalCon NA 2021 speakers/schedule page to settle 14 vs 16 April."
+    },
+    {
+      "id": "all-things-open-2022",
+      "audit_verdict_confirmed": "PASS-WITH-CAVEAT resolved -> session title RECOVERED",
+      "finding": "The actual ATO 2022 session title is recovered from a primary source. The All Things Open 'Community Track Recordings Now live!' post (allthingsopen.org/community-track-recordings-now-live, published 2022-12-19) lists: 'Lessons Learned Leading an OSS Diversity Team — Fatima Sarah Khalid, GitLab' with a Watch Recording link. This upgrades the entry from generic 'speaker appearance' to a concrete, source-supported talk title with a recording.",
+      "recommendation": "Merge as an update to existing content-db all-things-open-2022 (currently quarantined as 'title TBC'). Now has a real title and is eligible to leave quarantine pending Fatima confirmation. Set title to 'Lessons Learned Leading an OSS Diversity Team', type 'talk', affiliation gitlab.",
+      "evidence_urls": [
+        "https://allthingsopen.org/community-track-recordings-now-live",
+        "https://2022.allthingsopen.org/speakers/fatima-sarah-khalid/"
+      ],
+      "verification_status": "verified",
+      "curator_note": "Recording link exists on the ATO recordings page; capture the exact recording URL on merge. NOTE: this row is currently in research/quarantine (title TBC) — flag to Fatima that it now has evidence and can be un-quarantined."
+    }
+  ],
+  "net_new": [
+    {
+      "id": "drupalcon-nashville-2018-community-convo-ddi",
+      "slug": "drupalcon-nashville-2018-community-convo-ddi",
+      "title": "Community Convo: Drupal Diversity & Inclusion",
+      "event": "DrupalCon Nashville 2018",
+      "location": "Nashville, TN",
+      "date": "2018",
+      "year": 2018,
+      "type": "panel",
+      "contentType": "talk",
+      "affiliation": ["personal"],
+      "description": "Community conversation session on Drupal Diversity & Inclusion, led during DrupalCon Nashville 2018. Listed under Fatima's own drupal.org contributor profile 'Sessions'.",
+      "topics": ["drupal", "diversity-inclusion", "community"],
+      "links": {},
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://web.archive.org/web/20190930224616/https://www.drupal.org/u/sugaroverflow",
+      "verification_status": "verified-wayback",
+      "curator_note": "From Fatima's own drupal.org profile Sessions list. No standalone session page URL recovered yet; drupal.org profile is the evidence. Distinct from the OOP Pokemon talk already in content-db."
+    },
+    {
+      "id": "drupalcon-nashville-2018-community-convo-governance",
+      "slug": "drupalcon-nashville-2018-community-convo-governance",
+      "title": "Community Convo: Governance Retrospective",
+      "event": "DrupalCon Nashville 2018",
+      "location": "Nashville, TN",
+      "date": "2018",
+      "year": 2018,
+      "type": "panel",
+      "contentType": "talk",
+      "affiliation": ["personal"],
+      "description": "Community conversation session reflecting on Drupal community governance, during DrupalCon Nashville 2018. Fatima's drupal.org profile also notes she was 'one of the facilitators in the first rounds of Community Governance meetings.' Listed under her drupal.org 'Sessions'.",
+      "topics": ["drupal", "community", "governance"],
+      "links": {},
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://web.archive.org/web/20190930224616/https://www.drupal.org/u/sugaroverflow",
+      "verification_status": "verified-wayback",
+      "curator_note": "From Fatima's own drupal.org profile Sessions list. No standalone session page URL recovered yet."
+    }
+  ],
+  "corrections_for_content_db": [
+    {
+      "target": "content-db/community.json (or new program-committee type)",
+      "field": "DrupalCon Nashville 2018 track-chair role",
+      "correction": "Fatima's drupal.org profile states 'DrupalCon Nashville volunteer and track chair for Building Community.' The RESEARCH-SCOPE draft guessed 'DEI Track Chair 2018'; the profile-supported title is TRACK CHAIR for the 'Building Community' track at DrupalCon Nashville 2018. Use the profile wording, not the scope-doc guess.",
+      "evidence_url": "https://web.archive.org/web/20190930224616/https://www.drupal.org/u/sugaroverflow",
+      "verification_status": "verified-wayback"
+    },
+    {
+      "target": "content-db/community.json drupal-di-working-group",
+      "field": "role title",
+      "correction": "drupal.org profile describes her as on the 'Leadership team Drupal Diversity & Inclusion working group' and 'Leader of the Drupal Diversity & Inclusion working group.' CV says 'Team Lead' 2017-2019. All three phrasings agree on a leadership role; recommend 'Team Lead' per CV, note the drupal.org corroboration.",
+      "evidence_url": "https://web.archive.org/web/20190930224616/https://www.drupal.org/u/sugaroverflow",
+      "verification_status": "verified-wayback"
+    }
+  ],
+  "bonus_leads": [
+    {
+      "note": "ATO 2023 talk title also recovered (for when we reach the ATO-2023 quarantined row): 'Given the Choices We Have: The Power of...' lightning talk at the Inclusion & Diversity in Open Source event, October 15, 2023, rooms 306 A/B/C. Source: https://2023.allthingsopen.org/join-gitlab-at-all-things-open/ . Note this reuses the 'Given the Choices' title from the 2020 DrupalCamp Colorado keynote — likely an evolved/reworked version. Do NOT merge yet (ATO 2023 is quarantined); flag to Fatima."
+    },
+    {
+      "note": "Sessionize public speaker profile exists (https://sessionize.com/sugaroverflow/) with a current GitLab bio but no public session list. Good as a bio/press datapoint, not a session source."
+    },
+    {
+      "note": "drupal.org profile also documents: Community Governance meeting facilitator (first rounds); DDI Contrib Team; Drupal Diversity project (2 commits); mentoring lead / new-contributor mentor; scholarship recipient Vienna 2017, Nashville 2018, Seattle 2019. Several of these are community-category, not speaking."
+    }
+  ]
+}
