@@ -1,0 +1,308 @@
+{
+  "_meta": {
+    "category": "posts",
+    "audited_by": "soren",
+    "audited_at": "2026-08-14T15:11:00Z",
+    "gathered_file": "research/gathered/posts-2026-08-14.json",
+    "rubric": "research/RESEARCH-SCOPE.md § Verification bar",
+    "summary": {
+      "merge_ready": 9,
+      "needs_more_evidence": 0,
+      "fail_quarantine": 0,
+      "candidates_checked": 9,
+      "net_new_rows": 9,
+      "existing_content_db_collisions": 0,
+      "live_200_evidence_urls": 9,
+      "co_byline_rows": 2
+    },
+    "note": "Method: checked out research/gather-posts-2026-08-14, inspected research/gathered/posts-2026-08-14.json and existing content-db/posts.json, fetched every evidence_url with a browser-like User-Agent, and searched the fetched page text/raw HTML for title, publication date, Fatima Sarah Khalid/Fatima Khalid, and co-author names. All nine slug-only GitLab URLs returned HTTP 200. The old dated-path migration gotcha was respected by auditing the live slug-only evidence_url values."
+  },
+  "audits": [
+    {
+      "id": "gitlab-comparing-static-site-generators-2022",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-live-byline",
+      "content_db_action": "add net-new external GitLab byline row",
+      "observed_urls": [
+        {
+          "url": "https://about.gitlab.com/blog/comparing-static-site-generators/",
+          "observed_status": 200,
+          "note": "Live GitLab slug-only blog URL. Observed title/date/byline: How to choose the right static site generator — April 18, 2022 — Fatima Sarah Khalid."
+        }
+      ],
+      "observed_byline": {
+        "authors": [
+          "Fatima Sarah Khalid"
+        ],
+        "fatima_present": true,
+        "co_author_flag": false,
+        "evidence_snippet": "Published on: April 18, 2022 ... How to choose the right static site generator ... Fatima Sarah Khalid ... frontend community open source"
+      },
+      "rubric": {
+        "attribution": "pass — fetched page names Fatima Sarah Khalid in the byline/author metadata area.",
+        "freshness": "pass — evidence_url returned HTTP 200 during audit.",
+        "date_consistency": "pass — gathered date matches observed GitLab publication date (April 18, 2022).",
+        "editorial_honesty": "pass — title/description are consistent with the GitLab page; keep any recap/demo wording scoped to what the article itself does.",
+        "duplication": "pass — no matching id in existing content-db/posts.json; GitLab byline is net-new."
+      },
+      "notes": "Slug-only canonical URL is live and attributes the article to Fatima Sarah Khalid. No co-author observed."
+    },
+    {
+      "id": "gitlab-can-chatgpt-resolve-gitlab-issues-2022",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-live-byline",
+      "content_db_action": "add net-new external GitLab byline row",
+      "observed_urls": [
+        {
+          "url": "https://about.gitlab.com/blog/can-chatgpt-resolve-gitlab-issues/",
+          "observed_status": 200,
+          "note": "Live GitLab slug-only blog URL. Observed title/date/byline: Testing ChatGPT: Can it solve a GitLab issue? — December 15, 2022 — John Coghlan, Fatima Sarah Khalid."
+        }
+      ],
+      "observed_byline": {
+        "authors": [
+          "John Coghlan",
+          "Fatima Sarah Khalid"
+        ],
+        "fatima_present": true,
+        "co_author_flag": true,
+        "evidence_snippet": "Published on: December 15, 2022 ... Testing ChatGPT: Can it solve a GitLab issue? ... John Coghlan Fatima Sarah Khalid ... tutorial community contributors DevOps"
+      },
+      "rubric": {
+        "attribution": "pass with co-byline caveat — fetched page names Fatima Sarah Khalid and also lists co-author(s); content-db should preserve the full author list.",
+        "freshness": "pass — evidence_url returned HTTP 200 during audit.",
+        "date_consistency": "pass — gathered date matches observed GitLab publication date (December 15, 2022).",
+        "editorial_honesty": "pass — title/description are consistent with the GitLab page; keep any recap/demo wording scoped to what the article itself does.",
+        "duplication": "pass — no matching id in existing content-db/posts.json; GitLab byline is net-new."
+      },
+      "notes": "Fatima attribution is verified, but the gathered row under-reports authorship: live page lists John Coghlan before Fatima Sarah Khalid. Merge should preserve both authors."
+    },
+    {
+      "id": "gitlab-benefits-of-corporate-shadow-programs-2023",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-live-byline",
+      "content_db_action": "add net-new external GitLab byline row",
+      "observed_urls": [
+        {
+          "url": "https://about.gitlab.com/blog/benefits-of-corporate-shadow-programs/",
+          "observed_status": 200,
+          "note": "Live GitLab slug-only blog URL. Observed title/date/byline: Shadow programs give employees a peek into leadership roles — July 17, 2023 — Fatima Sarah Khalid."
+        }
+      ],
+      "observed_byline": {
+        "authors": [
+          "Fatima Sarah Khalid"
+        ],
+        "fatima_present": true,
+        "co_author_flag": false,
+        "evidence_snippet": "Published on: July 17, 2023 ... Shadow programs give employees a peek into leadership roles ... Fatima Sarah Khalid ... careers growth inside GitLab"
+      },
+      "rubric": {
+        "attribution": "pass — fetched page names Fatima Sarah Khalid in the byline/author metadata area.",
+        "freshness": "pass — evidence_url returned HTTP 200 during audit.",
+        "date_consistency": "pass — gathered date matches observed GitLab publication date (July 17, 2023).",
+        "editorial_honesty": "pass — title/description are consistent with the GitLab page; keep any recap/demo wording scoped to what the article itself does.",
+        "duplication": "pass — no matching id in existing content-db/posts.json; GitLab byline is net-new."
+      },
+      "notes": "Slug-only canonical URL is live and attributes the article to Fatima Sarah Khalid. No co-author observed."
+    },
+    {
+      "id": "gitlab-building-a-text-adventure-cplusplus-2023",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-live-byline",
+      "content_db_action": "add net-new external GitLab byline row",
+      "observed_urls": [
+        {
+          "url": "https://about.gitlab.com/blog/building-a-text-adventure-using-cplusplus-and-code-suggestions/",
+          "observed_status": 200,
+          "note": "Live GitLab slug-only blog URL. Observed title/date/byline: Explore the Dragon Realm: Building a C++ adventure game with AI — August 24, 2023 — Fatima Sarah Khalid."
+        }
+      ],
+      "observed_byline": {
+        "authors": [
+          "Fatima Sarah Khalid"
+        ],
+        "fatima_present": true,
+        "co_author_flag": false,
+        "evidence_snippet": "Published on: August 24, 2023 ... Explore the Dragon Realm: Building a C++ adventure game with a little help from AI ... Fatima Sarah Khalid ... DevSecOps tutorial"
+      },
+      "rubric": {
+        "attribution": "pass — fetched page names Fatima Sarah Khalid in the byline/author metadata area.",
+        "freshness": "pass — evidence_url returned HTTP 200 during audit.",
+        "date_consistency": "pass — gathered date matches observed GitLab publication date (August 24, 2023).",
+        "editorial_honesty": "pass — title/description are consistent with the GitLab page; keep any recap/demo wording scoped to what the article itself does.",
+        "duplication": "pass — no matching id in existing content-db/posts.json; GitLab byline is net-new."
+      },
+      "notes": "Slug-only canonical URL is live and attributes the article to Fatima Sarah Khalid. No co-author observed."
+    },
+    {
+      "id": "gitlab-develop-cpp-unit-testing-catch2-junit-2024",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-live-byline",
+      "content_db_action": "add net-new external GitLab byline row",
+      "observed_urls": [
+        {
+          "url": "https://about.gitlab.com/blog/develop-c-unit-testing-with-catch2-junit-and-gitlab-ci/",
+          "observed_status": 200,
+          "note": "Live GitLab slug-only blog URL. Observed title/date/byline: Develop C++ unit testing with Catch2, JUnit, and GitLab CI — July 2, 2024 — Fatima Sarah Khalid."
+        }
+      ],
+      "observed_byline": {
+        "authors": [
+          "Fatima Sarah Khalid"
+        ],
+        "fatima_present": true,
+        "co_author_flag": false,
+        "evidence_snippet": "Published on: July 2, 2024 ... Develop C++ unit testing with Catch2, JUnit, and GitLab CI ... Fatima Sarah Khalid ... tutorial testing CI AI DevSecOps"
+      },
+      "rubric": {
+        "attribution": "pass — fetched page names Fatima Sarah Khalid in the byline/author metadata area.",
+        "freshness": "pass — evidence_url returned HTTP 200 during audit.",
+        "date_consistency": "pass — gathered date matches observed GitLab publication date (July 2, 2024).",
+        "editorial_honesty": "pass — title/description are consistent with the GitLab page; keep any recap/demo wording scoped to what the article itself does.",
+        "duplication": "pass — no matching id in existing content-db/posts.json; GitLab byline is net-new."
+      },
+      "notes": "Slug-only canonical URL is live and attributes the article to Fatima Sarah Khalid. No co-author observed."
+    },
+    {
+      "id": "gitlab-5-things-linkedin-live-security-deep-dive-2024",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-live-byline",
+      "content_db_action": "add net-new external GitLab byline row",
+      "observed_urls": [
+        {
+          "url": "https://about.gitlab.com/blog/5-things-to-know-from-our-linkedin-live-security-deep-dive/",
+          "observed_status": 200,
+          "note": "Live GitLab slug-only blog URL. Observed title/date/byline: 5 things to know from our LinkedIn Live Security Deep Dive — October 28, 2024 — Fatima Sarah Khalid."
+        }
+      ],
+      "observed_byline": {
+        "authors": [
+          "Fatima Sarah Khalid"
+        ],
+        "fatima_present": true,
+        "co_author_flag": false,
+        "evidence_snippet": "Published on: October 28, 2024 ... 5 things to know from our LinkedIn Live Security Deep Dive ... Fatima Sarah Khalid ... AI security webcast DevSecOps"
+      },
+      "rubric": {
+        "attribution": "pass — fetched page names Fatima Sarah Khalid in the byline/author metadata area.",
+        "freshness": "pass — evidence_url returned HTTP 200 during audit.",
+        "date_consistency": "pass — gathered date matches observed GitLab publication date (October 28, 2024).",
+        "editorial_honesty": "pass — title/description are consistent with the GitLab page; keep any recap/demo wording scoped to what the article itself does.",
+        "duplication": "pass — no matching id in existing content-db/posts.json; GitLab byline is net-new."
+      },
+      "notes": "Slug-only canonical URL is live and attributes the article to Fatima Sarah Khalid. No co-author observed."
+    },
+    {
+      "id": "gitlab-icymi-ai-security-developer-community-2024",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-live-byline",
+      "content_db_action": "add net-new external GitLab byline row",
+      "observed_urls": [
+        {
+          "url": "https://about.gitlab.com/blog/icymi-key-ai-and-security-insights-from-our-developer-community/",
+          "observed_status": 200,
+          "note": "Live GitLab slug-only blog URL. Observed title/date/byline: ICYMI: Key AI and security insights from our developer community — December 5, 2024 — Fatima Sarah Khalid."
+        }
+      ],
+      "observed_byline": {
+        "authors": [
+          "Fatima Sarah Khalid"
+        ],
+        "fatima_present": true,
+        "co_author_flag": false,
+        "evidence_snippet": "Published on: December 5, 2024 ... ICYMI: Key AI and security insights from our developer community ... Fatima Sarah Khalid ... AI security community tutorial webcast"
+      },
+      "rubric": {
+        "attribution": "pass — fetched page names Fatima Sarah Khalid in the byline/author metadata area.",
+        "freshness": "pass — evidence_url returned HTTP 200 during audit.",
+        "date_consistency": "pass — gathered date matches observed GitLab publication date (December 5, 2024).",
+        "editorial_honesty": "pass — title/description are consistent with the GitLab page; keep any recap/demo wording scoped to what the article itself does.",
+        "duplication": "pass — no matching id in existing content-db/posts.json; GitLab byline is net-new."
+      },
+      "notes": "Slug-only canonical URL is live and attributes the recap to Fatima Sarah Khalid. The body summarizes other speakers; she is the author/curator, not necessarily the presenter of every segment."
+    },
+    {
+      "id": "gitlab-co-create-program-customers-collaborating-2025",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-live-byline",
+      "content_db_action": "add net-new external GitLab byline row",
+      "observed_urls": [
+        {
+          "url": "https://about.gitlab.com/blog/the-co-create-program-how-customers-are-collaborating-to-build-gitlab/",
+          "observed_status": 200,
+          "note": "Live GitLab slug-only blog URL. Observed title/date/byline: The Co-Create Program: How customers are collaborating to build GitLab — January 30, 2025 — Fatima Sarah Khalid."
+        }
+      ],
+      "observed_byline": {
+        "authors": [
+          "Fatima Sarah Khalid"
+        ],
+        "fatima_present": true,
+        "co_author_flag": false,
+        "evidence_snippet": "Published on: January 30, 2025 ... The Co-Create Program: How customers are collaborating to build GitLab ... Fatima Sarah Khalid ... contributors open source customers"
+      },
+      "rubric": {
+        "attribution": "pass — fetched page names Fatima Sarah Khalid in the byline/author metadata area.",
+        "freshness": "pass — evidence_url returned HTTP 200 during audit.",
+        "date_consistency": "pass — gathered date matches observed GitLab publication date (January 30, 2025).",
+        "editorial_honesty": "pass — title/description are consistent with the GitLab page; keep any recap/demo wording scoped to what the article itself does.",
+        "duplication": "pass — no matching id in existing content-db/posts.json; GitLab byline is net-new."
+      },
+      "notes": "Slug-only canonical URL is live and attributes the article to Fatima Sarah Khalid. No co-author observed."
+    },
+    {
+      "id": "gitlab-duo-agentic-chat-web-ui-2025",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-live-byline",
+      "content_db_action": "add net-new external GitLab byline row",
+      "observed_urls": [
+        {
+          "url": "https://about.gitlab.com/blog/get-started-with-gitlab-duo-agentic-chat-in-the-web-ui/",
+          "observed_status": 200,
+          "note": "Live GitLab slug-only blog URL. Observed title/date/byline: Get started with GitLab Duo Agentic Chat in the web UI — August 11, 2025 — Fatima Sarah Khalid, Daniel Helfand."
+        }
+      ],
+      "observed_byline": {
+        "authors": [
+          "Fatima Sarah Khalid",
+          "Daniel Helfand"
+        ],
+        "fatima_present": true,
+        "co_author_flag": true,
+        "evidence_snippet": "Published on: August 11, 2025 ... Get started with GitLab Duo Agentic Chat in the web UI ... Fatima Sarah Khalid Daniel Helfand ... AI CI/CD"
+      },
+      "rubric": {
+        "attribution": "pass with co-byline caveat — fetched page names Fatima Sarah Khalid and also lists co-author(s); content-db should preserve the full author list.",
+        "freshness": "pass — evidence_url returned HTTP 200 during audit.",
+        "date_consistency": "pass — gathered date matches observed GitLab publication date (August 11, 2025).",
+        "editorial_honesty": "pass — title/description are consistent with the GitLab page; keep any recap/demo wording scoped to what the article itself does.",
+        "duplication": "pass — no matching id in existing content-db/posts.json; GitLab byline is net-new."
+      },
+      "notes": "Co-byline confirmed exactly as Glyphie flagged; renderer/content schema should display both Fatima Sarah Khalid and Daniel Helfand."
+    }
+  ],
+  "recommendations_for_lotus": {
+    "merge_ready": [
+      "gitlab-comparing-static-site-generators-2022",
+      "gitlab-can-chatgpt-resolve-gitlab-issues-2022",
+      "gitlab-benefits-of-corporate-shadow-programs-2023",
+      "gitlab-building-a-text-adventure-cplusplus-2023",
+      "gitlab-develop-cpp-unit-testing-catch2-junit-2024",
+      "gitlab-5-things-linkedin-live-security-deep-dive-2024",
+      "gitlab-icymi-ai-security-developer-community-2024",
+      "gitlab-co-create-program-customers-collaborating-2025",
+      "gitlab-duo-agentic-chat-web-ui-2025"
+    ],
+    "needs_more_evidence": [],
+    "fail_quarantine": [],
+    "merge_edits": [
+      "All 9 evidence_url values are live slug-only about.gitlab.com/blog URLs with observed HTTP 200 and Fatima Sarah Khalid present in the byline area.",
+      "Preserve co-authors. `gitlab-duo-agentic-chat-web-ui-2025` is co-authored by Fatima Sarah Khalid and Daniel Helfand, as Glyphie noted.",
+      "Also correct `gitlab-can-chatgpt-resolve-gitlab-issues-2022`: live GitLab page lists John Coghlan and Fatima Sarah Khalid, so the gathered Fatima-only byline is incomplete.",
+      "Treat these as external bylines hosted on about.gitlab.com, not local MDX posts. Current `Post` type requires a `file` field; merge should add an external-post representation or make `file` optional with a URL field.",
+      "Current `ContentType` union does not include gathered values `essay` or `recap`; map them to existing types or extend the type before merging/building.",
+      "No ID collisions found against existing content-db/posts.json's four rows. Existing rows `building-contributors-garden` and `civic-signal-map` remain governed by the separate PROJECTS/scout quarantine discussion and are not affected by this batch."
+    ]
+  }
+}
