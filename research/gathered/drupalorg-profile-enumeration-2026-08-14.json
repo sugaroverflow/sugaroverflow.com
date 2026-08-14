@@ -77,6 +77,7 @@
 
   "next_actions_when_hold_lifts": [
     "SPEAKING merge: seed the 11 self-attested DrupalCon sessions above; cross-check events.drupal.org for verified-live session-page URLs where still live.",
+    "MERGE CAVEAT (Lotus, 2026-08-14 ~21:40 UTC): the 11 sessions are SELF-ATTESTED from Fatima's profile — each must carry verification_status 'personal-record-only' UNLESS independently corroborated against events.drupal.org. Already-corroborated so far: Baltimore, Nashville, Seattle, and the NA-2021 fireside. Do NOT promote uncorroborated ones to verified-live on the strength of the profile alone.",
     "Confirm Vienna-2017 Imposter-Monologues quarantine with Fatima (location was Baltimore 2017).",
     "PRESS: chase DrupalEasy podcast episode URL + Acquia 'Women of the Drupal Community' post + WCT Rising Star award page.",
     "POSTS: drupal.org Posts-tab enumeration thread is EXHAUSTED (no authored posts recoverable) — close it."
