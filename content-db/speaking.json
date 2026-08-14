@@ -181,14 +181,62 @@
       "year": 2020,
       "type": "keynote",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": ["pantheon"],
       "description": "Keynote on the power of intentional choices in open source community participation.",
       "topics": ["drupal", "community", "diversity-inclusion"],
-      "links": {},
+      "links": {
+        "session": "https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid"
+      },
       "image": null,
       "featured": false,
       "verified": true,
-      "evidence_url": null,
+      "evidence_url": "https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid",
+      "verification_status": "verified"
+    },
+    {
+      "id": "drupalcon-na-2021-javascript-ate-the-web",
+      "slug": "drupalcon-na-2021-javascript-ate-the-web",
+      "title": "JavaScript Ate the Web: Key Lessons for the Drupal Community",
+      "event": "DrupalCon North America 2021",
+      "location": "remote",
+      "date": "2021-04-16",
+      "year": 2021,
+      "type": "panel",
+      "contentType": "talk",
+      "affiliation": ["pantheon"],
+      "description": "Fireside-chat panel where a group of leading JavaScript and Decoupled Drupal experts discuss the opportunities and pitfalls of greater reliance on JavaScript. Fatima appeared on the panel alongside Sally Young and Ben Morss, moderated by Steve Persch.",
+      "topics": ["drupal", "javascript", "decoupled", "open-source"],
+      "links": {
+        "blog": "https://www.drupal.org/association/supporters/blog/javascript-ate-the-web-key-lessons-for-the-drupal-community",
+        "wrap_up": "https://events.drupal.org/northamerica2021/news/drupalcon-north-america-wrap.html"
+      },
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://www.drupal.org/association/supporters/blog/javascript-ate-the-web-key-lessons-for-the-drupal-community",
+      "verification_status": "verified"
+    },
+    {
+      "id": "fwd50-2020-where-are-they-now-past-fellows",
+      "slug": "fwd50-2020-where-are-they-now-past-fellows",
+      "title": "Where Are They Now? Past Fellows",
+      "event": "FWD50 2020 (Code for Canada Showcase)",
+      "location": "remote",
+      "date": "2020-11-09",
+      "year": 2020,
+      "type": "panel",
+      "contentType": "talk",
+      "affiliation": ["personal"],
+      "description": "Code for Canada Showcase session at FWD50 where fellowship alumni share firsthand how the program impacted their careers and their commitment to the common good. Fatima appeared as a Code for Canada Developer Fellow (2018) embedded with Transport Canada.",
+      "topics": ["civic-tech", "code-for-canada", "fellowship", "government"],
+      "links": {
+        "speaker": "https://www.fwd50.com/speaker/445/fatima-sarah-khalid",
+        "session": "https://www.fwd50.com/session/448/where-are-they-now-past-fellows"
+      },
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://www.fwd50.com/speaker/445/fatima-sarah-khalid",
       "verification_status": "verified"
     },
     {
@@ -324,11 +372,13 @@
       "affiliation": ["personal"],
       "description": "Second installment of the Imposter Monologues series on imposter syndrome in tech.",
       "topics": ["drupal", "community", "imposter-syndrome"],
-      "links": {},
+      "links": {
+        "session": "https://events.drupal.org/baltimore2017/sessions/imposter-monologues-part-ii"
+      },
       "image": null,
       "featured": false,
       "verified": true,
-      "evidence_url": null,
+      "evidence_url": "https://events.drupal.org/baltimore2017/sessions/imposter-monologues-part-ii",
       "verification_status": "verified"
     }
   ],
