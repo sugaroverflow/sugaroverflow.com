@@ -1,0 +1,76 @@
+{
+  "_meta": {
+    "category": "community",
+    "type": "followup",
+    "gathered_by": "glyphie",
+    "gathered_at": "2026-08-14",
+    "resolves_audit": "research/audits/community-2026-08-14.json",
+    "resolves_row": "program-committee-open-source-summit-2022-2023",
+    "note": "Resolves Soren's single send-back on the community batch. Soren found a live LF 2024 OSS Europe program-committee page naming Fatima and flagged that it contradicts the gathered 2022-2023 D&I Track Chair claim. I independently re-verified all archive years 2022-2025 for BOTH OSS North America and OSS Europe. New finding beyond Soren's: Fatima is on the 2024 program committee for BOTH North America AND Europe (Soren only caught Europe). 2022, 2023, and 2025 pages return HTTP 200 but contain no match for 'Fatima Sarah Khalid'. The public bio lists her only as 'Developer Evangelist, GitLab' with NO diversity/inclusion/track-chair language. Therefore: split the held row into (a) a verified 2024 program-committee role backed by two primary LF URLs, and (b) the original 2022-2023 D&I Track Chair claim demoted to personal-record-only pending Fatima's confirmation. Bonus corroboration: the same LF bio independently confirms the WCT Rising Star 2018 award (feeds AWARDS category)."
+  },
+  "verification_method": {
+    "checked_years": [2022, 2023, 2024, 2025],
+    "checked_regions": ["open-source-summit-north-america", "open-source-summit-europe"],
+    "tool": "curl -A Mozilla/5.0 against events.linuxfoundation.org/archive/<year>/<region>/program/program-committee/",
+    "results": {
+      "2022-na": "HTTP 200, no Fatima match",
+      "2022-eu": "HTTP 200, no Fatima match",
+      "2023-na": "HTTP 200, no Fatima match",
+      "2023-eu": "HTTP 200, no Fatima match",
+      "2024-na": "HTTP 200, MATCH: 'Fatima Sarah Khalid — Developer Evangelist, GitLab' + headshot + bio",
+      "2024-eu": "HTTP 200, MATCH: 'Fatima Sarah Khalid — Developer Evangelist, GitLab' + headshot + bio",
+      "2025-na": "HTTP 200, no Fatima match",
+      "2025-eu": "HTTP 200, no Fatima match"
+    }
+  },
+  "community": [
+    {
+      "id": "program-committee-open-source-summit-2024",
+      "replaces": "program-committee-open-source-summit-2022-2023",
+      "title": "Program Committee, Open Source Summit 2024 (North America + Europe)",
+      "organization": "The Linux Foundation",
+      "role": "Program Committee Member",
+      "type": "program-committee",
+      "year_start": 2024,
+      "year_end": 2024,
+      "date": "2024",
+      "description": "Served on the program committee for the Linux Foundation's Open Source Summit in 2024, for both the North America and Europe editions, helping shape the conference program. Listed on the official LF Events committee pages as 'Fatima Sarah Khalid, Developer Evangelist, GitLab'.",
+      "topics": ["open source", "developer relations", "conference programming", "linux foundation"],
+      "image": null,
+      "verified": true,
+      "verification_status": "verified",
+      "evidence_url": "https://events.linuxfoundation.org/archive/2024/open-source-summit-north-america/program/program-committee/",
+      "evidence_urls": [
+        "https://events.linuxfoundation.org/archive/2024/open-source-summit-north-america/program/program-committee/",
+        "https://events.linuxfoundation.org/archive/2024/open-source-summit-europe/program/program-committee/"
+      ],
+      "curator_note": "Both URLs fetched HTTP 200 with Fatima's name, headshot, and bio present. Public listing gives her title as 'Developer Evangelist, GitLab' with NO 'D&I' / 'Diversity & Inclusion' / 'Track Chair' language — do NOT encode a track-chair title on this verified row. The gathered 2022-2023 D&I Track Chair claim is a separate, unverified assertion (see the personal-record-only row below)."
+    },
+    {
+      "id": "program-committee-oss-di-track-chair-personal-record",
+      "title": "D&I Track Chair, Open Source Summit (self-reported, 2022–2023)",
+      "organization": "The Linux Foundation",
+      "role": "Diversity & Inclusion Track Chair",
+      "type": "program-committee",
+      "year_start": 2022,
+      "year_end": 2023,
+      "date": "2022–2023",
+      "description": "Self-reported role as Diversity & Inclusion Track Chair for the Open Source Summit, per Fatima's LinkedIn/CV.",
+      "topics": ["diversity and inclusion", "open source", "conference programming"],
+      "image": null,
+      "verified": false,
+      "verification_status": "personal-record-only",
+      "evidence_url": null,
+      "curator_note": "HELD — no public corroboration. I checked LF Events program-committee archive pages for OSS North America and Europe across 2022, 2023, 2024, and 2025. Fatima appears ONLY on the two 2024 pages, and there as plain 'Developer Evangelist, GitLab' with no track-chair or D&I title. The 2022/2023 pages (HTTP 200) do not list her. Brave search for '\"Open Source Summit\" \"Fatima Khalid\" \"Diversity & Inclusion\" \"Track Chair\"' returned 0 results. Keep null evidence_url; needs Fatima's explicit confirmation of the year(s) and exact title before it can be encoded, and even then only as personal-record-only. It is possible the real role was the 2024 program committee and the '2022-2023 D&I Track Chair' framing is a memory/date drift — flag for Fatima."
+    }
+  ],
+  "bonus_corroboration": [
+    {
+      "for_category": "awards",
+      "claim": "Women in Communications & Technology (WCT) Rising Star leadership award, 2018",
+      "evidence_url": "https://events.linuxfoundation.org/archive/2024/open-source-summit-north-america/program/program-committee/",
+      "quote": "In 2018, she received the Women in Communications & Technology (WCT) Rising Star leadership award for her efforts in teaching and advocacy.",
+      "curator_note": "Independent third-party corroboration (LF-hosted bio) of the WCT Rising Star 2018 award. Not on the current AWARDS target list (which is Nashville 2018 / Vienna 2017 scholarships, NYU Prototyping Fund 2013, Innovative Design 2012), but worth banking for when AWARDS is gathered — a verified secondary source for an award Fatima may otherwise only self-attest."
+    }
+  ]
+}
