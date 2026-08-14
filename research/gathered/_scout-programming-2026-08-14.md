@@ -116,3 +116,36 @@ Calls this step: 6 spaced ja-jp status curls + 2 body-grep fetches + 2 YT status
 3. Pantheon Office Hours 2024 → Pantheon YouTube / Wayback (Pantheon forum sunset noted in POSTS batch 2 — may be Wayback-only).
 4. Contributors Garden → leave as personal-record-only unless a live stream archive surfaces; already flagged dead in projects batch.
 5. Each entry: title, program, role (host/co-host), era, dates, evidence_url (live), verification_status, curator_note for co-host disambiguation.
+
+## UPDATE 2026-08-14 ~18:38 UTC — AUTHORITATIVE Monday Merge enumeration (16 editions, all evidence-backed)
+
+Re-confirmed URL-integrity finding still live this heartbeat: en canonical slugs = **404**, ja-jp mirrors = **200** (spot-checked aug-10, june-22, july-14). Unchanged from 17:10 finding.
+
+Then enumerated the FULL Monday Merge run by probing dated ja-jp slugs and, for each 200, extracting the structured-data `datePublished` + counting in-body `Fatima Sarah Khalid` signoff. **16 editions confirmed**, each with (a) HTTP 200, (b) `"datePublished"` matching the slug date, (c) ≥1 in-body Fatima Sarah Khalid byline. Series began April 2025 (jan/feb/mar-2025 slugs all 404 → genuine start boundary; may-2025 is a real skip-month, not a slug miss):
+
+| # | ja-jp slug | datePublished | Fatima signoff |
+|---|---|---|---|
+| 1 | monday-merge-2025-april-7 | 2025-04-07 | ✅ |
+| 2 | monday-merge-2025-june-9 | 2025-06-09 | ✅ |
+| 3 | monday-merge-2025-july-14 | 2025-07-14 | ✅ |
+| 4 | monday-merge-2025-august-11 | 2025-08-11 | ✅ |
+| 5 | monday-merge-2025-september-8 | 2025-09-08 | ✅✅ |
+| 6 | monday-merge-2025-october-13 | 2025-10-13 | ✅✅ |
+| 7 | monday-merge-2025-november-10 | 2025-11-10 | ✅ |
+| 8 | monday-merge-2025-december-08 | 2025-12-08 | ✅ |
+| 9 | monday-merge-2026-january-12 | 2026-01-12 | ✅ |
+| 10 | monday-merge-2026-february-9 | 2026-02-09 | ✅ |
+| 11 | monday-merge-2026-march-9 | 2026-03-09 | ✅ |
+| 12 | monday-merge-2026-april-13 | 2026-04-13 | ✅ |
+| 13 | monday-merge-2026-may-11 | 2026-05-11 | ✅ |
+| 14 | monday-merge-2026-june-22 | 2026-06-22 | ✅ |
+| 15 | monday-merge-2026-july-13 | 2026-07-13 | ✅ |
+| 16 | monday-merge-2026-aug-10 | 2026-08-10 | ✅ |
+
+**Verification method** (honest, non-hammering): single curl per slug, User-Agent Mozilla, -L follow; `datePublished` read from embedded JSON-LD; byline read from body signoff. NOT date-guessing luck — the extracted `datePublished` independently corroborates each slug's date.
+
+**Evidence-vs-claim reconciliation**: resume L14 claims "12 editions / 235K+ newsletter / ~26K views." I can evidence **16 published editions** (≥ the claimed 12 — the resume line likely counted a snapshot-in-time or the en-newsletter subset). The 235K audience + 26K views figures are NOT publicly verifiable → keep as `personal-record-only` metrics with a curator_note; do NOT assert them as verified.
+
+**Ship-ready shape for programming.json (when Lotus pings)**: ONE `monday-merge` programming entry (series), `editions: 16`, `date_range: 2025-04-07 → 2026-08-10`, `role: host/author`, `verified: true`, `verification_status: verified-live-byline`, `evidence_url`: a representative ja-jp edition (e.g. .../ja-jp/blog/monday-merge-2026-aug-10/) + `curator_note` capturing the 🚨 en-404/ja-200 URL-integrity caveat so downstream rendering never links a dead en slug. Metrics (235K/26K) → separate `metrics_personal_record` block, unverified.
+
+**STILL holding the full programming batch for Lotus's ping** per HEARTBEAT rotation rule. This is scout enumeration only — no programming.json / gathered batch written yet.
