@@ -1,0 +1,344 @@
+{
+  "_meta": {
+    "category": "community",
+    "audited_by": "soren",
+    "audited_at": "2026-08-14",
+    "gathered_file": "research/gathered/community-2026-08-14.json",
+    "rubric": "research/RESEARCH-SCOPE.md § Verification bar",
+    "summary": {
+      "merge_ready": 8,
+      "needs_more_evidence": 1,
+      "fail_quarantine": 0,
+      "candidates_checked": 9,
+      "existing_content_db_rows_enriched": 5,
+      "net_new_program_committee_rows": 2,
+      "personal_record_only_rows": 2
+    },
+    "note": "Method: checked Glyphie's gathered JSON, the scaffolded content-db/community.json, src/lib type reader/schema usage, seed files for personal-record-only claims, live web_fetch/curl status checks, Wayback for expired/bot-gated pages, and Brave snippets when a source was bot-gated (Drupal.org, events.drupal.org, Medium, DrupalEasy). Medium returned 403 Cloudflare from this egress; Drupal.org/events.drupal.org returned HTTP 200 Client Challenge; those are recorded as caveats rather than treated as content evidence. The scaffold shape { community: [...] } is sensible and matches src/lib/content-db.ts, but src/lib/types.ts currently lacks the new 'program-committee' type, so Lotus should extend that type during merge/build work."
+  },
+  "audits": [
+    {
+      "id": "fellowship-newspeak-house-2025",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified",
+      "content_db_action": "enrich existing community row",
+      "observed_urls": [
+        {
+          "url": "https://2025.newspeak.house/",
+          "observed_status": 200,
+          "note": "Live cohort page: London College of Political Technology 2025/26 cohort, status active, fellows 18, cycle 2025-2026. Raw HTML also contains Fatima, but readability mainly exposes the cohort shell."
+        },
+        {
+          "url": "https://newspeak.house/events?id=579",
+          "observed_status": 200,
+          "note": "Live Newspeak events page; search/readability path shows Fatima Sarah Khalid and an event organised by fellowship candidates from the 2025/26 Introduction to Political Technology programme."
+        },
+        {
+          "url": "https://luma.com/357o5glx",
+          "observed_status": 200,
+          "note": "Live Luma event hosted by Fatima Sarah Khalid; event says it is part of a study group initiated by fellow candidates of the 2025/2026 Introduction to Political Technology course and is open to faculty/fellowship candidates only."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass with caveat — public pages tie Fatima to current Newspeak/fellow-candidate programming; LinkedIn/CV seed supplies the explicit fellow title.",
+        "freshness": "pass — evidence URLs fetched HTTP 200.",
+        "date_consistency": "pass — 2025/26 cohort and 2025-2026 cycle match year_start 2025/year_end 2026.",
+        "editorial_honesty": "pass if kept as Newspeak House fellow with the thesis/project language coming from Fatima's seed, not overstated as public-page text.",
+        "duplication": "existing row; enrich evidence_url/description rather than add a duplicate."
+      },
+      "notes": "Mergeable. The scaffolded row's richer description is sensible, but the public evidence for the exact thesis text is seed-backed rather than independently public."
+    },
+    {
+      "id": "fellowship-code-for-canada-2018",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-publisher-gated",
+      "content_db_action": "enrich existing community row",
+      "observed_urls": [
+        {
+          "url": "https://medium.com/code-for-canada/meet-the-digital-drone-collective-42bc97b53ed7",
+          "observed_status": 403,
+          "note": "Medium Cloudflare blocked direct fetch, but Brave snippet quotes the body: Digital Drone Collective Code for Canada fellowship team working with Transport Canada, made up of fellows Andee, Jen, and Fatima (@sugaroverflow)."
+        },
+        {
+          "url": "https://medium.com/code-for-canada/introducing-the-2018-code-for-canada-fellowship-3ac40b8f72a2",
+          "observed_status": 403,
+          "note": "Medium Cloudflare blocked direct fetch; retained only as corroborating cohort source, not primary body evidence from my egress."
+        }
+      ],
+      "observed_search_index": [
+        {
+          "query": "\"Meet the Digital Drone Collective\" \"Fatima\" \"@sugaroverflow\"",
+          "provider": "Brave",
+          "result_count": 1,
+          "note": "Snippet names Fatima (@sugaroverflow) on the Digital Drone Collective Code for Canada/Transport Canada fellowship team."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass with publisher-gated caveat — indexed Medium body names Fatima/@sugaroverflow; local seed also supports Code for Canada fellowship.",
+        "freshness": "caveat — source exists but direct HTTP from this egress is 403 Cloudflare; do not call it clean live-verified.",
+        "date_consistency": "pass — fellowship period 2018-09 to 2019 aligns with the Code for Canada 2018 cohort/Digital Drone Collective context.",
+        "editorial_honesty": "pass — Transport Canada/Digital Drone Collective framing is supported; keep drone-operator metric as seed-supported if included.",
+        "duplication": "existing community fellowship row; also overlaps press/project evidence, but not a duplicate community row."
+      },
+      "notes": "Mergeable as `verified-publisher-gated`; Medium gating is a caveat, not a deletion reason."
+    },
+    {
+      "id": "community-drupal-di-working-group",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified",
+      "content_db_action": "enrich existing community row",
+      "observed_urls": [
+        {
+          "url": "https://www.drupaldiversity.com/about",
+          "observed_status": 200,
+          "note": "Live Drupal Diversity & Inclusion page lists Alumni: 'Fatima Khalid - sugaroverflow (former lead)'."
+        },
+        {
+          "url": "https://www.drupaldiversity.com/node/107/revisions/577/view",
+          "observed_status": 200,
+          "note": "Live revision view from 2020-08-27 lists Fatima Khalid/sugaroverflow on Leadership Council (Internal), while Tara King is Leader."
+        },
+        {
+          "url": "https://www.talkingdrupal.com/297",
+          "observed_status": 200,
+          "note": "Live Talking Drupal #297 names guest host Fatima Sarah Khalid and lists Drupal Diversity & Inclusion Working Group as a topic; useful self-attested/podcast-context corroboration, not the strongest proof of leadership."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — primary Drupal Diversity page names Fatima/sugaroverflow as former lead; revision page names her on council.",
+        "freshness": "pass — primary/corroborating URLs fetched HTTP 200.",
+        "date_consistency": "pass with nuance — lead role appears approx 2017-2019; 2020 evidence supports continued Leadership Council involvement, not continued lead title.",
+        "editorial_honesty": "pass if qualifier is applied: Talking Drupal #297 is self-attested/podcast context only; leadership itself is verified by drupaldiversity.com, and description should distinguish lead vs council phases.",
+        "duplication": "existing row; enrich/correct rather than duplicate."
+      },
+      "notes": "This is the cleanest community verification in the batch. Validate Lotus applies the self-attested qualifier only to Talking Drupal, not to the primary Drupal Diversity source."
+    },
+    {
+      "id": "community-civic-tech-guide-curator",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified",
+      "content_db_action": "enrich existing community row",
+      "observed_urls": [
+        {
+          "url": "https://civictech.guide/curators",
+          "observed_status": 200,
+          "note": "Live curators page says 'With thanks to our Global Curators: Drones for good: Fatima Sarah Khalid'."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — source names Fatima Sarah Khalid directly.",
+        "freshness": "pass — HTTP 200 live page.",
+        "date_consistency": "pass with caveat — current page verifies active/ongoing role but does not publish a start date; 2018 remains seed/timeline-derived.",
+        "editorial_honesty": "pass — Drones for Good/Global Curator wording is source-supported.",
+        "duplication": "existing row; enrich evidence_url/title."
+      },
+      "notes": "Mergeable. Mark 2018 as approximate if the UI exposes exact dates."
+    },
+    {
+      "id": "community-bad-idea-factory",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-wayback",
+      "content_db_action": "enrich existing community row, with title wording tightened",
+      "observed_urls": [
+        {
+          "url": "https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid",
+          "observed_status": "000/expired-domain",
+          "note": "Current HTTPS failed and HTTP resolves to NameBright expired-domain content; do not use the live URL as clean evidence."
+        },
+        {
+          "url": "https://web.archive.org/web/20200924151503id_/https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid",
+          "observed_status": 200,
+          "note": "Wayback snapshot names Fatima/sugaroverflow and says she is 'the beast wrangler (in charge of projects) at the Bad Idea Factory (BIFFUD)' and a curator for the Civic Tech Guide."
+        },
+        {
+          "url": "https://biffud.com/wat/",
+          "observed_status": 200,
+          "note": "Live BIFFUD about page confirms Bad Idea Factory, worker-owned/technical-comedy context, and 'Corporate Overlords, Members, and Accomplices' role terminology, but does not name Fatima."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass via Wayback — DrupalCamp Colorado bio names Fatima/sugaroverflow and BIFFUD role.",
+        "freshness": "pass only as Wayback for attribution; current DrupalCamp Colorado domain is expired. BIFFUD current page is live but not attribution-specific.",
+        "date_consistency": "pass — Wayback/session is 2020 and content-db start year 2019 is plausible but not publicly pinned.",
+        "editorial_honesty": "pass with edit — public attribution supports 'beast wrangler (in charge of projects) at BIFFUD'; 'Corporate Overlord' is supported only as BIFFUD terminology/low-quality search snippets, not as the exact Fatima title in strong primary evidence.",
+        "duplication": "existing row; enrich or retitle rather than duplicate."
+      },
+      "notes": "Mergeable if Lotus either uses the source-supported title 'Beast Wrangler (projects), BIFFUD' or keeps Corporate Overlord with a curator note explaining the title ambiguity."
+    },
+    {
+      "id": "program-committee-drupalcon-2018-2020",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-publisher-gated",
+      "content_db_action": "add net-new program-committee row",
+      "observed_urls": [
+        {
+          "url": "https://www.drupal.org/u/sugaroverflow",
+          "observed_status": 200,
+          "note": "Direct fetch returns Drupal.org Client Challenge rather than readable profile content; Brave snippet for exact phrase says 'DrupalCon Nashville, Seattle, and Global track chair (2018-2020) - Backend Development & Community Building'."
+        },
+        {
+          "url": "https://web.archive.org/web/20200924151503id_/https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid",
+          "observed_status": 200,
+          "note": "Wayback DrupalCamp Colorado bio says Fatima is a volunteer for the DrupalCon Program team."
+        },
+        {
+          "url": "https://events.drupal.org/nashville2018/ddi-game-night",
+          "observed_status": 200,
+          "note": "Direct event fetch returns HTTP 200 Client Challenge; search snippets can corroborate DD&I event contact, but I did not treat the challenged body as evidence."
+        }
+      ],
+      "observed_search_index": [
+        {
+          "query": "\"DrupalCon Nashville, Seattle, and Global track chair\" \"sugaroverflow\"",
+          "provider": "Brave",
+          "result_count": 1,
+          "note": "Snippet from Drupal.org profile gives exact track-chair claim and date range."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass with publisher-gated caveat — Drupal.org profile/search snippet ties sugaroverflow to the exact track-chair claim; Wayback bio corroborates DrupalCon Program team involvement.",
+        "freshness": "caveat — Drupal.org is live but bot-challenged; Wayback source is readable.",
+        "date_consistency": "pass — 2018-2020 matches DrupalCon Nashville, Seattle, Global sequence.",
+        "editorial_honesty": "pass with caveat — Backend Development & Community Building is supported by profile snippet; DEI Track Chair at Nashville is in seed/scope and should not be over-merged unless Fatima confirms whether it is a separate role.",
+        "duplication": "net-new program-committee role; distinct from speaking rows."
+      },
+      "notes": "Mergeable. Add `program-committee` to the CommunityItem type during merge; current TS type only allows fellowship/community-role/working-group."
+    },
+    {
+      "id": "program-committee-open-source-summit-2022-2023",
+      "status": "needs-more-evidence",
+      "verification_status_recommendation": "needs-evidence-or-rewrite",
+      "content_db_action": "hold pending date/title correction",
+      "observed_urls": [
+        {
+          "url": "https://events.linuxfoundation.org/archive/2024/open-source-summit-europe/program/program-committee/",
+          "observed_status": 200,
+          "note": "Live LF Events 2024 OSS Europe Program Committee page names 'Fatima Sarah Khalid, Developer Evangelist, GitLab' with bio. This verifies a 2024 OSS Europe program committee role, not the gathered 2022-2023 D&I Track Chair claim."
+        },
+        {
+          "url": "https://events.linuxfoundation.org/archive/2023/open-source-summit-north-america/program/program-committee/",
+          "observed_status": 200,
+          "note": "Live 2023 OSS North America Program Committee page fetched HTTP 200; text search found Program Committee but not Fatima."
+        }
+      ],
+      "observed_search_index": [
+        {
+          "query": "\"Fatima Sarah Khalid\" \"Open Source Summit Europe\" \"Program Committee\"",
+          "provider": "Brave",
+          "result_count": 1,
+          "note": "Search result points to the 2024 OSS Europe Program Committee page, not 2022/2023."
+        },
+        {
+          "query": "\"Open Source Summit\" \"Fatima Khalid\" \"Diversity & Inclusion\" \"Track Chair\"",
+          "provider": "Brave",
+          "result_count": 0,
+          "note": "No public corroboration found for D&I Track Chair 2022-2023 wording."
+        }
+      ],
+      "rubric": {
+        "attribution": "partial — a public LF page names Fatima on a 2024 program committee, but I did not verify the claimed 2022-2023 D&I Track Chair role.",
+        "freshness": "pass for 2024 page; fail/unknown for claimed 2022-2023 pages.",
+        "date_consistency": "fail as gathered — public evidence found is 2024, not 2022-2023.",
+        "editorial_honesty": "hold — either rewrite as 'Open Source Summit Europe 2024 Program Committee' with verified status, or keep the 2022-2023 D&I Track Chair version as personal-record-only with null evidence after Fatima confirms.",
+        "duplication": "net-new program-committee candidate; do not merge in current form."
+      },
+      "notes": "This is the only held row. I found better evidence than Glyphie did, but it contradicts the gathered date/title enough that Lotus should not merge the current row unedited."
+    },
+    {
+      "id": "community-anitab-mentor-2022",
+      "status": "merge-ready",
+      "verification_status_recommendation": "personal-record-only",
+      "content_db_action": "add net-new personal-record-only row or duplicate into certifications later",
+      "observed_urls": [
+        {
+          "url": "https://membership.anitab.org/",
+          "observed_status": 200,
+          "note": "AnitaB membership site is live but does not expose a public mentor roster naming Fatima; included only as platform-context status, not attribution evidence."
+        }
+      ],
+      "observed_local_sources": [
+        {
+          "path": "research/seed/linkedin-full-2026-08-14.md",
+          "note": "LinkedIn seed lists AnitaB.org Mentor Badge, issued Apr 2022, credential ID 002, and summarizes AnitaB.org Mentor as Apr 2022-present."
+        }
+      ],
+      "observed_public_searches": [
+        {
+          "query": "\"Fatima Sarah Khalid\" \"AnitaB.org Mentor\"",
+          "provider": "Brave",
+          "result_count": 0
+        }
+      ],
+      "rubric": {
+        "attribution": "pass only for personal-record-only — seed supports it; no public roster found.",
+        "freshness": "n/a for evidence_url — keep evidence_url null; the AnitaB membership site itself is live but not evidence of Fatima's role.",
+        "date_consistency": "pass — Apr 2022 matches seed.",
+        "editorial_honesty": "pass if kept with verified:false, verification_status personal-record-only, evidence_url:null, and curator_note explaining private mentor roster.",
+        "duplication": "net-new mentor role; may also belong in certifications.json later."
+      },
+      "notes": "Honest null is correct; do not invent an AnitaB URL for attribution."
+    },
+    {
+      "id": "community-nyu-poly-innovation-consultant-2012",
+      "status": "merge-ready",
+      "verification_status_recommendation": "personal-record-only",
+      "content_db_action": "add net-new personal-record-only row",
+      "observed_urls": [
+        {
+          "url": "https://aaari.info/2014economicb/",
+          "observed_status": 406,
+          "note": "Adjacent ecosystem page returned HTTP 406 from this egress and does not serve as Fatima attribution; do not use as evidence_url."
+        }
+      ],
+      "observed_local_sources": [
+        {
+          "path": "research/seed/linkedin-full-2026-08-14.md",
+          "note": "LinkedIn seed lists General Engineering — Innovation Consultant, NYU-Poly, Sep 2012-Dec 2014, mentoring ~20 students on innovation/entrepreneurship."
+        },
+        {
+          "path": "research/seed/resume--fatimasarahkhalid.md",
+          "note": "CV/seed frame supports NYU-era entrepreneurship/community context but no public roster."
+        }
+      ],
+      "observed_public_searches": [
+        {
+          "query": "\"Fatima Khalid\" \"NYU-Poly\" \"Innovation Consultant\"",
+          "provider": "Brave",
+          "result_count": 0
+        }
+      ],
+      "rubric": {
+        "attribution": "pass only for personal-record-only — seed supports it; no public NYU roster found.",
+        "freshness": "n/a for evidence_url — keep evidence_url null.",
+        "date_consistency": "pass — 2012-09 to 2014 aligns with seed.",
+        "editorial_honesty": "pass if kept with verified:false, verification_status personal-record-only, evidence_url:null, and no implication of public verification.",
+        "duplication": "net-new mentor/consultant role; distinct from NYU awards rows."
+      },
+      "notes": "Honest null is correct."
+    }
+  ],
+  "recommendations_for_lotus": {
+    "merge_ready": [
+      "fellowship-newspeak-house-2025",
+      "fellowship-code-for-canada-2018",
+      "community-drupal-di-working-group",
+      "community-civic-tech-guide-curator",
+      "community-bad-idea-factory",
+      "program-committee-drupalcon-2018-2020",
+      "community-anitab-mentor-2022",
+      "community-nyu-poly-innovation-consultant-2012"
+    ],
+    "needs_more_evidence": [
+      "program-committee-open-source-summit-2022-2023"
+    ],
+    "fail_quarantine": [],
+    "merge_edits": [
+      "Scaffold shape `{ \"community\": [...] }` is sensible and already matches `getAllCommunity()` loading/sorting. Preserve fields id, type, title, organization, location, date, year_start, year_end, description, topics, verified, evidence_url, verification_status.",
+      "Before build/merge, extend `src/lib/types.ts` CommunityItem.type to include `program-committee`; current type only allows fellowship/community-role/working-group.",
+      "For Drupal DEI, use DrupalDiversity.com as primary verification; Talking Drupal #297 should be described as self-attested/podcast-context corroboration only.",
+      "For Bad Idea Factory, prefer source-supported wording `beast wrangler (projects) at BIFFUD` or keep `Corporate Overlord` only with a title-ambiguity note.",
+      "For Open Source Summit, either rewrite to the verified 2024 OSS Europe Program Committee row or hold the 2022-2023 D&I Track Chair claim for Fatima/LF evidence.",
+      "Keep AnitaB.org Mentor and NYU-Poly Innovation Consultant as personal-record-only with null evidence_url; the nulls are honest and correct."
+    ]
+  }
+}
