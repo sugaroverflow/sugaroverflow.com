@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "category": "speaking",
+    "audited_by": "audit-standin-for-soren",
+    "audited_at": "2026-08-14",
+    "gathered_file": "research/gathered/speaking-2026-08-14.json",
+    "note": "Standing in for Soren because agent-to-agent messaging is currently blocked. Lotus is aware; will flag to Fatima. Method: web_fetch for live pages; Wayback CDX API + timestamped snapshot URLs for the events.drupal.org bot-gated set and any URL that failed live. Every 'verified' row below is backed by a URL I personally reached (live or Wayback) and text I read myself."
+  },
+  "audits": [
+    {
+      "id": "drupalcon-baltimore-2017-imposter-monologues",
+      "verdict": "verified",
+      "evidence_url_status": "wayback-only",
+      "wayback_url": "https://web.archive.org/web/20221205111812/https://events.drupal.org/baltimore2017/sessions/imposter-monologues-part-ii",
+      "notes": "events.drupal.org is bot-gated on direct fetch (as Glyphie flagged). Wayback snapshot 2022-12-05 loads cleanly and the session-page body explicitly lists 'a Drupal Novice - Fatima Khalid' among the panelists alongside Nikki Stevens, Jeff Eaton, Mike Anello, Stephanie El-Hajj, Greg Dunlap, Ron Northcutt, Angie Byron. Also confirms date/time: 'Wednesday, 26 April, 2017 - 15:45 to 16:45, Room: 320'. Backfill safe to merge.",
+      "merge_ready": true
+    },
+    {
+      "id": "drupalcon-vienna-2017-imposter-monologues",
+      "verdict": "needs-more-evidence",
+      "evidence_url_status": "wayback-only",
+      "wayback_url": "https://web.archive.org/web/20231211123303/https://events.drupal.org/vienna2017/sessions/imposter-monologues-vol-3",
+      "notes": "Session page exists and is confirmed via Wayback (also 2025-08-26 snapshot) — 'The Imposter Monologues, vol. 3', Tuesday 26 September 2017, Room Schubert 3. HOWEVER neither snapshot's rendered body contains 'Fatima' or 'Khalid'; the visible speaker byline reads 'eatings' and 'emma.maria' only. The session is real, but Fatima's participation is NOT confirmed from this URL alone. Glyphie's Brave-indexed snippet claim could not be reproduced from the Wayback captures I read. Suggest Lotus/Fatima add a secondary source (the coding-girls.com report Glyphie mentioned, a tweet, or Fatima's own recall) before merging as a fully-attributed panel.",
+      "merge_ready": false
+    },
+    {
+      "id": "drupalcamp-colorado-2020-keynote-given-choices",
+      "verdict": "verified",
+      "evidence_url_status": "wayback-only",
+      "wayback_url": "https://web.archive.org/web/20200924151503/https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid",
+      "notes": "Live fetch of the 2020.drupalcampcolorado.org URL failed for me (host unreachable), so I used Wayback CDX to pull a 2020-09-24 snapshot (200). Title on the snapshot: 'Keynote: Given the Choices We Have with Fatima Khalid'. Body describes the 'Actions Speak Louder than Code' interactive/choose-your-own-adventure keynote framing (Islamophobia lived-experience). Confirms Fatima as the keynote speaker; slug and event both check out. Note: I did not personally verify the 'Pantheon' affiliation string from this snapshot text — the speaker bio section of the snapshot is trimmed — but the session attribution is solid. Backfill safe to merge.",
+      "merge_ready": true
+    },
+    {
+      "id": "drupalcon-na-2021-javascript-ate-the-web",
+      "verdict": "verified",
+      "evidence_url_status": "wayback-only",
+      "wayback_url": "https://web.archive.org/web/20210815080751/https://www.drupal.org/association/supporters/blog/javascript-ate-the-web-key-lessons-for-the-drupal-community",
+      "notes": "Live www.drupal.org fetch is bot-gated ('Client Challenge'). Wayback 2021-08-15 snapshot of the Drupal Association blog post loads clean and explicitly names 'Moderator: Steve Persch (Director of Technical Marketing, Pantheon); Panelists: Fatima (Developer Programs Engineer, Pantheon), Ben Morss (Developer Advocate, Google), Sally Young (Core JavaScript Maintainer, Lullabot)' — matches Glyphie's description verbatim. Second corroborating source: Wayback snapshot of events.drupal.org/northamerica2021/news/drupalcon-north-america-wrap.html (2023-03-20) lists 'Fireside chat with Sally Young, Fatima Sarah Khalid, and Ben Morss - JavaScript ate the Web: Key lessons for the Drupal community' in the wrap-up. Two independent primary sources confirm the panel. IMPORTANT CAVEAT: the 'session' link Glyphie inferred (events.drupal.org/northamerica2021/sessions/javascript-ate-web-key-lessons-drupal-community) returns EMPTY from Wayback CDX — no snapshot exists — so that specific URL is unverified and should be DROPPED from links{} on merge in favor of the confirmed blog + wrap-up URLs. Panel itself is solidly verified.",
+      "merge_ready": true
+    },
+    {
+      "id": "fwd50-2020-where-are-they-now-past-fellows",
+      "verdict": "verified",
+      "evidence_url_status": "live-fetched",
+      "wayback_url": null,
+      "notes": "Live fetch of https://www.fwd50.com/speaker/445/fatima-sarah-khalid returned 200 with Fatima's speaker page, bio ('Code for Canada Developer Fellow in 2018, embedded with Transport Canada... currently Developer Programs Engineer at Pantheon'), and the session card 'Code for Canada Showcase — Where are they now? Past fellows, November 9, 2020, 9:00 PM - 9:20 PM GMT+0, Channel 2'. Matches Glyphie's assertion exactly. Panel/showcase framing is accurate. Safe to merge; borderline-inclusion call is Fatima's, not mine.",
+      "merge_ready": true
+    },
+    {
+      "id": "all-things-open-2022",
+      "verdict": "verified",
+      "evidence_url_status": "live-fetched",
+      "wayback_url": "https://web.archive.org/web/20221028190858/https://2022.allthingsopen.org/schedule/",
+      "notes": "Live fetch of https://2022.allthingsopen.org/speakers/fatima-sarah-khalid/ returned 200 with speaker profile as 'Developer Evangelist, GitLab'. In addition, I recovered the REAL session title from a Wayback snapshot of the ATO 2022 schedule (2022-10-28, two days before the conference): the schedule JSON explicitly lists id 16402, 'Lessons Learned Leading an OSS Diversity Team', category Community, single speaker 'Fatima Sarah Khalid', session URL https://2022.allthingsopen.org/sessions/lessons-learned-leading-an-oss-diversity-team/. Glyphie left the title as a placeholder ('All Things Open 2022 (speaker)') per the no-fabrication rule; that placeholder should be replaced on merge with the recovered real title. Speaker appearance is fully verified against two primary sources. I'm marking merge_ready:true, but Lotus/Fatima should swap in the real title on merge — do NOT merge the placeholder title as-is.",
+      "merge_ready": true
+    }
+  ]
+}
