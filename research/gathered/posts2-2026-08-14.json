@@ -5,7 +5,8 @@
   "gathered_at": "2026-08-14",
   "source_of_truth": "research/seed/resume--fatimasarahkhalid.md (L57 Pantheon; L66 Code for Canada; L83 City of Boston; Digital Echidna era) + research/seed/linkedin-full-2026-08-14.md + scout note research/gathered/_scout-posts-love-2026-08-14.md",
   "scope_note": "Batch 2 targets Fatima's AUTHORED bylines from 2015–2021 (pre-GitLab), which content-db/posts.json has zero rows for. The single most important integrity finding of this batch: the 2014–2018 civic/Drupal era is PRESS-HEAVY, not BYLINE-HEAVY. Most surfaced content is coverage written ABOUT Fatima (CBC, Digital Echidna 'Rising Star', boston.gov 'Stacking the team', CFC 'Meet the Digital Drone Collective'), not pieces she bylined herself. Those press items are correctly EXCLUDED here and belong in press.json (some already captured in PRESS batch 1). This batch only admits genuine authored bylines. Result: yield is intentionally small and honest — most candidates are personal-record-only or Wayback-pending because the original publishing platforms (pantheon.io author pages, boston.gov 2016 posts, echidna.ca/blog author archive) are not currently reachable for live byline confirmation.",
-  "coordination_note": "Does NOT re-import batch 1 (GitLab bylines, branch research/gather-posts-2026-08-14, merged by Lotus 6862acf). Does NOT touch the 4 legacy content-db posts or the quarantine-pending contributors-garden/civic-signal-map rows. Wayback checks for boston.gov and pantheon AMA were rate-limited (HTTP 429) on 2026-08-14; those two candidates are marked wayback-pending and should be re-attempted next heartbeat with backoff. Medium direct-fetch is Cloudflare-blocked (403); Medium bylines were read from search-result metadata only.",
+  "coordination_note": "Does NOT re-import batch 1 (GitLab bylines, branch research/gather-posts-2026-08-14, merged by Lotus 6862acf). Does NOT touch the 4 legacy content-db posts or the quarantine-pending contributors-garden/civic-signal-map rows. Medium direct-fetch is Cloudflare-blocked (403); Medium bylines were read from search-result metadata only.",
+  "wayback_resolution_2026-08-14T16:07Z": "Both wayback-pending items resolved this heartbeat. (1) Pantheon WebOps AMA: CDX search returned [] — the discuss.pantheon.io AMA thread was NEVER archived by Wayback, and the live URL now 302-redirects to a generic pantheon.io/customer-community landing page (forum sunset). No recoverable public evidence exists; the first-person byline survives only as a Brave search snippet. Candidate DOWNGRADED from wayback-pending to snippet-only-personal-record; cannot be promoted to verified-live-byline. (2) boston.gov Stacking-the-team: CDX found live snapshots (earliest 20170126043322, HTTP 200). Fetched that snapshot — content is departmental coverage authored by the Boston Digital Team lead, referring to Fatima in THIRD PERSON ('Fatima is our developer who valiantly juggles Drupal and ASP.NET'). CONFIRMED not-her-byline → excluded from posts, belongs in press with a now-stable Wayback URL. Wayback availability/CDX API intermittently 429s server-side; CDX succeeded when spaced ~6-8s between calls — did NOT hammer.",
   "candidates": [
     {
       "id": "pantheon-webops-wednesday-ama-2019",
@@ -27,8 +28,8 @@
       "byline": "Fatima Sarah Khalid",
       "evidence_url": "https://discuss.pantheon.io/t/webops-wednesday-ama-fatima-sarah-khalid/778",
       "verified": false,
-      "verification_status": "wayback-pending",
-      "curator_note": "Search snippet (Brave, 2026-08-14) confirms opening line 'Hi, I'm Fatima Sarah Khalid, I'm a Developer Programs Engineer (DPE) on the Developer Relations team at Pantheon.' — genuine first-person byline. Direct fetch of the live URL exceeded the redirect limit (3) on 2026-08-14; Wayback lookup was HTTP 429. Re-attempt live/Wayback fetch next heartbeat to promote to verified-live-byline. Borderline contentType: it's a forum AMA authored by her, defensible as a post; flag for Soren on whether AMAs belong in posts vs community."
+      "verification_status": "snippet-only-personal-record",
+      "curator_note": "RESOLVED 2026-08-14 (heartbeat 16:07Z): downgraded from wayback-pending. Wayback CDX search for this exact URL returned [] — the thread was NEVER archived. Live URL 302-redirects to pantheon.io/customer-community (forum sunset, no thread content). The genuine first-person byline ('Hi, I'm Fatima Sarah Khalid, I'm a Developer Programs Engineer (DPE) on the Developer Relations team at Pantheon.') survives ONLY as a Brave search snippet (2026-08-14) — no live page, no archive. Cannot be promoted to verified-live-byline; keep as personal-record with snippet provenance. If admitted at all, flag for Soren; borderline AMA-vs-post contentType still applies."
     },
     {
       "id": "cfc-meet-the-digital-drone-collective-2018",
@@ -93,10 +94,10 @@
       ],
       "description": "City of Boston Digital Team post introducing 2016 team members; contains the widely-quoted line describing Fatima as valiantly juggling Drupal and ASP.NET on boston.gov.",
       "byline": "City of Boston Digital Team",
-      "evidence_url": "https://web.archive.org/web/2016*/boston.gov/news/stacking-team-2016",
-      "verified": false,
-      "verification_status": "wayback-pending",
-      "curator_note": "The live boston.gov/news/stacking-team-2016 URL now 404s (confirmed 2026-08-14); original content is Wayback-only. Wayback availability API was HTTP 429 on 2026-08-14 — re-attempt with backoff next heartbeat to recover the exact snapshot URL + original publish date. LIKELY PRESS not byline: this reads as a team/departmental post mentioning Fatima, so probable press.json placement unless Wayback shows her as author. Do NOT ship as an authored post without that confirmation."
+      "evidence_url": "https://web.archive.org/web/20170126043322/https://www.boston.gov/news/stacking-team-2016",
+      "verified": true,
+      "verification_status": "excluded-not-her-byline",
+      "curator_note": "RESOLVED 2026-08-14 (heartbeat 16:07Z): Wayback CDX found snapshots (earliest 20170126043322, HTTP 200; also 2025-05-01, 2025-10-17). Fetched the 2017 snapshot and CONFIRMED authorship: departmental post by the Boston Digital Team lead, referring to Fatima in THIRD PERSON — verbatim: 'Fatima is our developer who valiantly juggles Drupal and ASP.NET to improve user experience on current tools while building new ones.' Byline block reads 'Digital Team'. This is COVERAGE, not a Fatima byline → firmly EXCLUDED from posts. Hand the now-stable Wayback URL to the press team (may already be captured in PRESS batch 1). evidence_url updated from the wildcard placeholder to the exact 2017-01-26 snapshot."
     },
     {
       "id": "boston-digital-team-case-studies-web-dev",
@@ -136,10 +137,13 @@
       ],
       "description": "Fatima's authored posts/contributions listed on her Drupal.org user profile (@sugaroverflow, on Drupal.org 10+ years). Potential source of genuine authored forum/issue posts from the Digital Echidna / Northern Commerce Drupal era (2016–2019).",
       "byline": "Fatima Sarah Khalid",
-      "evidence_url": "https://www.drupal.org/u/sugaroverflow",
+      "drupal_user_id": "3319263",
+      "evidence_url": "https://web.archive.org/web/20190930224616/https://www.drupal.org/u/sugaroverflow",
+      "live_url": "https://www.drupal.org/u/sugaroverflow",
+      "posts_tab_url": "https://www.drupal.org/user/3319263/track",
       "verified": true,
-      "verification_status": "verified-profile-exists",
-      "curator_note": "Profile confirmed live (Brave, 2026-08-14): 'On Drupal.org for 10 years 3 months', with a 'Posts on Drupal.org' section. This is a lead, not yet a set of discrete post candidates — the individual authored posts need enumeration next heartbeat (fetch the profile's Posts tab). Kept as a single tracked lead so the Drupal-era byline trove isn't lost. Drupal.org forum/issue posts are borderline as portfolio 'posts'; flag to Soren whether to admit them."
+      "verification_status": "verified-profile-archived",
+      "curator_note": "ENUMERATION ATTEMPTED 2026-08-14 (heartbeat 16:07Z). Live drupal.org profile is now behind a JS 'Client Challenge' bot wall (plain fetch blocked). Recovered instead via Wayback: resolved drupal user id = 3319263; Posts tab = /user/3319263/track. That /track page itself was NEVER archived (CDX []), so discrete authored forum/issue posts cannot be enumerated without a JS-capable browser fetch of the live bot-gated page — hand to browser tool if individual posts are wanted. HOWEVER the archived PROFILE landing page (snapshot 20190930224616, HTTP 200) yields concrete, citable contribution evidence: 'Credited on 34 issues fixed in the past 1 year'; contributed modules; member of DDI Contrib Team (Drupal Diversity & Inclusion), DrupalCon Minneapolis 2020, MidCamp, DrupalCon Seattle Tag Team, and Baltimore/Vienna/Nashville/New Orleans event committees; '3 people list sugaroverflow as a mentor'; talk reference 'DrupalCon Baltimore - The Imposter Monologues part II (Being Human)'. NET: this is stronger as a COMMUNITY/contribution evidence artifact than as discrete 'posts'. Recommend: cite the archived profile in community.json (mentor + DDI + 34-issues credit) and speaking.json (Baltimore Imposter Monologues II); do NOT ship as authored posts. Flag to Soren whether drupal.org issue/forum posts are ever admitted to posts.json."
     }
   ]
 }
