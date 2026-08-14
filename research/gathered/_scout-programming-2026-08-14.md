@@ -172,3 +172,22 @@ No Lotus ping since the SPEAKING/PROJECTS merge coordination (~15:00-16:00 UTC).
 **Batch-readiness recap**: Monday Merge = 16 editions settled (prior update). The Developer Show = 2 Fatima-hosted episodes evidence-locked + 2 correctly held/excluded + homonym trap flagged. Remaining scout targets before a full batch: Pantheon Office Hours 2024, Contributors Garden (already flagged dead in projects). Still awaiting Lotus's ping to write `programming-2026-08-14.json`.
 
 Calls this step: 2 web_search, 4 watch-page curls (all 429, aborted), 2 oEmbed curls (200). Backed off cleanly on the 429s.
+
+## UPDATE 2026-08-14 ~19:40 UTC — Pantheon Office Hours disambiguation VERDICT (still no Lotus ping)
+
+Still holding the batch. This heartbeat advanced the one remaining scout target from the next-batch plan: **Pantheon Office Hours 2024** (linkedin L220).
+
+**Verdict: real program, but attribution to Fatima is NOT publicly evidenced → `personal-record-only` at most.**
+
+- ✅ Pantheon Office Hours is a **genuine recurring DevRel program** — Wednesdays 2pm ET / 11am PT on Zoom + YouTube. Evidenced across multiple pantheon.io pages spanning 2022→2025 (`/developer-community/office-hours`, `/developers/office-hours`, `/blog/pantheon-office-hours`, `/events/office-hours/public-office-hours-1-22-2025`).
+- ⚠️ **No surfaced page names Fatima as a host** — all credit "the Developer Relations team" / "Developer Advocacy team" collectively. Live pages are JS-walled (SPA shell, grep for 'Fatima' returns nothing).
+- 🚨 **Date/tenure mismatch**: linkedin L220 tag reads "Pantheon Office Hours 2024" but Fatima's Pantheon tenure was **Nov 2019 – Nov 2021** (linkedin L277). A 2024 instance postdates her by ~3 years → the '2024' is almost certainly a LinkedIn media-attachment/link-preview artifact, NOT evidence she hosted a 2024 session.
+- Wayback CDX for `pantheon.io/developers/office-hours` **2020–2021** (her actual era) = **empty** → no archived Fatima-era capture of the office-hours page to anchor a host claim.
+
+**Treatment for the batch**: do NOT bank Pantheon Office Hours as a verified Fatima-hosted program. If included at all, `verification_status: personal-record-only` + curator_note capturing (a) program is real 2022–2025 but team-credited, (b) the 2024-vs-tenure mismatch, (c) no Fatima-era Wayback capture. This mirrors the Colleen-Lake Developer-Show and CFC-Medium/Boston third-person exclusion discipline — real thing, wrong/unproven attribution.
+
+**Bonus corroboration surfaced** (feeds SPEAKING, not programming): pantheon.io/blog/pantheon-drupalcon-north-america-2021 names a fireside chat "JavaScript ate the Web: Key lessons for the Drupal community — Fatima Sarah Khalid with Sally Young and Ben Morss" (Apr 8 2021) → independent Pantheon-era public-facing evidence for Fatima; flag to SPEAKING batch (may help pin the unresolved DrupalCon NA 2021 date from the speaking-followup).
+
+**Scout status: programming category is now fully scouted.** Monday Merge (16 editions, evidence-locked) + The Developer Show (2 Fatima eps locked, traps flagged) + Pantheon Office Hours (personal-record-only verdict) + Contributors Garden (dead, per projects batch). No remaining scout targets. Batch write (`programming-2026-08-14.json`) still held for Lotus's ping per rotation rule.
+
+Calls this step: 2 web_search, 2 live curls (JS-walled), 1 Wayback CDX (empty). No 429s, no hammering.
