@@ -28,14 +28,18 @@
     },
     {
       "id": "drupalcon-na-2021-javascript-ate-the-web",
-      "audit_verdict_confirmed": "PASS-WITH-CAVEAT (date still unresolved)",
-      "finding": "Could not recover a Wayback snapshot of the specific session URL (events.drupal.org/northamerica2021/sessions/javascript-ate-web-key-lessons-drupal-community returns empty CDX). The events.drupal.org site is bot-gated on direct fetch. I was unable this pass to independently confirm the exact day (search index earlier suggested Wednesday 14 April; my gather note had claimed Friday 16 April). Until a clean primary snapshot of the speakers/schedule page is recovered, the date should be left as year-only (2021) rather than 2021-04-16.",
-      "recommendation": "Merge as NET-NEW but with date reduced to year-only '2021' and verification_status 'personal-record-only' for the exact day, OR hold until the schedule page is recovered via browser. The panel/panelists and description are corroborated by search index; only the precise date is unsettled.",
+      "audit_verdict_confirmed": "PASS (date RESOLVED 2026-08-14 followup2)",
+      "finding": "DATE RESOLVED. The events.drupal.org North America 2021 speakers page (indexed 2021-04-13) groups the 'Fireside chat: JavaScript ate the Web' session with Friday, 16 April programming, confirming the Friday-16-April reading over the earlier Wednesday-14 guess. Conference ran virtually April 12-16, 2021, 11:00am-3:00pm Eastern (UTC-5) per events.drupal.org/drupalcon2021/news/lead-session and drupal.regfox.com/drupalcon-north-america-2021. Panel + title + role independently corroborated by TWO sources: (a) events.drupal.org NA-2021 wrap-up page names 'Fireside chat with Sally Young, Fatima Sarah Khalid, and Ben Morss - JavaScript ate the Web: Key lessons for the Drupal community'; (b) Pantheon blog recap (pantheon.io/blog/drupalcon-2021-session-recap) names the same lineup, moderator Steve Persch, and Fatima's then-title 'Developer Programs Engineer' at Pantheon.",
+      "recommendation": "Merge as NET-NEW with date '2021-04-16' and verification_status 'verified-live'. Title: 'JavaScript ate the Web: Key lessons for the Drupal community' (fireside chat / panel). Co-panelists Sally Young + Ben Morss, moderated by Steve Persch (Pantheon).",
+      "date": "2021-04-16",
       "evidence_urls": [
-        "https://www.drupal.org/association/supporters/blog/javascript-ate-the-web-key-lessons-for-the-drupal-community"
+        "https://www.drupal.org/association/supporters/blog/javascript-ate-the-web-key-lessons-for-the-drupal-community",
+        "https://events.drupal.org/northamerica2021/speakers.html",
+        "https://events.drupal.org/northamerica2021/news/drupalcon-north-america-wrap.html",
+        "https://pantheon.io/blog/drupalcon-2021-session-recap"
       ],
-      "verification_status": "verified-partial",
-      "curator_note": "Attribution + description OK; exact day unresolved. Needs a browser fetch of the DrupalCon NA 2021 speakers/schedule page to settle 14 vs 16 April."
+      "verification_status": "verified-live",
+      "curator_note": "Date settled to Fri 16 Apr 2021 via events.drupal.org speakers page grouping (session listed with Friday 16 April programming) + Pantheon recap. Two independent corroborating sources for panel/title/role. No remaining ambiguity on this entry."
     },
     {
       "id": "all-things-open-2022",
