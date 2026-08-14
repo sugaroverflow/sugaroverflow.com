@@ -166,7 +166,7 @@ CV revealed items not on public LinkedIn:
 
 1. **`community.json` "drupal-di-working-group"** currently says 2017–2020. CV says 2017–2019 with title **Team Lead** (not "Leader"). Update.
 2. **`community.json` "newspeak-house-2025"** description is vague. CV gives specific thesis-project scope: *"data governance, algorithmic accountability, and the ways technology, policy, and communities shape one another."* Update.
-3. **Employer name Digital Echidna vs Northern Commerce** — needs Glyphie to check which is canonical. If Digital Echidna was acquired by / became Northern Commerce, both stay in the record but chronology needs cleaning up.
+3. **Employer name Digital Echidna vs Northern Commerce** — ✅ Confirmed 2026-08-14 by Fatima: Digital Echidna was acquired by Northern Commerce. Both are real and chronologically distinct. Glyphie to research the acquisition date and encode as two career chapters: Digital Echidna (pre-acquisition, Sep 2016 – ~acquisition date) → Northern Commerce (post-acquisition, ~acquisition date – Aug 2018).
 4. **DrupalCon Nashville 2018** — currently in `speaking.json` as "OOP the Pokemon Journey." That may be right, but also Fatima was **DEI Track Chair 2018 at that conference** — that's a separate role, not the same as speaking. Need both entries.
 
 ## Category decisions (proposed for Fatima to sign off)
@@ -177,7 +177,7 @@ Currently no certifications category. Three entries from LinkedIn:
 - AnitaB.org Mentor Badge (Apr 2022, credential ID 002)
 - Acquia Certified Developer - Drupal 8 (May 2016)
 
-**Recommendation**: Yes, add `certifications.json`. Small file, clean separation.
+✅ **Confirmed 2026-08-14 by Fatima**: add `certifications.json`. Empty scaffold committed alongside this scope update; Glyphie fills.
 
 ### New file `programming.json`?
 Hosted programs/series are neither "speaking" (one-off talks) nor "projects" (code). They're a distinct thing:
@@ -185,22 +185,33 @@ Hosted programs/series are neither "speaking" (one-off talks) nor "projects" (co
 - Monday Merge
 - ClawClub / OpenClaw hack nights
 
-**Recommendation**: Yes, add `programming.json`. This is a meaningful category of Fatima's DevRel work.
+✅ **Confirmed 2026-08-14 by Fatima**: add `programming.json`. Empty scaffold committed alongside this scope update; Glyphie fills.
 
 ### New file `education.json`?
 NYU CS + NYU Journalism + Hanyang exchange + Cardozo HS + CTY.
 
-**Recommendation**: Add `education.json` for formal degrees + exchange. Leave fellowships in `community.json`. High school + CTY optional — Fatima's call.
+✅ **Confirmed 2026-08-14 by Fatima**: add `education.json` for formal degrees + exchange. Leave fellowships in `community.json`. High school + CTY optional — Fatima's call at merge time.
 
 ### Program-committee roles — where do they go?
 D&I Track Chair, DEI Track Chair, Backend Dev Track Chair — these are conference-governance roles, not speaking, not general community.
 
 **Recommendation**: Add to `community.json` under new `type: "program-committee"`. Same file, existing schema flex.
 
+## Confirmed missing items from Fatima (need Glyphie to find evidence URLs)
+
+**Awards (2026-08-14, Fatima confirmed all 4 are real, currently missing from `press.json` `awards` array):**
+- DrupalCon Nashville 2018 scholarship
+- DrupalCon Vienna 2017 scholarship
+- NYU Prototyping Fund 2013
+- Innovative Design 1st place 2012
+
+Glyphie: when you hit AWARDS category, these 4 are on the target list — hunt evidence URLs (Drupal Association archives + drupal.org news, NYU archive + Wayback, Innovative Design event/school archive).
+
 ## Next actions (immediate)
 
 1. ✅ Set up `research/{seed,gathered,quarantine,audits}/`
 2. ✅ Write RESEARCH-SCOPE.md + seed README + quarantine README
-3. 🟡 Unpause Glyphie with a portfolio-scoped heartbeat pointing at this scope
-4. 🟡 Dispatch first gather batch: **Category 1 = SPEAKING** (highest volume of gatherable evidence + Drupal-era items are internally consistent so should be quickest wins)
-5. Post 30-min heartbeats to Discord coworking channel (`1519890238967779338`) — Fatima wants prolific updates so she can spot-check JSONs as they come
+3. ✅ Unpause Glyphie with a portfolio-scoped heartbeat pointing at this scope
+4. ✅ Dispatch first gather batch: **Category 1 = SPEAKING** — Glyphie delivered `speaking-2026-08-14.json` (6 candidates, 5 with live evidence URLs, 1 net-new FWD50 find)
+5. 🟡 Soren audit pass on Glyphie's SPEAKING batch
+6. 🟡 Post 30-min heartbeats to Discord coworking channel (`1519890238967779338`) — routing pin request sent to Techie 2026-08-14

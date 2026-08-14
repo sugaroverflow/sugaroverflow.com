@@ -24,12 +24,14 @@ for deletion, not a candidate for rescue.
 
 ### From `posts.json`
 
-- **`ai-governance-layers`** — "Mapping AI Governance: Three Layers" — a placeholder Newspeak-branded post. File doesn't exist in `src/content/posts/`.
-- **`civic-signal-map`** (post) — companion post to the placeholder project.
-- **`building-contributors-garden`** — deep-dive on the placeholder project (see above).
-- **`devrel-summit-notes`** — field notes from the DevRel Summit 2024 talk that itself has no evidence.
+**Reclassified 2026-08-14 (per Fatima): these 4 entries are LAYOUT SAMPLES, not invented posts.** Fatima put them there as placeholder rows to develop the blog page against. Treatment: keep the row metadata as scaffolding reference, but do NOT publish these to the real site. Replace with real posts once Glyphie surfaces them (GitLab blog + Pantheon blog + Digital Echidna + Code for Canada Medium have real bylined content to draw from). Do NOT delete outright — they document the intended layout shape.
 
-All four posts have `file:` values pointing to `.mdx` files that don't exist in the repo. If we're being strict, this whole file is suspect — but Fatima may have real drafts to bring back.
+- **`ai-governance-layers`** — "Mapping AI Governance: Three Layers" — layout sample. File doesn't exist in `src/content/posts/`.
+- **`civic-signal-map`** (post) — layout sample. Companion to the placeholder project.
+- **`building-contributors-garden`** — layout sample.
+- **`devrel-summit-notes`** — layout sample.
+
+All four posts have `file:` values pointing to `.mdx` files that don't exist in the repo. That's expected — they're sample rows, not real drafts.
 
 ### From `love.json`
 
