@@ -55,6 +55,35 @@ Also tried dated-path forms (`/blog/2025/07/14/...`, `/blog/2025/07/14/monday-me
 
 **No Wayback hammering done this step** — only 8 curl HEAD-equivalent status checks (spaced 1s) + 1 body fetch of the confirmed-live ja-jp page.
 
+## UPDATE 2026-08-14 ~17:40 UTC — Wayback CDX resolves the evidence-URL question (Monday Merge)
+
+Ran Wayback CDX + live curl to settle how to source Monday Merge editions honestly. **Verdict reached — the ja-jp live mirror is the honest evidence_url.**
+
+**Wayback CDX enumeration** (`about.gitlab.com/blog/monday-merge*`, collapsed, spaced calls, no hammering):
+- Wayback has ONLY 3 distinct editions indexed: `2025-april-7`, `2025-may-9`, `2025-june-9` — **all captured as HTTP 301** (redirect stubs, not article bodies).
+- The 301 target is just the trailing-slash form (`.../april-7` → `.../april-7/`) — NOT a content-bearing capture. Grep of the followed snapshot returned zero Fatima/Monday-Merge strings → the archived body is a redirect stub, not the article.
+- A `filter=statuscode:200` CDX query timed out (exit 28) with no 200 rows → **no clean article-body capture exists in Wayback** for any edition.
+
+**Live en canonical re-test (trailing-slash form, the earlier scout's suspected fix):** still 404.
+- `https://about.gitlab.com/blog/monday-merge-2025-april-7/` → 404
+- `.../monday-merge-2025-july-14/` → 404
+- `.../monday-merge-2025-may-9/` → 404
+- `.../monday-merge-2025-june-9/` → 404
+→ So the trailing slash was NOT the issue; the en article genuinely does not resolve at any slug form, live or archived-as-200.
+
+**ja-jp mirror re-confirmed LIVE (HTTP 200) with in-body byline:**
+- `https://about.gitlab.com/ja-jp/blog/monday-merge-2025-july-14/` → 200, body: 「Fatimaです。今月のMonday Mergeも…」 + signoff 'Fatima Sarah Khalid'
+- `https://about.gitlab.com/ja-jp/blog/monday-merge-2025-april-7/` → 200
+
+**DECISION for the batch (honest, no fake URLs):**
+- `evidence_url` = the live `/ja-jp/blog/monday-merge-<date>/` mirror (HTTP 200 today).
+- `verification_status: "byline-in-body-non-canonical-mirror"`
+- `curator_note`: en canonical 404s live + Wayback only holds 3 editions as 301 redirect stubs (no 200 body capture); ja-jp meta author = 'GitLab Japan Team' (translators) but in-body byline + signoff is Fatima → she IS the credited series author.
+- Cross-third-party host attribution still available: Shorty Awards 17th case study (names Fatima as host) — feeds AWARDS too.
+- **Editions we can currently evidence live:** july-14 + april-7 (ja-jp 200 confirmed). Others (may-9, june-9, dec-08 2025; mar-9, jun-22, aug-10 2026) are search-surfaced only → next step: test each ja-jp mirror live before banking. Do NOT bank the resume's '~12 editions / 235K newsletter / ~26K views' stats — resume-only unless a public source shows them.
+
+Calls this step: 1 CDX collapse, 1 CDX 200-filter (timed out), 1 Wayback snapshot HEAD, 1 Wayback body grep, ~6 live curls — all spaced ≥1s. No 429s hit.
+
 ## Next-batch plan (on Lotus ping)
 1. Enumerate Monday Merge full run via about.gitlab.com author/tag page → count editions, capture canonical en URLs, confirm ~12 + stats claim.
 2. Enumerate The Developer Show via GitLab YouTube channel → list Fatima-hosted episodes only; capture view counts where public (supports the ~26K claim, but that stat is Monday Merge per resume L14 — keep separated).
