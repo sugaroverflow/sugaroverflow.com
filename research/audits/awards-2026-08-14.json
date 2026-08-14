@@ -1,0 +1,304 @@
+{
+  "_meta": {
+    "category": "awards",
+    "audited_by": "soren",
+    "audited_at": "2026-08-14",
+    "gathered_file": "research/gathered/awards-2026-08-14.json",
+    "rubric": "research/RESEARCH-SCOPE.md § Verification bar",
+    "summary": {
+      "merge_ready": 8,
+      "needs_more_evidence": 0,
+      "fail_quarantine": 0,
+      "existing_content_db_updates": 3,
+      "net_new_rows": 5,
+      "personal_record_only": 2
+    },
+    "note": "Method: checked gathered awards, existing content-db/press.json awards array, Fatima's LinkedIn/CV seeds for personal-record-only entries, live web_fetch, Brave search where direct event pages were bot-challenged, and curl/browser-UA raw HTML/Wayback snapshots for pages where readability omitted recipient lists. For Drupal event pages, direct fetch returned HTTP 200 Client Challenge; Wayback snapshots and/or search-index snippets supplied body-level attribution. Personal-record-only entries intentionally have null evidence_url; I searched for public corroboration and found none, so the honest null is preserved."
+  },
+  "audits": [
+    {
+      "id": "award-devops-dozen-top-evangelist-2023",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified",
+      "content_db_action": "update existing award row",
+      "observed_urls": [
+        {
+          "url": "https://devopsdozen.com/devops-dozen-2023-community-awards-winners/",
+          "observed_status": 200,
+          "note": "Live page contains Top DevOps Evangelist section and Alan Shimel citation: 'We have followed Fatima at GitLab...'"
+        },
+        {
+          "url": "https://devops.com/meet-the-devops-dozen%C2%B2-2023-honorees/",
+          "observed_status": 200,
+          "note": "Live DevOps.com honorees page lists 'Top DevOps Evangelist: Fatima Sarah Khalid, Developer Evangelist at GitLab'."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — both live sources name Fatima Sarah Khalid and GitLab.",
+        "freshness": "pass — both URLs fetched HTTP 200.",
+        "date_consistency": "pass — this is the DevOps Dozen 2023 award announced in Jan 2024; year 2023 with date 2024-01 is honest.",
+        "editorial_honesty": "pass — description and citation are source-supported.",
+        "duplication": "existing content-db awards row `award-devops-dozen-top-evangelist-2023`; merge as enrichment/update, not net-new."
+      },
+      "notes": "Recommend adding devopsdozen.com as primary/evidence URL and retaining DevOps.com as corroboration."
+    },
+    {
+      "id": "award-google-open-source-peer-bonus-2020",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified",
+      "content_db_action": "update existing award row; fix null evidence_url",
+      "observed_urls": [
+        {
+          "url": "https://opensource.googleblog.com/2020/04/announcing-2020-first-quarter-google.html",
+          "observed_status": 200,
+          "note": "Live page fetched HTTP 200. Readability text confirms Q1 2020 Open Source Peer Bonus cycle for women in open source; raw HTML contains 'Fatima Sarah Khalid Drupal'."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — raw HTML names Fatima Sarah Khalid in the public winners list.",
+        "freshness": "pass — Google Open Source Blog URL is live HTTP 200.",
+        "date_consistency": "pass — blog is April 2020; candidate date 2020-04 and year 2020 match.",
+        "editorial_honesty": "pass — source supports Google Open Source Peer Bonus and Drupal project context; LinkedIn seed supports Pantheon affiliation.",
+        "duplication": "existing content-db awards row `award-google-open-source-peer-bonus-2020`; merge as evidence_url backfill/update."
+      },
+      "notes": "Do backfill evidence_url; no fake citation needed."
+    },
+    {
+      "id": "award-wct-rising-star-2018",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-wayback",
+      "content_db_action": "update existing award row with authoritative Wayback source",
+      "observed_urls": [
+        {
+          "url": "http://web.archive.org/web/20230324155855/https://wct-fct.com/en/wct-annual-leadership-awards-recognize-champions-closing-the-gender-gap",
+          "observed_status": 200,
+          "note": "Wayback snapshot renders real WCT page and lists 'Rising Star, Fatima Khalid, Developer, Digital Echidna'."
+        },
+        {
+          "url": "https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417",
+          "observed_status": 200,
+          "note": "Live CBC corroboration names Fatima Khalid of Digital Echidna as WCT Rising Star of 2018."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FS68AzJMzoE",
+          "observed_status": 200,
+          "note": "YouTube page resolves HTTP 200; useful corroboration, but WCT Wayback + CBC are stronger textual sources."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — WCT Wayback and CBC both name Fatima; WCT page also names Digital Echidna.",
+        "freshness": "pass as Wayback — live awarder page is not relied on; archived WCT source renders real content, not a 404. CBC corroboration is live.",
+        "date_consistency": "pass — WCT announcement is March 8, 2018 and says awards presented April 16 at Ottawa gala; candidate date 2018-04-16 is presentation date, while announcement/press date can remain in notes.",
+        "editorial_honesty": "pass — Rising Star Leadership Excellence Award framing is supported by WCT/CBC.",
+        "duplication": "existing content-db awards row `award-wct-rising-star-2018`; merge as authoritative-source enrichment, not net-new."
+      },
+      "notes": "Confirmed WCT Wayback snapshot renders and names Fatima. `verified-wayback` is the right status."
+    },
+    {
+      "id": "award-drupalcon-nashville-scholarship-2018",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-wayback",
+      "content_db_action": "add net-new award row",
+      "observed_urls": [
+        {
+          "url": "https://events.drupal.org/nashville2018/grants-and-scholarships",
+          "observed_status": 200,
+          "note": "Direct fetch returned HTTP 200 Client Challenge, not readable content."
+        },
+        {
+          "url": "https://web.archive.org/web/20230925022625id_/https://events.drupal.org/nashville2018/grants-and-scholarships",
+          "observed_status": 200,
+          "note": "Wayback snapshot renders recipient list including 'Fatima Khalid - sugaroverflow'."
+        }
+      ],
+      "observed_search_index": [
+        {
+          "query": "site:events.drupal.org/nashville2018/grants-and-scholarships \"Fatima Khalid\" \"sugaroverflow\"",
+          "provider": "Brave",
+          "result_count": 1,
+          "note": "Search-index snippet also shows 'Fatima Khalid - sugaroverflow' on the Nashville grants page."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — Wayback recipient list and search-index snippet name Fatima Khalid / sugaroverflow.",
+        "freshness": "pass with caveat — primary URL is live but bot-challenged; Wayback snapshot is real readable content.",
+        "date_consistency": "pass — Nashville 2018 grants page matches candidate year 2018.",
+        "editorial_honesty": "pass — description as DrupalCon Nashville 2018 Grant/Scholarship recipient is supported.",
+        "duplication": "net-new awards row; distinct from any speaking/community-role Nashville rows."
+      },
+      "notes": "Because direct events.drupal.org fetch is challenged, prefer `verified-wayback` or cite both primary URL and Wayback evidence."
+    },
+    {
+      "id": "award-drupalcon-vienna-scholarship-2017",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-wayback",
+      "content_db_action": "add net-new award row",
+      "observed_urls": [
+        {
+          "url": "https://events.drupal.org/vienna2017/grants-and-scholarships.html",
+          "observed_status": 200,
+          "note": "Direct fetch returned HTTP 200 Client Challenge, not readable content; Brave search resolved canonical `.html` URL and snippet names Fatima."
+        },
+        {
+          "url": "https://events.drupal.org/vienna2017/news/drupalcon-vienna-welcomes-12-grant-and-scholarship-recipients",
+          "observed_status": 200,
+          "note": "Direct fetch returned HTTP 200 Client Challenge, not readable content."
+        },
+        {
+          "url": "https://web.archive.org/web/20250325015532id_/https://events.drupal.org/vienna2017/news/drupalcon-vienna-welcomes-12-grant-and-scholarship-recipients",
+          "observed_status": 200,
+          "note": "Wayback snapshot renders recipient list including 'Fatima Khalid - sugaroverflow'."
+        }
+      ],
+      "observed_search_index": [
+        {
+          "query": "site:events.drupal.org/vienna2017/grants-and-scholarships \"Fatima Khalid\" \"sugaroverflow\"",
+          "provider": "Brave",
+          "result_count": 1,
+          "note": "Search-index snippet for the grants-and-scholarships page names 'Fatima Khalid - sugaroverflow'."
+        },
+        {
+          "query": "\"DrupalCon Vienna welcomes 12 Grant and Scholarship recipients\" \"Fatima Khalid\"",
+          "provider": "Brave",
+          "result_count": 1,
+          "note": "Search-index snippet for the news post names Fatima in the 12-recipient list."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — Wayback news snapshot and search snippets name Fatima Khalid / sugaroverflow.",
+        "freshness": "pass with caveat — events.drupal.org direct fetch is bot-challenged; Wayback snapshot is readable real content.",
+        "date_consistency": "pass — sources are Vienna 2017 pages; candidate date 2017-09/year 2017 match DrupalCon Vienna timing.",
+        "editorial_honesty": "pass — description as one of 12 Grant & Scholarship recipients is supported.",
+        "duplication": "net-new awards row; separate from the quarantined Vienna speaking claim."
+      },
+      "notes": "AUDIT-CRITICAL: this real Vienna 2017 scholarship does NOT rehabilitate the failed/quarantined Vienna 2017 `Imposter Monologues Vol. 3` speaking claim. Same city/year, different artifact; keep them separate."
+    },
+    {
+      "id": "award-drupalcon-seattle-scholarship-2019",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified-wayback",
+      "content_db_action": "add net-new award row",
+      "observed_urls": [
+        {
+          "url": "https://events.drupal.org/seattle2019/news/first-look-drupalcon-seattle%E2%80%99s-scholarship-grant-recipients",
+          "observed_status": 200,
+          "note": "Direct fetch returned HTTP 200 Client Challenge, not readable content."
+        },
+        {
+          "url": "https://web.archive.org/web/20250114122120id_/https://events.drupal.org/seattle2019/news/first-look-drupalcon-seattle%E2%80%99s-scholarship-grant-recipients",
+          "observed_status": 200,
+          "note": "Wayback snapshot renders quote naming 'Fatima Khalid of Canada' and recipient list including 'Fatima Khalid - sugaroverflow'."
+        }
+      ],
+      "observed_search_index": [
+        {
+          "query": "\"First look at DrupalCon Seattle\" \"Fatima Khalid\" scholarship recipients",
+          "provider": "Brave",
+          "result_count": 1,
+          "note": "Search-index snippet includes the same Fatima Khalid quote about paving the road for people with barriers."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — Wayback page names Fatima Khalid and sugaroverflow.",
+        "freshness": "pass with caveat — primary URL is bot-challenged; Wayback snapshot is readable real content.",
+        "date_consistency": "pass — source is Seattle 2019 scholarship/grant recipient post; candidate year 2019 matches.",
+        "editorial_honesty": "pass with small caveat — scholarship and quote are supported; affiliation `code-for-canada` is timeline-derived and should be confirmed by Fatima if displayed.",
+        "duplication": "net-new award row; not in existing content-db awards."
+      },
+      "notes": "Net-new find is valid. Recommend `verified-wayback` unless Lotus has a browser path through the event-site challenge."
+    },
+    {
+      "id": "award-nyu-prototyping-fund-2013",
+      "status": "merge-ready",
+      "verification_status_recommendation": "personal-record-only",
+      "content_db_action": "add net-new personal-record-only award row",
+      "observed_urls": [],
+      "observed_local_sources": [
+        {
+          "path": "research/seed/linkedin-full-2026-08-14.md",
+          "note": "LinkedIn seed states NYU Prototyping Fund Recipient, issued Sep 2013, $350 from NYU Entrepreneurial Fund, first prototype of Heat Nomad/ThermoShake."
+        }
+      ],
+      "observed_public_searches": [
+        {
+          "query": "site:engineering.nyu.edu \"Prototyping Fund\" \"Fatima Khalid\"",
+          "provider": "Brave",
+          "result_count": 0
+        },
+        {
+          "query": "site:entrepreneur.nyu.edu \"ThermoShake\" OR \"Heat Nomad\" \"Fatima\"",
+          "provider": "Brave",
+          "result_count": 0
+        },
+        {
+          "query": "\"ThermoShake\" \"Fatima Khalid\"",
+          "provider": "Brave",
+          "result_count": 0
+        }
+      ],
+      "rubric": {
+        "attribution": "pass for personal-record-only — Fatima's own LinkedIn seed supports the claim; no public evidence URL found.",
+        "freshness": "n/a — intentionally null evidence_url; no fake source should be added.",
+        "date_consistency": "pass — seed says issued Sep 2013; candidate date 2013-09 matches.",
+        "editorial_honesty": "pass — honest only with `verification_status: personal-record-only`, `verified:false`, empty links, and `evidence_url:null`.",
+        "duplication": "net-new awards row."
+      },
+      "notes": "I cannot independently verify this through a public URL. That is acceptable under the explicit batch rule; keep the null evidence_url."
+    },
+    {
+      "id": "award-innovative-design-tournament-2012",
+      "status": "merge-ready",
+      "verification_status_recommendation": "personal-record-only",
+      "content_db_action": "add net-new personal-record-only award row",
+      "observed_urls": [],
+      "observed_local_sources": [
+        {
+          "path": "research/seed/linkedin-full-2026-08-14.md",
+          "note": "LinkedIn seed states 1st place, Innovative Design Tournament at NYU Polytechnic School of Engineering, issued Apr 2012, portable re-heatable water bottle/Heat Nomad precursor."
+        }
+      ],
+      "observed_public_searches": [
+        {
+          "query": "site:engineering.nyu.edu \"Innovative Design Tournament\" \"Fatima\"",
+          "provider": "Brave",
+          "result_count": 0
+        },
+        {
+          "query": "\"Fatima Khalid\" \"Innovative Design Tournament\" \"NYU\"",
+          "provider": "Brave",
+          "result_count": 0
+        }
+      ],
+      "rubric": {
+        "attribution": "pass for personal-record-only — Fatima's own LinkedIn seed supports the claim; no public evidence URL found.",
+        "freshness": "n/a — intentionally null evidence_url; no fake source should be added.",
+        "date_consistency": "pass — seed says issued Apr 2012; candidate date 2012-04 matches.",
+        "editorial_honesty": "pass — honest only with `verification_status: personal-record-only`, `verified:false`, empty links, and `evidence_url:null`.",
+        "duplication": "net-new awards row."
+      },
+      "notes": "I cannot independently verify this through a public URL. That is acceptable under the explicit batch rule; keep the null evidence_url."
+    }
+  ],
+  "recommendations_for_lotus": {
+    "merge_ready": [
+      "award-devops-dozen-top-evangelist-2023",
+      "award-google-open-source-peer-bonus-2020",
+      "award-wct-rising-star-2018",
+      "award-drupalcon-nashville-scholarship-2018",
+      "award-drupalcon-vienna-scholarship-2017",
+      "award-drupalcon-seattle-scholarship-2019",
+      "award-nyu-prototyping-fund-2013",
+      "award-innovative-design-tournament-2012"
+    ],
+    "needs_more_evidence": [],
+    "fail_quarantine": [],
+    "merge_edits": [
+      "Awards live in `content-db/press.json` under `awards`; update the three existing rows there rather than creating an awards.json.",
+      "Backfill Google Peer Bonus evidence_url to the Google Open Source Blog URL.",
+      "Use WCT Wayback as the authoritative Rising Star source and keep CBC as corroboration; status should be `verified-wayback`.",
+      "For DrupalCon scholarship rows, consider `verified-wayback` because direct event-site fetches are HTTP 200 Client Challenge pages; Wayback/search-index provided the readable attribution.",
+      "Keep NYU Prototyping Fund and Innovative Design Tournament honestly personal-record-only with null evidence_url and empty links.",
+      "Explicitly keep DrupalCon Vienna scholarship separate from the quarantined Vienna Imposter Monologues speaking claim."
+    ]
+  }
+}
