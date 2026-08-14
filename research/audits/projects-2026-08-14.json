@@ -1,0 +1,347 @@
+{
+  "_meta": {
+    "category": "projects",
+    "audited_by": "soren",
+    "audited_at": "2026-08-14",
+    "gathered_file": "research/gathered/projects-2026-08-14.json",
+    "rubric": "research/RESEARCH-SCOPE.md § Verification bar",
+    "summary": {
+      "merge_ready": 7,
+      "needs_more_evidence": 1,
+      "fail_quarantine": 2,
+      "dead_link_rows_checked": 3
+    },
+    "note": "Method: checked the gathered JSON, existing content-db/projects.json, quarantine catalogue, Fatima's CV/LinkedIn seeds for personal-record-only rows, live web_fetch where useful, and curl/browser-UA status checks for GitHub, GitLab API, Wayback, Microsoft, Medium, and dead-link URLs. GitLab browser pages can return sign-in/challenge behavior for missing/private repos, so I used the public GitLab API as the decisive live check for 404 Project Not Found."
+  },
+  "audits": [
+    {
+      "id": "civicgraph-io",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified",
+      "observed_urls": [
+        {
+          "url": "https://github.com/MicrosoftTCE/civic-graph-node",
+          "observed_status": 200,
+          "note": "Live GitHub repo; title/README identify Civic Graph visualization tool."
+        },
+        {
+          "url": "https://api.github.com/repos/MicrosoftTCE/civic-graph-node/contributors?per_page=10",
+          "observed_status": 200,
+          "note": "Contributor list includes sugaroverflow with 15 contributions."
+        },
+        {
+          "url": "https://web.archive.org/web/20150507033636id_/http://civicgraph.io/",
+          "observed_status": 200,
+          "note": "Wayback replay shows real Civic Graph landing content, not a 404."
+        },
+        {
+          "url": "https://blogs.microsoft.com/newyork/2015/07/09/whats-next-after-microsoft-civic-tech-fellow-alumni-fatima-khalid/",
+          "observed_status": 200,
+          "note": "Microsoft interview names Fatima and says the team produced Civic Graph from early d3 plots."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — GitHub contributor API ties sugaroverflow to the repo; Microsoft interview names Fatima and Civic Graph.",
+        "freshness": "pass — repo and Microsoft interview are live; civicgraph.io itself is dead but Wayback replay is real content.",
+        "date_consistency": "pass — repo is 2014/2015-era and Microsoft interview is July 2015; candidate year 2015 is consistent.",
+        "editorial_honesty": "pass with caveat — platform description is supported; keep d3.js/Metro UI as seed-supported unless Lotus also verifies code-level stack.",
+        "duplication": "net-new — no existing content-db project row overlaps."
+      },
+      "notes": "Strong merge candidate. Do not use dead civicgraph.io as sole evidence; include repo + Wayback or Microsoft interview."
+    },
+    {
+      "id": "hubhacks-boston-address-search-2014",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified",
+      "observed_urls": [
+        {
+          "url": "https://blogs.microsoft.com/newengland/2014/08/12/microsoft-new-york-fellows-do-boston-win-hubhacks-challenge/",
+          "observed_status": 200,
+          "note": "Live Microsoft New England post names Fatima Sarah Khalid and Ken Chan, says their team won, and describes the City of Boston Official Address Search/SAM app."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — source explicitly names Fatima Sarah Khalid.",
+        "freshness": "pass — live HTTP 200.",
+        "date_consistency": "pass — post is Aug 12, 2014; candidate date 2014-08 is consistent.",
+        "editorial_honesty": "pass with caveat — win, address search, SAM, and Fatima's final-design role are supported; tech stack comes from LinkedIn seed, not the article body.",
+        "duplication": "net-new project; source also supports a press row, but this is not a duplicate project row."
+      },
+      "notes": "Mergeable if the row is honest that no public repo was found."
+    },
+    {
+      "id": "betanyc-preschool-search-2014",
+      "status": "merge-ready",
+      "verification_status_recommendation": "personal-record-only",
+      "observed_urls": [],
+      "observed_local_sources": [
+        {
+          "path": "research/seed/linkedin-full-2026-08-14.md",
+          "note": "Seed states Fatima contributed at BetaNYC Civic Hack Day on the NYC DOE PreSchool challenge using Google Maps API search."
+        },
+        {
+          "path": "research/seed/resume--fatimasarahkhalid.md",
+          "note": "CV supports the Microsoft Civic Tech Fellowship era but does not independently name this exact hack-day project."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass for personal-record-only — Fatima's logged-in LinkedIn seed explicitly makes the claim.",
+        "freshness": "n/a public URL — no evidence_url and no public repo/article found during this audit.",
+        "date_consistency": "pass — 2014 fits the Microsoft fellowship period in the seed.",
+        "editorial_honesty": "pass only if kept explicitly as personal-record-only with null evidence_url; do not imply public verification.",
+        "duplication": "net-new."
+      },
+      "notes": "Legitimate personal-record-only row under the special instruction. I also searched for BetaNYC/PreSchool/Fatima/sugaroverflow and found no public corroboration."
+    },
+    {
+      "id": "boston-gov-drupal-migration",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified",
+      "observed_urls": [
+        {
+          "url": "https://github.com/sugaroverflow/boston.gov",
+          "observed_status": 200,
+          "note": "Live GitHub fork under sugaroverflow; README says Boston.gov is built on Drupal and is the official City of Boston source code."
+        },
+        {
+          "url": "https://web.archive.org/web/20170126043322id_/https://www.boston.gov/news/stacking-team-2016",
+          "observed_status": 200,
+          "note": "Wayback replay of Boston.gov post says Fatima juggles Drupal and ASP.NET while improving current tools and building new ones; also mentions pilot/redesigned Boston.gov."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — repo is under sugaroverflow; Wayback source explicitly names Fatima.",
+        "freshness": "pass — repo live HTTP 200; Boston.gov source is Wayback-only but real content.",
+        "date_consistency": "pass — Boston post is Dec 31, 2015 looking toward 2016 launch; candidate year 2016 is reasonable.",
+        "editorial_honesty": "pass with caveat — Drupal/ASP.NET and Boston.gov redesign/migration are supported; IDEO/Acquia and pilot.boston.gov are seed-supported by CV/LinkedIn.",
+        "duplication": "net-new but adjacent to existing `boston-311`; keep separate because this is Boston.gov Drupal migration, not Boston311."
+      },
+      "notes": "Mergeable as a distinct Boston.gov project."
+    },
+    {
+      "id": "digital-drone-collective-landing",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified",
+      "observed_urls": [
+        {
+          "url": "https://github.com/sugaroverflow/digital-drone-collective",
+          "observed_status": 200,
+          "note": "Live GitHub repo under sugaroverflow; README says it is a landing page for digitaldronecollective.com, built with Node/Express/Pug/Materialize and deployed to Azure."
+        },
+        {
+          "url": "https://medium.com/code-for-canada/meet-the-digital-drone-collective-42bc97b53ed7",
+          "observed_status": 403,
+          "note": "Direct Medium fetch blocked by Cloudflare; Brave search snippet corroborated the body-level line naming Fatima (@sugaroverflow) on the Digital Drone Collective team."
+        },
+        {
+          "url": "http://digitaldronecollective.com",
+          "observed_status": 0,
+          "note": "DNS resolution failed during audit; do not ship this as a live demo link without an archive or restored domain."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — repo owner is sugaroverflow; search-index corroboration names Fatima/sugaroverflow on the team.",
+        "freshness": "pass for repo; fail for demo domain. Evidence URL is the live repo, so the project can merge if the dead demo is omitted or caveated.",
+        "date_consistency": "pass — repo created in 2018 and fellowship seed spans 2018-2019.",
+        "editorial_honesty": "pass with edits — landing-site claim is supported; Transport Canada/drone team context is supported by seed and search-index; tech stack should use repo README (Node/Express/Pug/Materialize/Azure) rather than generic JavaScript only if desired.",
+        "duplication": "net-new sibling to existing `drone-companion-app`, not a duplicate."
+      },
+      "notes": "Mergeable, but strip or archive `http://digitaldronecollective.com` because it does not resolve today."
+    },
+    {
+      "id": "transport-canada-site-search",
+      "status": "merge-ready",
+      "verification_status_recommendation": "personal-record-only",
+      "observed_urls": [],
+      "observed_local_sources": [
+        {
+          "path": "research/seed/resume--fatimasarahkhalid.md",
+          "note": "CV states Fatima developed and launched a Site Search tool during the Code for Canada / Transport Canada fellowship and reports 40,000+ hits in the first month."
+        },
+        {
+          "path": "research/seed/linkedin-full-2026-08-14.md",
+          "note": "LinkedIn seed confirms Code for Canada Developer Fellow at Transport Canada, Digital Drone Collective team, and prototype digital tools for regulation compliance."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass for personal-record-only — Fatima's CV directly supports the claim.",
+        "freshness": "n/a public URL — no repo/article identified.",
+        "date_consistency": "pass — 2019 fits the Sep 2018-Aug 2019 fellowship period.",
+        "editorial_honesty": "pass only if marked personal-record-only and the 40,000+ metric is treated as self-reported; no public artifact should be implied.",
+        "duplication": "net-new; deliberately not the existing `drone-companion-app`."
+      },
+      "notes": "Legitimate personal-record-only row under the special instruction."
+    },
+    {
+      "id": "kubecon-eu-2023-demo",
+      "status": "merge-ready",
+      "verification_status_recommendation": "verified",
+      "observed_urls": [
+        {
+          "url": "https://gitlab.com/sugaroverflow/kubecon-eu-2023",
+          "observed_status": 200,
+          "note": "Live GitLab browser page title: Fatima Sarah Khalid / KubeCon EU 2023 Code Challenge."
+        },
+        {
+          "url": "https://gitlab.com/api/v4/projects/sugaroverflow%2Fkubecon-eu-2023",
+          "observed_status": 200,
+          "note": "GitLab API confirms public project `sugaroverflow/kubecon-eu-2023`, namespace name Fatima Sarah Khalid, created 2023-04-12; forked from `gitlab-code-challenge/kubecon-eu-2023`."
+        }
+      ],
+      "rubric": {
+        "attribution": "pass — GitLab namespace name is Fatima Sarah Khalid and path is sugaroverflow.",
+        "freshness": "pass — live GitLab page and API both HTTP 200.",
+        "date_consistency": "pass — created 2023-04-12; candidate year 2023 matches.",
+        "editorial_honesty": "pass with edit — source supports `KubeCon EU 2023 Code Challenge`; `demo/materials Fatima built` is broader than the repo proves because the project is a fork. Prefer title/description that call it a GitLab Code Challenge fork/materials unless Fatima adds context.",
+        "duplication": "net-new."
+      },
+      "notes": "Mergeable with wording tightened to the source."
+    },
+    {
+      "id": "contributors-garden-FLAG",
+      "status": "needs-more-evidence",
+      "verification_status_recommendation": "needs-evidence",
+      "observed_urls": [
+        {
+          "url": "https://gitlab.com/api/v4/projects/sugaroverflow%2Fcontributors-garden",
+          "observed_status": 404,
+          "note": "GitLab API says `404 Project Not Found`."
+        },
+        {
+          "url": "https://gitlab.com/sugaroverflow/contributors-garden",
+          "observed_status": 403,
+          "note": "Browser URL redirects/sign-in/challenges to GitLab sign-in from this environment; API 404 is the decisive public-project check."
+        },
+        {
+          "url": "https://contributors.garden",
+          "observed_status": 0,
+          "note": "DNS resolution failed: Could not resolve host."
+        }
+      ],
+      "rubric": {
+        "attribution": "fail — no accessible repo or independent public source ties this project to Fatima.",
+        "freshness": "fail — stored repo not publicly found and demo domain does not resolve.",
+        "date_consistency": "unverified — date may be real, but no source was available.",
+        "editorial_honesty": "fail for current verified:true row — the description may be real, but evidence links do not support it today.",
+        "duplication": "existing content-db row `contributors-garden`; this is a downgrade/hold, not a net-new row."
+      },
+      "notes": "I concur with Glyphie's dead-link claim. Downgrade from verified:true and strip dead links unless Fatima supplies a working repo or stream/archive."
+    },
+    {
+      "id": "tanuki-airlines-FLAG",
+      "status": "fail-quarantine",
+      "verification_status_recommendation": "delete",
+      "observed_urls": [
+        {
+          "url": "https://gitlab.com/api/v4/projects/sugaroverflow%2Ftanuki-airlines",
+          "observed_status": 404,
+          "note": "GitLab API says `404 Project Not Found`."
+        },
+        {
+          "url": "https://gitlab.com/sugaroverflow/tanuki-airlines",
+          "observed_status": 403,
+          "note": "Browser URL redirects/sign-in/challenges to GitLab sign-in from this environment; API 404 is the decisive public-project check."
+        },
+        {
+          "url": "https://tanuki-airlines.example.com",
+          "observed_status": 0,
+          "note": "DNS resolution failed; `.example.com` is a placeholder domain."
+        }
+      ],
+      "rubric": {
+        "attribution": "fail — no accessible sugaroverflow repo or public source for Fatima's ownership.",
+        "freshness": "fail — repo 404 via API and demo placeholder does not resolve.",
+        "date_consistency": "unverified — no source supports 2023-07-10.",
+        "editorial_honesty": "fail — appears to be a fabricated/placeholder row unless Fatima supplies a real artifact.",
+        "duplication": "existing content-db row `tanuki-airlines`; quarantine/delete candidate."
+      },
+      "notes": "I concur with Glyphie's dead-link claim and quarantine recommendation."
+    },
+    {
+      "id": "civic-signal-map-FLAG",
+      "status": "fail-quarantine",
+      "verification_status_recommendation": "delete",
+      "observed_urls": [
+        {
+          "url": "https://gitlab.com/api/v4/projects/sugaroverflow%2Fcivic-signal-map",
+          "observed_status": 404,
+          "note": "GitLab API says `404 Project Not Found`."
+        },
+        {
+          "url": "https://gitlab.com/sugaroverflow/civic-signal-map",
+          "observed_status": 403,
+          "note": "Browser URL redirects/sign-in/challenges to GitLab sign-in from this environment; API 404 is the decisive public-project check."
+        },
+        {
+          "url": "https://civic-signal-map.example.com",
+          "observed_status": 0,
+          "note": "DNS resolution failed; `.example.com` is a placeholder domain."
+        }
+      ],
+      "rubric": {
+        "attribution": "fail — no accessible repo or source ties this project to Fatima.",
+        "freshness": "fail — repo 404 via API and demo placeholder does not resolve.",
+        "date_consistency": "unverified — no source supports 2024-08-01.",
+        "editorial_honesty": "fail — current row is inferred/low-confidence and unsupported.",
+        "duplication": "existing content-db row `civic-signal-map`; quarantine/delete candidate."
+      },
+      "notes": "I concur with Glyphie's dead-link claim and quarantine recommendation."
+    }
+  ],
+  "dead_link_verification": [
+    {
+      "id": "contributors-garden",
+      "existing_content_db_status": "verified:true / verification_status:verified",
+      "result": "concur-needs-evidence",
+      "observed": [
+        "GitLab API https://gitlab.com/api/v4/projects/sugaroverflow%2Fcontributors-garden returned HTTP 404 Project Not Found.",
+        "Demo https://contributors.garden failed DNS resolution (curl HTTP 000 / Could not resolve host)."
+      ],
+      "recommendation": "Downgrade; remove dead repo/demo links; ask Fatima for real repo, deployed URL, or stream/VOD evidence before restoring verified:true."
+    },
+    {
+      "id": "tanuki-airlines",
+      "existing_content_db_status": "verified:false / verification_status:inferred / confidence:low",
+      "result": "concur-fail-quarantine",
+      "observed": [
+        "GitLab API https://gitlab.com/api/v4/projects/sugaroverflow%2Ftanuki-airlines returned HTTP 404 Project Not Found.",
+        "Demo https://tanuki-airlines.example.com failed DNS resolution and is a placeholder domain."
+      ],
+      "recommendation": "Quarantine/delete unless Fatima supplies a real artifact."
+    },
+    {
+      "id": "civic-signal-map",
+      "existing_content_db_status": "verified:false / verification_status:inferred / confidence:low",
+      "result": "concur-fail-quarantine",
+      "observed": [
+        "GitLab API https://gitlab.com/api/v4/projects/sugaroverflow%2Fcivic-signal-map returned HTTP 404 Project Not Found.",
+        "Demo https://civic-signal-map.example.com failed DNS resolution and is a placeholder domain."
+      ],
+      "recommendation": "Quarantine/delete unless Fatima supplies a real artifact."
+    }
+  ],
+  "recommendations_for_lotus": {
+    "merge_ready": [
+      "civicgraph-io",
+      "hubhacks-boston-address-search-2014",
+      "betanyc-preschool-search-2014",
+      "boston-gov-drupal-migration",
+      "digital-drone-collective-landing",
+      "transport-canada-site-search",
+      "kubecon-eu-2023-demo"
+    ],
+    "needs_more_evidence": [
+      "contributors-garden-FLAG"
+    ],
+    "fail_quarantine": [
+      "tanuki-airlines-FLAG",
+      "civic-signal-map-FLAG"
+    ],
+    "merge_edits": [
+      "Keep personal-record-only rows explicitly marked as such with null evidence_url.",
+      "Do not ship dead demo URL http://digitaldronecollective.com unless archived/restored.",
+      "Tighten kubecon-eu-2023 wording to `GitLab Code Challenge fork/materials` unless Fatima confirms demo authorship.",
+      "Downgrade contributors-garden from verified:true until a real repo/demo/archive is supplied."
+    ]
+  }
+}
