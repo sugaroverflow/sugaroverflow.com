@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "category": "speaking",
+    "gathered_by": "glyphie",
+    "gathered_at": "2026-08-14",
+    "source_frame": [
+      "research/seed/resume--fatimasarahkhalid.md",
+      "research/seed/linkedin-full-2026-08-14.md"
+    ],
+    "note": "First gather pass, Drupal-era priority. Focus this batch: attaching real evidence_urls to speaking entries that currently sit in content-db/speaking.json with evidence_url:null, plus surfacing net-new verifiable talks/panels not yet in content-db. Every entry below carries a real, live-at-fetch-time evidence URL. events.drupal.org session pages return HTTP 200 in search with Fatima-attributed descriptions but gate direct web_fetch behind a bot challenge (Client Challenge / required-part-couldn't-load); flagged per entry so Soren can spot-check via browser or Wayback.",
+    "candidates_count": 6
+  },
+  "talks": [
+    {
+      "id": "drupalcon-baltimore-2017-imposter-monologues",
+      "slug": "drupalcon-baltimore-2017-imposter-monologues",
+      "title": "The Imposter Monologues, Part II",
+      "event": "DrupalCon Baltimore 2017",
+      "location": "Baltimore, MD",
+      "date": "2017",
+      "year": 2017,
+      "type": "talk",
+      "contentType": "talk",
+      "affiliation": ["personal"],
+      "description": "A panel of diverse Drupal community speakers share personal stories of imposter syndrome, how it impacted their careers, and how they face it day to day. Fatima appeared billed as 'a Drupal Novice' alongside Nikki Stevens (Community Organizer) and Jeff Eaton (Content Strategist).",
+      "topics": ["drupal", "imposter-syndrome", "community", "diversity-inclusion"],
+      "links": {
+        "session": "https://events.drupal.org/baltimore2017/sessions/imposter-monologues-part-ii"
+      },
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://events.drupal.org/baltimore2017/sessions/imposter-monologues-part-ii",
+      "verification_status": "verified",
+      "curator_note": "Matches existing content-db entry (id: baltimore 2017 'The Imposter Monologues, Part II'); this adds the missing evidence_url. Session page returns HTTP 200 with a Brave-indexed description naming 'a Drupal Novice - Fatima Khalid'. Direct web_fetch is gated by a bot challenge, so Soren should confirm via browser or Wayback. Exact date within DrupalCon Baltimore (Apr 24-28, 2017) not pinned to a day from this source."
+    },
+    {
+      "id": "drupalcon-vienna-2017-imposter-monologues",
+      "slug": "drupalcon-vienna-2017-imposter-monologues",
+      "title": "The Imposter Monologues, Vol. 3",
+      "event": "DrupalCon Vienna 2017",
+      "location": "Vienna, Austria",
+      "date": "2017",
+      "year": 2017,
+      "type": "talk",
+      "contentType": "talk",
+      "affiliation": ["personal"],
+      "description": "Continuing the first and second editions, a new panel of diverse speakers covering the breadth of the Drupalverse share their personal stories and lived experiences with imposter syndrome and how they continue to face it.",
+      "topics": ["drupal", "imposter-syndrome", "community", "diversity-inclusion"],
+      "links": {
+        "session": "https://events.drupal.org/vienna2017/sessions/imposter-monologues-vol-3"
+      },
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://events.drupal.org/vienna2017/sessions/imposter-monologues-vol-3",
+      "verification_status": "verified",
+      "curator_note": "Matches existing content-db entry (id: vienna 2017 'The Imposter Monologues, Vol. 3'); adds missing evidence_url. Session page returns HTTP 200 with a matching Brave-indexed description. A secondary source (coding-girls.com DrupalCon Vienna event report, 2017-10-01) independently references 'The Imposter Monologues, vol. 3' at the same conference. Direct web_fetch gated by bot challenge; Soren to confirm via browser/Wayback. DrupalCon Vienna ran Sep 26-29, 2017."
+    },
+    {
+      "id": "drupalcamp-colorado-2020-keynote-given-choices",
+      "slug": "drupalcamp-colorado-2020-keynote-given-choices",
+      "title": "Given the Choices We Have",
+      "event": "DrupalCamp Colorado 2020",
+      "location": "remote",
+      "date": "2020",
+      "year": 2020,
+      "type": "keynote",
+      "contentType": "talk",
+      "affiliation": ["pantheon"],
+      "description": "Keynote on the power of intentional choices in open source community participation. Speaker bio on the event page describes Fatima as a Developer Programs Engineer at Pantheon on the Developer Relations team, and 'the former leader of the Drupal Diversity & Inclusion' working group.",
+      "topics": ["drupal", "community", "diversity-inclusion", "open-source"],
+      "links": {
+        "session": "https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid"
+      },
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid",
+      "verification_status": "verified",
+      "curator_note": "Matches existing content-db entry (id: drupalcamp-colorado-keynote-2020); adds missing evidence_url. Session page returns HTTP 200 with a Fatima-attributed bio confirming Pantheon-era affiliation (corrects content-db affiliation from 'personal' to 'pantheon'). Exact date within DrupalCamp Colorado 2020 not pinned from this source."
+    },
+    {
+      "id": "drupalcon-na-2021-javascript-ate-the-web",
+      "slug": "drupalcon-na-2021-javascript-ate-the-web",
+      "title": "JavaScript Ate the Web: Key Lessons for the Drupal Community",
+      "event": "DrupalCon North America 2021",
+      "location": "remote",
+      "date": "2021-04-16",
+      "year": 2021,
+      "type": "panel",
+      "contentType": "talk",
+      "affiliation": ["pantheon"],
+      "description": "Fireside-chat panel where a group of leading JavaScript and Decoupled Drupal experts discuss the opportunities and pitfalls of greater reliance on JavaScript. Fatima appeared on the panel alongside Sally Young and Ben Morss, moderated by Steve Persch.",
+      "topics": ["drupal", "javascript", "decoupled", "open-source"],
+      "links": {
+        "session": "https://events.drupal.org/northamerica2021/sessions/javascript-ate-web-key-lessons-drupal-community",
+        "blog": "https://www.drupal.org/association/supporters/blog/javascript-ate-the-web-key-lessons-for-the-drupal-community",
+        "wrap_up": "https://events.drupal.org/northamerica2021/news/drupalcon-north-america-wrap.html"
+      },
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://www.drupal.org/association/supporters/blog/javascript-ate-the-web-key-lessons-for-the-drupal-community",
+      "verification_status": "verified",
+      "curator_note": "NET-NEW: not currently in content-db/speaking.json. Multiple corroborating sources: DrupalCon NA 2021 speakers page and wrap-up news post both name 'Panel - Sally Young, Fatima Sarah Khalid, Ben Morss' for the Friday, 16 April fireside chat; Drupal Association blog post gives moderator (Steve Persch) and description; Pantheon blog (2021-04-08) also lists it. The 'session' link is inferred from the standard events.drupal.org URL pattern and MUST be verified by Soren before use (or dropped in favor of the confirmed blog/wrap-up URLs). Date 2021-04-16 confirmed by the speakers page ('Friday, 16 April')."
+    },
+    {
+      "id": "fwd50-2020-where-are-they-now-past-fellows",
+      "slug": "fwd50-2020-where-are-they-now-past-fellows",
+      "title": "Where Are They Now? Past Fellows",
+      "event": "FWD50 2020 (Code for Canada Showcase)",
+      "location": "remote",
+      "date": "2020-11-09",
+      "year": 2020,
+      "type": "panel",
+      "contentType": "talk",
+      "affiliation": ["personal"],
+      "description": "Code for Canada Showcase session at FWD50 where fellowship alumni share firsthand how the program impacted their careers and their commitment to the common good. Fatima is listed as a speaker; her FWD50 bio notes she was a Code for Canada Developer Fellow in 2018 embedded with Transport Canada.",
+      "topics": ["civic-tech", "code-for-canada", "fellowship", "government"],
+      "links": {
+        "speaker": "https://www.fwd50.com/speaker/445/fatima-sarah-khalid",
+        "session": "https://www.fwd50.com/session/448/where-are-they-now-past-fellows"
+      },
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://www.fwd50.com/speaker/445/fatima-sarah-khalid",
+      "verification_status": "verified",
+      "curator_note": "NET-NEW: not currently in content-db/speaking.json. FWD50 speaker page (live, web_fetch 200) lists this session under Fatima's profile with date 'November 9, 2020, 9:00 PM - 9:20 PM GMT+0, Channel 2'. This is a panel/showcase appearance rather than a solo talk; borderline for portfolio inclusion (Fatima's call). Session link taken directly from the speaker page's own link."
+    },
+    {
+      "id": "all-things-open-2022",
+      "slug": "all-things-open-2022",
+      "title": "All Things Open 2022 (speaker)",
+      "event": "All Things Open 2022",
+      "location": "Raleigh, NC",
+      "date": "2022",
+      "year": 2022,
+      "type": "talk",
+      "contentType": "talk",
+      "affiliation": ["gitlab"],
+      "description": "Fatima was a confirmed speaker at All Things Open 2022. Her speaker profile (as Developer Evangelist, GitLab) is live on the 2022 event site. Specific session title not yet recovered from a primary source.",
+      "topics": ["open-source"],
+      "links": {
+        "speaker": "https://2022.allthingsopen.org/speakers/fatima-sarah-khalid/"
+      },
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://2022.allthingsopen.org/speakers/fatima-sarah-khalid/",
+      "verification_status": "verified",
+      "curator_note": "Upgrades existing content-db 'all-things-open-2022' entry (currently verification_status: inferred, 'Title TBC') to verified: her speaker page is live (web_fetch 200) and confirms the appearance and GitLab affiliation. Session TITLE is still unknown; the title field is a placeholder describing the appearance, NOT an invented talk title. Next step: recover the actual session title from the ATO 2022 schedule before this can claim a specific talk. Do not fabricate a title."
+    }
+  ]
+}
