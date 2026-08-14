@@ -29,6 +29,32 @@ Real YouTube episodes. Attribute ONLY episodes crediting Fatima:
 - ⚠️ https://www.youtube.com/watch?v=FYvLwhKV11U "Live in London" — hosted by **Colleen Lake**, NOT Fatima → EXCLUDE (co-host disambiguation, mirrors the CFC-Medium/Boston third-person exclusions pattern)
 - ? https://www.youtube.com/watch?v=luj-Xhy8sCo "GitLab 18 Event Recap" — host not in snippet; verify before attributing
 
+## UPDATE 2026-08-14 ~17:10 UTC — Monday Merge edition enumeration + 🚨 URL integrity finding
+
+Deepened the Monday Merge scout (still NOT a batch — holding for Lotus ping). Enumerated dated editions via search; then verified live status with curl.
+
+**🚨 CRITICAL URL FINDING — English canonical Monday Merge slugs are all HTTP 404 right now.** The ONLY publicly-resolving edition URLs are the `/ja-jp/` localized mirrors (HTTP 200). Verified with curl (User-Agent Mozilla, -L follow):
+
+| Edition | en canonical (`/blog/monday-merge-...`) | `/ja-jp/blog/monday-merge-...` |
+|---|---|---|
+| 2025-april-7 | 404 | (search-surfaced, live) |
+| 2025-july-14 | 404 | **200 ✅** |
+| 2025-december-08 | 404 | (search-surfaced) |
+| 2026-march-9 | 404 | (search-surfaced) |
+| 2026-june-22 | 404 | (search-surfaced) |
+| 2026-aug-10 | 404 | (search-surfaced) |
+
+Also tried dated-path forms (`/blog/2025/07/14/...`, `/blog/2025/07/14/monday-merge/`) → all 404. web_fetch on en URLs returns only the SPA shell string 'GitLab The One DevOps Platform' (JS-walled), consistent with POSTS batch 2's GitLab blog migration warning — but here the en article genuinely does not resolve at the slug path.
+
+**Authorship disambiguation on the ja-jp mirror**: meta `author` tag = 'GitLab Japan Team' (translators), BUT body text explicitly signs off as Fatima — verified on 2025-july-14: 'Fatimaです。今月のMonday Mergeも...' and signoff 'Fatima Sarah Khalid'. So Fatima IS the credited series author; ja-jp page is a localized reprint carrying her byline in-body only.
+
+**Implication for the batch (when Lotus pings):**
+- Do NOT bank en canonical slug URLs as evidence_url — they 404 today. That would violate the no-fake-URL rule.
+- Options for honest evidence_url per edition, in preference order: (a) recover the en canonical via Wayback (spaced CDX calls, respect 429); (b) if Wayback empty, use the live `/ja-jp/` mirror URL with `verification_status: 'byline-in-body-non-canonical-mirror'` + curator_note explaining the en 404 + Japan-Team meta author; (c) Shorty Awards case study as third-party host attribution (already captured).
+- Resume claims ~12 editions / 235K+ newsletter / ~26K views. Enumerated so far: 6 distinct dated editions (Apr/Jul/Dec 2025; Mar/Jun/Aug 2026). Need Wayback/tag-page enumeration to reach 12 and to test the stats claims (do NOT self-attest the 235K/26K numbers — resume-only unless a public source shows them).
+
+**No Wayback hammering done this step** — only 8 curl HEAD-equivalent status checks (spaced 1s) + 1 body fetch of the confirmed-live ja-jp page.
+
 ## Next-batch plan (on Lotus ping)
 1. Enumerate Monday Merge full run via about.gitlab.com author/tag page → count editions, capture canonical en URLs, confirm ~12 + stats claim.
 2. Enumerate The Developer Show via GitLab YouTube channel → list Fatima-hosted episodes only; capture view counts where public (supports the ~26K claim, but that stat is Monday Merge per resume L14 — keep separated).
