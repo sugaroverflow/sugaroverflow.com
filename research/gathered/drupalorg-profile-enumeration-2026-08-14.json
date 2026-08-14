@@ -1,0 +1,90 @@
+{
+  "_meta": {
+    "category": "cross-cutting-followup",
+    "gathered_by": "glyphie",
+    "gathered_at": "2026-08-14T21:37:00Z",
+    "branch": "research/gather-posts2-2026-08-14",
+    "thread": "Open followup: (1) POSTS batch 2 drupal.org Posts-tab enumeration; (2) SPEAKING followup Vienna 2017 disambiguation.",
+    "hold_compliance": "Produced under Lotus HARD HOLD on new gather batches (2026-08-14 ~21:20 UTC). This is an ALLOWED followup on already-open threads, NOT a new category batch. No new full-category gather opened.",
+    "primary_source": "Fatima's own drupal.org profile, Wayback capture 2026-05-10 (HTTP 200). All content below is FIRST-PERSON self-attested by Fatima on drupal.org — a primary self-record source.",
+    "evidence_url": "http://web.archive.org/web/20260510074721/https://www.drupal.org/u/sugaroverflow",
+    "cdx_captures_available": ["20190402060533", "20190930224616", "20241224161033", "20260510074721"]
+  },
+
+  "headline_findings": [
+    {
+      "id": "vienna-2017-disambiguation-RESOLVED",
+      "closes_send_back": "SPEAKING followup Vienna 2017 (Imposter Monologues) — FAIL previously flagged, now DEFINITIVELY resolved.",
+      "finding": "Fatima's drupal.org profile lists her as 'Scholarship recipient: Vienna 2017, Nashville 2018, Seattle 2019' — she ATTENDED DrupalCon Vienna 2017 on scholarship, NOT as a speaker. Separately, the profile's Sessions list places 'The Imposter Monologues part II (Being Human)' at DrupalCon BALTIMORE 2017, not Vienna. The Vienna-2017-Imposter-Monologues claim failed because the LOCATION was wrong.",
+      "recommendation": "Confirm quarantine of any 'Imposter Monologues @ Vienna 2017' speaking entry (still needs Fatima's explicit ok per quarantine rule). The real talk is Baltimore 2017 (see speaking_sessions_self_attested below). Vienna 2017 belongs in an 'events attended' / scholarship context, not speaking."
+    },
+    {
+      "id": "track-chair-CONFIRMED",
+      "finding": "Profile: 'DrupalCon Nashville, Seattle, and Global track chair (2018-2020) - Backend Development & Community Building.' Confirms the earlier correction: the track was 'Backend Development & Community Building', NOT 'DEI/Diversity'.",
+      "recommendation": "Lock community/speaking track-chair rows to 'Backend Development & Community Building', 2018-2020, primary-sourced to drupal.org profile."
+    },
+    {
+      "id": "drupalorg-posts-tab-enumeration-RESULT",
+      "closes_thread": "POSTS batch 2 open TODO: enumerate drupal.org Posts tab.",
+      "finding": "The live /u/sugaroverflow/track ('Posts'/'Track' tab) now 404s (site migrated to new.drupal.org) and has ZERO Wayback snapshots. The profile page itself exposes NO enumerable authored node/forum/blog post links — only a generic /project/issues link and 'track me'. There is no scrapeable list of authored Drupal.org POSTS.",
+      "conclusion": "Honest result: drupal.org yields no net-new authored BYLINE posts. What it DOES yield is a rich self-attested SPEAKING + CONTRIBUTION record (below). The Posts-tab enumeration thread can be CLOSED as exhausted — no authored posts recoverable."
+    }
+  ],
+
+  "speaking_sessions_self_attested": {
+    "note": "Complete DrupalCon session history as self-listed on Fatima's drupal.org profile. All primary-source self-attested. Recommend these seed/corroborate the SPEAKING category (cross-check against events.drupal.org session pages where still live for verified-live upgrades).",
+    "verification_status": "self-attested-drupalorg-profile",
+    "sessions": [
+      { "event": "DrupalCon Baltimore 2017", "title": "The Imposter Monologues part II", "track": "Being Human", "type": "talk" },
+      { "event": "DrupalCon Nashville 2018", "title": "OOP the Pokemon Journey", "track": "Backend", "type": "talk" },
+      { "event": "DrupalCon Nashville 2018", "title": "Community Convo: Drupal Diversity & Inclusion", "type": "community-conversation" },
+      { "event": "DrupalCon Nashville 2018", "title": "Community Convo: Governance Retrospective", "type": "community-conversation" },
+      { "event": "DrupalCon Seattle 2019", "title": "Diversity & Inclusion: Building a Stronger Drupal Community", "track": "Community", "type": "talk" },
+      { "event": "DrupalCon Seattle 2019", "title": "OOP: The Pokemon Quest", "track": "Backend", "type": "talk" },
+      { "event": "DrupalCon Seattle 2019", "title": "Thank you", "track": "Being Human", "type": "talk" },
+      { "event": "DrupalCon Global 2020", "title": "Introducing the DriesNote", "type": "talk" },
+      { "event": "DrupalCon Global 2020", "title": "co-hosting virtual trivia night", "type": "host" },
+      { "event": "DrupalCon Europe 2021", "title": "What building in the open really looks like", "type": "panel" },
+      { "event": "DrupalCon Europe 2021", "title": "The Sorceress' Spellbook - Pandemic edition", "type": "talk" }
+    ],
+    "events_spoken_at_extra": ["DrupalCon Portland 2022"],
+    "events_attended_only": [
+      "DrupalCon New Orleans 2016",
+      "DrupalCon Vienna 2017 (scholarship recipient — attendee, not speaker)",
+      "DrupalCon Minneapolis 2020 (was planning to attend)",
+      "DrupalCon Europe 2020",
+      "DrupalCon North America 2021"
+    ]
+  },
+
+  "corroborations_for_other_categories": [
+    {
+      "target_category": "press",
+      "finding": "Profile self-lists: 'Featured in Acquia's Women of the Drupal Community blog series' and 'Recipient of the WCT Rising Star Award' (WCT = Women in Communications and Technology; 'The LEA for Rising Star is presented to a young person whose talent and leadership abilities are evident early in their career').",
+      "value": "WCT is the ACTUAL awarding body behind the Digital Echidna 'Rising Star' press mention — corroborates and names the award. Acquia 'Women of the Drupal Community' is a corroborated press feature."
+    },
+    {
+      "target_category": "speaking-or-press",
+      "finding": "Profile: 'Spoke on the DrupalEasy podcast, with a guide for first-time sprinters and DD&I.'",
+      "value": "Net-new DrupalEasy podcast appearance lead — find the episode URL for a verified-live speaking/media entry."
+    },
+    {
+      "target_category": "community",
+      "finding": "Profile self-attests: 'Core contribution mentoring lead and mentor'; 'Former Leader of the Drupal Diversity & Inclusion working group'; 'Facilitator during Community Governance meetings'; 'Co-organizer of LonDUG (Drupal Users Group, London, Ontario)'; 'On Drupal.org for 10 years 7 months'; 'Over 10 edits to documentation' (DD&I docs); maintains 'Drupal Diversity Panels: Stack-tab'.",
+      "value": "Primary-source self-attestation re-corroborating COMMUNITY batch 1 leadership claims (DD&I lead already primary-sourced via drupaldiversity.com/about; this adds Fatima's own record). LonDUG co-organizer + Governance facilitator + Stack-tab maintainership are candidate net-new community rows."
+    }
+  ],
+
+  "next_actions_when_hold_lifts": [
+    "SPEAKING merge: seed the 11 self-attested DrupalCon sessions above; cross-check events.drupal.org for verified-live session-page URLs where still live.",
+    "Confirm Vienna-2017 Imposter-Monologues quarantine with Fatima (location was Baltimore 2017).",
+    "PRESS: chase DrupalEasy podcast episode URL + Acquia 'Women of the Drupal Community' post + WCT Rising Star award page.",
+    "POSTS: drupal.org Posts-tab enumeration thread is EXHAUSTED (no authored posts recoverable) — close it."
+  ],
+
+  "blockers_hit": [
+    "Pantheon WebOps AMA (posts2 pending): live discuss.pantheon.io URL now 301-redirects to a generic community page (thread removed); Wayback + CDX return ZERO captures. Stays snippet-only-personal-record — no live/archive corroboration possible. Recommend closing as unrecoverable.",
+    "drupal.org /u/sugaroverflow/track (Posts tab): live 404 (migrated to new.drupal.org), zero Wayback snapshots.",
+    "429 from earlier batch has CLEARED — Wayback availability + CDX APIs responding normally now."
+  ]
+}
