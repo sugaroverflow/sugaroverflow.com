@@ -1,0 +1,145 @@
+{
+  "category": "posts",
+  "batch": "posts2-2026-08-14 (batch 2 — pre-GitLab era: Pantheon / Code for Canada / City of Boston / Digital Echidna / Drupal.org)",
+  "gathered_by": "glyphie",
+  "gathered_at": "2026-08-14",
+  "source_of_truth": "research/seed/resume--fatimasarahkhalid.md (L57 Pantheon; L66 Code for Canada; L83 City of Boston; Digital Echidna era) + research/seed/linkedin-full-2026-08-14.md + scout note research/gathered/_scout-posts-love-2026-08-14.md",
+  "scope_note": "Batch 2 targets Fatima's AUTHORED bylines from 2015–2021 (pre-GitLab), which content-db/posts.json has zero rows for. The single most important integrity finding of this batch: the 2014–2018 civic/Drupal era is PRESS-HEAVY, not BYLINE-HEAVY. Most surfaced content is coverage written ABOUT Fatima (CBC, Digital Echidna 'Rising Star', boston.gov 'Stacking the team', CFC 'Meet the Digital Drone Collective'), not pieces she bylined herself. Those press items are correctly EXCLUDED here and belong in press.json (some already captured in PRESS batch 1). This batch only admits genuine authored bylines. Result: yield is intentionally small and honest — most candidates are personal-record-only or Wayback-pending because the original publishing platforms (pantheon.io author pages, boston.gov 2016 posts, echidna.ca/blog author archive) are not currently reachable for live byline confirmation.",
+  "coordination_note": "Does NOT re-import batch 1 (GitLab bylines, branch research/gather-posts-2026-08-14, merged by Lotus 6862acf). Does NOT touch the 4 legacy content-db posts or the quarantine-pending contributors-garden/civic-signal-map rows. Wayback checks for boston.gov and pantheon AMA were rate-limited (HTTP 429) on 2026-08-14; those two candidates are marked wayback-pending and should be re-attempted next heartbeat with backoff. Medium direct-fetch is Cloudflare-blocked (403); Medium bylines were read from search-result metadata only.",
+  "candidates": [
+    {
+      "id": "pantheon-webops-wednesday-ama-2019",
+      "title": "WebOps Wednesday AMA: Fatima Sarah Khalid",
+      "contentType": "ama",
+      "date": "2019-12-11",
+      "year": 2019,
+      "affiliation": [
+        "pantheon"
+      ],
+      "topics": [
+        "developer-relations",
+        "webops",
+        "drupal",
+        "wordpress",
+        "community"
+      ],
+      "description": "First-person AMA thread on the Pantheon Community forum in which Fatima introduces herself as a Developer Programs Engineer (DPE) on the Pantheon Developer Relations team and answers community questions. Genuine first-person authored content (self-introduction + answers), not coverage about her.",
+      "byline": "Fatima Sarah Khalid",
+      "evidence_url": "https://discuss.pantheon.io/t/webops-wednesday-ama-fatima-sarah-khalid/778",
+      "verified": false,
+      "verification_status": "wayback-pending",
+      "curator_note": "Search snippet (Brave, 2026-08-14) confirms opening line 'Hi, I'm Fatima Sarah Khalid, I'm a Developer Programs Engineer (DPE) on the Developer Relations team at Pantheon.' — genuine first-person byline. Direct fetch of the live URL exceeded the redirect limit (3) on 2026-08-14; Wayback lookup was HTTP 429. Re-attempt live/Wayback fetch next heartbeat to promote to verified-live-byline. Borderline contentType: it's a forum AMA authored by her, defensible as a post; flag for Soren on whether AMAs belong in posts vs community."
+    },
+    {
+      "id": "cfc-meet-the-digital-drone-collective-2018",
+      "title": "Meet the Digital Drone Collective",
+      "contentType": "article",
+      "date": null,
+      "year": 2018,
+      "affiliation": [
+        "code-for-canada",
+        "transport-canada"
+      ],
+      "topics": [
+        "civic-tech",
+        "drones",
+        "government",
+        "user-research"
+      ],
+      "description": "Introduction of the Code for Canada / Transport Canada fellowship team (the Digital Drone Collective), of which Fatima was a member alongside Andee Pittman and Jennifer Payne.",
+      "byline": "Jennifer Payne",
+      "evidence_url": "https://medium.com/code-for-canada/meet-the-digital-drone-collective-42bc97b53ed7",
+      "verified": false,
+      "verification_status": "excluded-not-her-byline",
+      "curator_note": "EXCLUDE FROM POSTS. Brave search metadata (2026-08-14) shows byline 'by Jennifer Payne'. This is PRESS (coverage naming Fatima/@sugaroverflow as a team member), not a Fatima byline. Recorded here only to document the disambiguation decision and prevent a future re-import as an authored post. Belongs in press.json if not already captured. The publish date shown by Brave (2022-03-25) is a Medium re-timestamp; original fellowship was 2018–2019."
+    },
+    {
+      "id": "cfc-meeting-canadas-newest-aviators-2021",
+      "title": "Meeting Canada's newest aviators",
+      "contentType": "article",
+      "date": "2021-12-08",
+      "year": 2021,
+      "affiliation": [
+        "code-for-canada",
+        "transport-canada"
+      ],
+      "topics": [
+        "civic-tech",
+        "drones",
+        "government",
+        "user-research"
+      ],
+      "description": "Code for Canada fellows at Transport Canada share results of their drone-pilot research.",
+      "byline": "Andee Pittman",
+      "evidence_url": "https://medium.com/code-for-canada/meeting-canadas-newest-aviators-6bc711064b98",
+      "verified": false,
+      "verification_status": "excluded-not-her-byline",
+      "curator_note": "EXCLUDE FROM POSTS. Brave search metadata (2026-08-14) shows byline 'by Andee Pittman (they/them)'. PRESS, not a Fatima byline. Documented here to lock the disambiguation and prevent future mis-import."
+    },
+    {
+      "id": "boston-stacking-the-team-2016",
+      "title": "Stacking the team for 2016",
+      "contentType": "article",
+      "date": null,
+      "year": 2016,
+      "affiliation": [
+        "city-of-boston"
+      ],
+      "topics": [
+        "civic-tech",
+        "drupal",
+        "government",
+        "web-development"
+      ],
+      "description": "City of Boston Digital Team post introducing 2016 team members; contains the widely-quoted line describing Fatima as valiantly juggling Drupal and ASP.NET on boston.gov.",
+      "byline": "City of Boston Digital Team",
+      "evidence_url": "https://web.archive.org/web/2016*/boston.gov/news/stacking-team-2016",
+      "verified": false,
+      "verification_status": "wayback-pending",
+      "curator_note": "The live boston.gov/news/stacking-team-2016 URL now 404s (confirmed 2026-08-14); original content is Wayback-only. Wayback availability API was HTTP 429 on 2026-08-14 — re-attempt with backoff next heartbeat to recover the exact snapshot URL + original publish date. LIKELY PRESS not byline: this reads as a team/departmental post mentioning Fatima, so probable press.json placement unless Wayback shows her as author. Do NOT ship as an authored post without that confirmation."
+    },
+    {
+      "id": "boston-digital-team-case-studies-web-dev",
+      "title": "Digital Team Case Studies: Web Development",
+      "contentType": "case-study",
+      "date": null,
+      "year": 2016,
+      "affiliation": [
+        "city-of-boston"
+      ],
+      "topics": [
+        "civic-tech",
+        "drupal",
+        "government",
+        "web-development"
+      ],
+      "description": "City of Boston Digital Service case-study page on the boston.gov web-development work Fatima contributed to during the Drupal 7 migration.",
+      "byline": "Boston Digital Service",
+      "evidence_url": "https://www.boston.gov/departments/boston-digital-service/digital-team-case-studies-web-development",
+      "verified": false,
+      "verification_status": "excluded-not-her-byline",
+      "curator_note": "EXCLUDE FROM POSTS. Live URL is a 2025-10-30 rewrite by the current Boston Digital Service (confirmed via Brave, 2026-08-14) — NOT Fatima-era content and NOT her byline. Departmental case study. Recorded to prevent mis-import; if the migration work is portfolio-relevant it belongs in projects.json (boston-gov-drupal-migration, already gathered in PROJECTS batch)."
+    },
+    {
+      "id": "drupalorg-authored-posts-sugaroverflow",
+      "title": "Posts on Drupal.org (sugaroverflow)",
+      "contentType": "profile-archive",
+      "date": null,
+      "year": null,
+      "affiliation": [
+        "drupal"
+      ],
+      "topics": [
+        "drupal",
+        "open-source",
+        "community"
+      ],
+      "description": "Fatima's authored posts/contributions listed on her Drupal.org user profile (@sugaroverflow, on Drupal.org 10+ years). Potential source of genuine authored forum/issue posts from the Digital Echidna / Northern Commerce Drupal era (2016–2019).",
+      "byline": "Fatima Sarah Khalid",
+      "evidence_url": "https://www.drupal.org/u/sugaroverflow",
+      "verified": true,
+      "verification_status": "verified-profile-exists",
+      "curator_note": "Profile confirmed live (Brave, 2026-08-14): 'On Drupal.org for 10 years 3 months', with a 'Posts on Drupal.org' section. This is a lead, not yet a set of discrete post candidates — the individual authored posts need enumeration next heartbeat (fetch the profile's Posts tab). Kept as a single tracked lead so the Drupal-era byline trove isn't lost. Drupal.org forum/issue posts are borderline as portfolio 'posts'; flag to Soren whether to admit them."
+    }
+  ]
+}
