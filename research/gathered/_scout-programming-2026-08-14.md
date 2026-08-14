@@ -149,3 +149,26 @@ Then enumerated the FULL Monday Merge run by probing dated ja-jp slugs and, for 
 **Ship-ready shape for programming.json (when Lotus pings)**: ONE `monday-merge` programming entry (series), `editions: 16`, `date_range: 2025-04-07 → 2026-08-10`, `role: host/author`, `verified: true`, `verification_status: verified-live-byline`, `evidence_url`: a representative ja-jp edition (e.g. .../ja-jp/blog/monday-merge-2026-aug-10/) + `curator_note` capturing the 🚨 en-404/ja-200 URL-integrity caveat so downstream rendering never links a dead en slug. Metrics (235K/26K) → separate `metrics_personal_record` block, unverified.
 
 **STILL holding the full programming batch for Lotus's ping** per HEARTBEAT rotation rule. This is scout enumeration only — no programming.json / gathered batch written yet.
+
+## UPDATE 2026-08-14 ~19:10 UTC — The Developer Show: oEmbed evidence path + disambiguation lock (no Lotus ping yet)
+
+No Lotus ping since the SPEAKING/PROJECTS merge coordination (~15:00-16:00 UTC). Still holding the batch. Advanced the **Developer Show** side (less-enumerated than Monday Merge) this heartbeat.
+
+**🚨 YouTube watch-page 429s my IP today** — all 4 `youtube.com/watch?v=` HEAD checks returned HTTP 429 (rate-limited). Backed off immediately, did NOT retry-hammer.
+
+**✅ Found a resilient, non-rate-limited live-evidence path: YouTube oEmbed** (`youtube.com/oembed?url=...&format=json`). Returns title + `author_name`/`author_url` + thumbnail without hitting the walled/limited watch page. Confirmed LIVE via oEmbed:
+
+| Video ID | oEmbed title | author (channel) | attribute to Fatima? |
+|---|---|---|---|
+| `9AzNcmrl_FU` | "The Developer Show: Specialized Agents & Skills" | GitLab (@Gitlab) | ✅ YES — search desc: "Hosts Fatima Sarah Khali[d]" (Apr 24 2026, GitLab 18.11) |
+| `ybbt2Qnx7fE` | "The Developer Show: Multi-Agent Episode, No Filter" | GitLab (@Gitlab) | ✅ YES — search desc: "cohosts Fatima Sarah Khalid and Colleen Lake" (Mar 25 2026) |
+| `luj-Xhy8sCo` | "The Developer Show - GitLab 18 Event Recap" | GitLab (@Gitlab) | ⚠️ HOLD — oEmbed has no host field; description never surfaced a host. Do NOT attribute without a body confirmation. |
+| `FYvLwhKV11U` | "The Developer Show - Live in London" | GitLab (@Gitlab) | ❌ EXCLUDE — hosted by Colleen Lake (search desc confirms), NOT Fatima. |
+
+**⚠️ NEW DISAMBIGUATION TRAP found**: there is an unrelated homonym podcast — "The Developer Show – Practical Coding, One Episode at a Time" on Apple Podcasts (id1873317060), a solo Laravel/API/frontend blog-companion podcast. **NOT GitLab, NOT Fatima.** GitLab's Developer Show is a release-tied video series (episodes map to GitLab 18.11, GitLab 18 recap, etc.) on the @Gitlab YouTube channel + about.gitlab.com/releases/whats-new. Flag so a downstream merge never conflates the two.
+
+**Evidence-path decision for the batch (Developer Show):** use the YouTube **oEmbed JSON URL** as a stable liveness check alongside the `watch?v=` canonical (the canonical is the human-facing evidence_url; oEmbed is the machine-verifiable liveness proof that survives 429s). `verification_status: verified-live-host` for the 2 Fatima episodes; leave the Event Recap as `needs-more-evidence` and Live-in-London excluded.
+
+**Batch-readiness recap**: Monday Merge = 16 editions settled (prior update). The Developer Show = 2 Fatima-hosted episodes evidence-locked + 2 correctly held/excluded + homonym trap flagged. Remaining scout targets before a full batch: Pantheon Office Hours 2024, Contributors Garden (already flagged dead in projects). Still awaiting Lotus's ping to write `programming-2026-08-14.json`.
+
+Calls this step: 2 web_search, 4 watch-page curls (all 429, aborted), 2 oEmbed curls (200). Backed off cleanly on the 429s.
