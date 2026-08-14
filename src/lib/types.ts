@@ -97,7 +97,7 @@ export interface SpeakerInfo {
 
 export interface CommunityItem {
   id: string;
-  type: 'fellowship' | 'community-role' | 'working-group';
+  type: 'fellowship' | 'community-role' | 'working-group' | 'program-committee';
   title: string;
   organization: string;
   location: string | null;

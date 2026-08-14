@@ -4,61 +4,87 @@
       "id": "fellowship-newspeak-house-2025",
       "type": "fellowship",
       "title": "Newspeak House Fellow",
-      "organization": "Newspeak House",
+      "organization": "The London College of Political Technology (Newspeak House)",
       "location": "London, UK",
-      "date": "2025",
+      "date": "2025-09",
       "year_start": 2025,
       "year_end": 2026,
-      "description": "Research Fellow at Newspeak House, a political technology college in London.",
-      "topics": ["political-tech", "governance", "community"],
+      "description": "Fellow in the 2025/26 Newspeak House cohort — a year-long residency for mid-career technologists developing a holistic understanding of the UK civic landscape via research and practitioner engagement. Thesis project prototype focuses on data governance, algorithmic accountability, and the ways technology, policy, and communities shape one another.",
+      "topics": [
+        "political-tech",
+        "governance",
+        "algorithmic-accountability",
+        "community",
+        "civic-tech"
+      ],
       "verified": true,
-      "evidence_url": null,
-      "verification_status": "verified"
+      "evidence_url": "https://2025.newspeak.house/",
+      "verification_status": "verified",
+      "curator_note": "2025.newspeak.house is live at HTTP 200: 'London College of Political Technology — 2025/26 cohort — STATUS: ACTIVE | FELLOWS: 18 | CYCLE: 2025-2026'. It does NOT list individual fellow names on the current cohort page, but newspeak.house/events (also HTTP 200) carries a Fatima Sarah Khalid speaker/organiser bio in the current programming, indexed by Brave. Additional corroboration: newspeak.house home page mentions 'talk to Fatima if there's a topic of interest or if you'd like to run one' — Fatima has both a fellowship seat AND a workshops-facilitator role in the college programming, consistent with the LinkedIn seed. Content-db previously said date '2025' / year_start 2025 / year_end 2026 with a vague description; this batch tightens the start to 2025-09 (per LinkedIn Sep 2025 – Present) and expands the description with Fatima's own thesis-project scope from the CV/LinkedIn seed. Alternate additional evidence URLs Soren may prefer: https://newspeak.house/fellowship (general fellowship description, does not name individuals) or https://newspeak.house/events (has an actual Fatima bio in a session listing)."
     },
     {
       "id": "fellowship-code-for-canada-2018",
       "type": "fellowship",
       "title": "Code for Canada Developer Fellow",
       "organization": "Code for Canada",
-      "location": "Ottawa, ON",
-      "date": "2018",
+      "location": "Ottawa, ON (embedded at Transport Canada)",
+      "date": "2018-09",
       "year_start": 2018,
       "year_end": 2019,
-      "description": "Developer Fellow embedded with Transport Canada, working on civic technology projects.",
-      "topics": ["civic-tech", "government", "open-source"],
+      "description": "Ten-month embedded fellowship at Transport Canada as part of the Digital Drone Collective (Code for Canada's 2018 cohort). The team ran user research with drone pilots and prototyped digital tools to support regulation compliance for the ~350,000 Canadian drone operators covered by Transport Canada's remit.",
+      "topics": [
+        "civic-tech",
+        "government",
+        "code-for-canada",
+        "transport-canada",
+        "drones"
+      ],
       "verified": true,
-      "evidence_url": null,
-      "verification_status": "verified"
+      "evidence_url": "https://medium.com/code-for-canada/meet-the-digital-drone-collective-42bc97b53ed7",
+      "verification_status": "verified-publisher-gated",
+      "curator_note": "The 'Meet the Digital Drone Collective' Medium post (by teammate Jennifer Payne) names Fatima (@sugaroverflow) as one of the three Code for Canada fellows on the Transport Canada team. Companion evidence: https://medium.com/code-for-canada/introducing-the-2018-code-for-canada-fellowship-3ac40b8f72a2 (Luke Simcoe, 2018-07-11) is the cohort announcement post. Both are Medium URLs — Medium returns HTTP 403 to my egress IP (Cloudflare bot protection), and the Internet Archive is blocked from indexing Medium, but Brave indexes both posts with matching titles/bylines/topics; Soren should verify in a real browser. Content-db previously used date '2018' / description 'civic technology projects'; this batch tightens the start month to 2018-09 (matching LinkedIn) and expands the description with the team name + Transport Canada mandate + drone-operator population Fatima's team was serving. This entry duplicates the C4C story surfaced in press-2026-08-14 (press-c4c-meet-digital-drone-collective-2019 and press-c4c-introducing-2018-fellowship-2018); that's fine — one URL is doing double duty as evidence for both the community fellowship and the third-party press attention."
     },
     {
       "id": "community-drupal-di-working-group",
       "type": "community-role",
       "title": "Leader, Drupal Diversity & Inclusion Working Group",
-      "organization": "Drupal Association",
+      "organization": "Drupal Diversity & Inclusion (community initiative endorsed by the Drupal Association)",
       "location": null,
       "date": "2017",
       "year_start": 2017,
       "year_end": 2020,
-      "description": "Led the Drupal Diversity & Inclusion Working Group, coordinating initiatives to improve representation and belonging in the Drupal community.",
-      "topics": ["drupal", "diversity-inclusion", "community"],
+      "description": "Led the Drupal Diversity & Inclusion Working Group, coordinating cross-community DD&I initiatives — DrupalCon programming, moderation policies, mentorship pathways for underrepresented contributors, and the DEI Track at DrupalCon Nashville 2018. Continued on the DD&I Leadership Council in an internal advisory role after stepping off the lead in ~2019.",
+      "topics": [
+        "drupal",
+        "diversity-inclusion",
+        "community",
+        "leadership"
+      ],
       "verified": true,
-      "evidence_url": null,
-      "verification_status": "verified"
+      "evidence_url": "https://www.drupaldiversity.com/about",
+      "verification_status": "verified",
+      "curator_note": "Primary-source attribution: drupaldiversity.com/about (HTTP 200 live) lists in the Alumni section: 'Fatima Khalid - sugaroverflow (former lead)'. Corroborating primary source: drupaldiversity.com/node/107/revisions/577/view (2020-08-27 revision of the Leadership Team page) shows Tara King as Leader with Fatima on the Leadership Council (Internal). Third-party corroboration: DrupalCamp Colorado 2020 keynote bio ('former leader of the Drupal Diversity & Inclusion'), Talking Drupal #297 (2021-06-01, Fatima guest-hosting), and opensource.com/article/19/10/drupals-diversity-initiatives (2019-10-16) which quotes Fatima's April-2019 tweet on how she dedicated the past year to #drupaldiversity. Content-db date '2017–2020' is roughly right, but the seed correction from RESEARCH-SCOPE (CV says 2017–2019 with title 'Team Lead') and the 2020-08 revision (still on Leadership Council but no longer lead) together imply: lead role approx 2017–2019, Council role 2019–2020. Kept year_end: 2020 because that matches the last public involvement; softened description to capture both phases. Title kept as 'Leader' because drupaldiversity.com's own 'former lead' phrasing is authoritative; the CV's 'Team Lead' variant is a synonym."
     },
     {
       "id": "community-civic-tech-guide-curator",
       "type": "community-role",
-      "title": "Curator, Drones for Good — Civic Tech Field Guide",
+      "title": "Global Curator — Drones for Good, Civic Tech Field Guide",
       "organization": "Civic Tech Field Guide",
       "location": null,
       "date": "2018",
       "year_start": 2018,
       "year_end": null,
-      "description": "Curated the Drones for Good section of the Civic Tech Field Guide.",
-      "topics": ["civic-tech", "drones", "open-source"],
+      "description": "Expert curator for the Drones for Good vertical of the Civic Tech Field Guide — a global directory of civic-tech projects, especially those in less-democratic or less-wealthy contexts. Contributes finds and perspective to keep the collection current.",
+      "topics": [
+        "civic-tech",
+        "drones",
+        "open-source",
+        "curation"
+      ],
       "verified": true,
-      "evidence_url": null,
-      "verification_status": "verified"
+      "evidence_url": "https://civictech.guide/curators",
+      "verification_status": "verified",
+      "curator_note": "civictech.guide/curators (HTTP 200 live, direct-fetch verified 2026-08-14) lists: 'Drones for good: Fatima Sarah Khalid' under 'With thanks to our Global Curators'. Mirror at directory.civictech.guide/about lists the same. Content-db previously had date '2018' with year_end null; keeping that. Title tightened: content-db said 'Curator, Drones for Good — Civic Tech Field Guide'; the CTFG page uses the phrase 'Global Curators', so incorporated that framing in the title. Ambiguity flag: CTFG's public curators page does not display individual start dates — year_start 2018 is a best guess based on Fatima's Code for Canada drones work overlapping with when the CTFG page structure was set up; Soren should treat 2018 as approximate rather than exact. Role is ongoing (year_end null) — Fatima still appears on the current curators page, so this is verified-active."
     },
     {
       "id": "community-bad-idea-factory",
@@ -69,11 +95,129 @@
       "date": "2019",
       "year_start": 2019,
       "year_end": null,
-      "description": "Corporate Overlord at Bad Idea Factory, a worker-owned cooperative creating technology for the public good.",
-      "topics": ["civic-tech", "cooperative", "community"],
+      "description": "Corporate Overlord (member/manager role in BIFFUD's satirical bylaws) at Bad Idea Factory — a worker-owned technical-comedy cooperative that produces civic-tech, satire, and public-good tools. BIFFUD projects have touched MIT Media Lab, Internet Archive, OpenNews, DocumentCloud, ProPublica, and the Center for Investigative Reporting.",
+      "topics": [
+        "civic-tech",
+        "cooperative",
+        "community",
+        "satire",
+        "creative-tech"
+      ],
       "verified": true,
+      "evidence_url": "https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid",
+      "verification_status": "verified",
+      "curator_note": "Attribution: DrupalCamp Colorado 2020 keynote speaker bio (HTTP 200 live in the speaking batch already) describes Fatima as 'a volunteer for the DrupalCon Program team, the beast wrangler (in charge of projects) at the Bad Idea Factory (BIFFUD), and a curator for the Civic Tech Guide'. Corroboration: biffud.com/wat/ (HTTP 200 live) confirms the BIFFUD 'Corporate Overlord' role terminology in their bylaws framing ('Corporate Overlords, Members, and Accomplices'), founded 2017, worker-owned. Ambiguity: DrupalCamp Colorado 2020 called her 'beast wrangler (in charge of projects)'; content-db uses BIFFUD's canonical 'Corporate Overlord' role name. These may be the same role in different BIFFUD parlance, or two BIFFUD roles she has held. Fatima can clarify at merge time; kept 'Corporate Overlord' because it matches BIFFUD's own bylaws terminology. Start date: content-db had 2019; kept because I could not find a public first-mention pinning the exact year, and the DrupalCamp Colorado bio (2020) references it as a current role. GitHub sugaroverflow is NOT in the public members list of https://github.com/BadIdeaFactory (public members are a subset — she is likely a private/full member with the org's private team)."
+    },
+    {
+      "id": "program-committee-drupalcon-2018-2020",
+      "type": "program-committee",
+      "title": "Track Chair, DrupalCon (Backend Development & Community Building)",
+      "organization": "Drupal Association",
+      "location": null,
+      "date": "2018",
+      "year_start": 2018,
+      "year_end": 2020,
+      "description": "Track Chair for DrupalCon Nashville 2018, DrupalCon Seattle 2019, and DrupalCon Global 2020 covering the Backend Development and Community Building tracks. Reviewed and curated session submissions, mentored sprint newcomers, and organised the DD&I Game Night at Nashville 2018.",
+      "topics": [
+        "drupal",
+        "drupalcon",
+        "program-committee",
+        "backend-development",
+        "community-building"
+      ],
+      "verified": true,
+      "evidence_url": "https://www.drupal.org/u/sugaroverflow",
+      "verification_status": "verified",
+      "curator_note": "Primary self-attested evidence: drupal.org/u/sugaroverflow profile lists 'DrupalCon Nashville, Seattle, and Global track chair (2018-2020) - Backend Development & Community Building' (indexed by Brave; drupal.org itself is bot-gated for direct fetch — Client Challenge / 'A required part of this site couldn't load'). Soren should re-verify in-browser. Corroboration: events.drupal.org/nashville2018/ddi-game-night (Brave-indexed 2018-04-02) names 'Fatima Khalid - fatimaskhalid at gmail.com' as the DD&I contact for the DrupalCon Nashville game night. DrupalEasy Podcast 205 (2018-02-12, in press-2026-08-14) also describes her as 'DrupalCon Nashville track chair and sprint mentor'. Note the scope discrepancy with the CV+scope corrections doc, which said 'DEI Track Chair 2018 + Backend Development Track Chair 2019'; drupal.org profile says 'Backend Development & Community Building' across 2018–2020, which is what I've encoded. If Fatima also served as the DEI Track Chair specifically at DrupalCon Nashville 2018, that would be a separate additional program-committee row — Fatima to clarify at merge time whether this is one combined role, two adjacent roles, or my synthesis is wrong."
+    },
+    {
+      "id": "program-committee-open-source-summit-2024",
+      "replaces": "program-committee-open-source-summit-2022-2023",
+      "title": "Program Committee, Open Source Summit 2024 (North America + Europe)",
+      "organization": "The Linux Foundation",
+      "role": "Program Committee Member",
+      "type": "program-committee",
+      "year_start": 2024,
+      "year_end": 2024,
+      "date": "2024",
+      "description": "Served on the program committee for the Linux Foundation's Open Source Summit in 2024, for both the North America and Europe editions, helping shape the conference program. Listed on the official LF Events committee pages as 'Fatima Sarah Khalid, Developer Evangelist, GitLab'.",
+      "topics": [
+        "open source",
+        "developer relations",
+        "conference programming",
+        "linux foundation"
+      ],
+      "image": null,
+      "verified": true,
+      "verification_status": "verified",
+      "evidence_url": "https://events.linuxfoundation.org/archive/2024/open-source-summit-north-america/program/program-committee/",
+      "evidence_urls": [
+        "https://events.linuxfoundation.org/archive/2024/open-source-summit-north-america/program/program-committee/",
+        "https://events.linuxfoundation.org/archive/2024/open-source-summit-europe/program/program-committee/"
+      ],
+      "curator_note": "Both URLs fetched HTTP 200 with Fatima's name, headshot, and bio present. Public listing gives her title as 'Developer Evangelist, GitLab' with NO 'D&I' / 'Diversity & Inclusion' / 'Track Chair' language — do NOT encode a track-chair title on this verified row. The gathered 2022-2023 D&I Track Chair claim is a separate, unverified assertion (see the personal-record-only row below)."
+    },
+    {
+      "id": "program-committee-oss-di-track-chair-personal-record",
+      "title": "D&I Track Chair, Open Source Summit (self-reported, 2022–2023)",
+      "organization": "The Linux Foundation",
+      "role": "Diversity & Inclusion Track Chair",
+      "type": "program-committee",
+      "year_start": 2022,
+      "year_end": 2023,
+      "date": "2022–2023",
+      "description": "Self-reported role as Diversity & Inclusion Track Chair for the Open Source Summit, per Fatima's LinkedIn/CV.",
+      "topics": [
+        "diversity and inclusion",
+        "open source",
+        "conference programming"
+      ],
+      "image": null,
+      "verified": false,
+      "verification_status": "personal-record-only",
       "evidence_url": null,
-      "verification_status": "verified"
+      "curator_note": "HELD — no public corroboration. I checked LF Events program-committee archive pages for OSS North America and Europe across 2022, 2023, 2024, and 2025. Fatima appears ONLY on the two 2024 pages, and there as plain 'Developer Evangelist, GitLab' with no track-chair or D&I title. The 2022/2023 pages (HTTP 200) do not list her. Brave search for '\"Open Source Summit\" \"Fatima Khalid\" \"Diversity & Inclusion\" \"Track Chair\"' returned 0 results. Keep null evidence_url; needs Fatima's explicit confirmation of the year(s) and exact title before it can be encoded, and even then only as personal-record-only. It is possible the real role was the 2024 program committee and the '2022-2023 D&I Track Chair' framing is a memory/date drift — flag for Fatima."
+    },
+    {
+      "id": "community-anitab-mentor-2022",
+      "type": "community-role",
+      "title": "Mentor, AnitaB.org",
+      "organization": "AnitaB.org",
+      "location": null,
+      "date": "2022-04",
+      "year_start": 2022,
+      "year_end": null,
+      "description": "AnitaB.org Mentor (early cohort — credential ID 002 suggests she was among the very first mentors in the current mentor-badge programme). Mentors work 1:1 with women in tech on career development, technical skills, and leadership through AnitaB's mentorship platform.",
+      "topics": [
+        "mentorship",
+        "women-in-tech",
+        "career-development"
+      ],
+      "verified": false,
+      "evidence_url": null,
+      "verification_status": "personal-record-only",
+      "curator_note": "Attribution: LinkedIn seed (Licenses & Certifications section — 'AnitaB.org Mentor Badge — Apr 2022, credential ID 002'). AnitaB.org mentor lists are behind their membership platform (membership.anitab.org) and are not publicly viewable. No third-party attestation found. Ambiguity note for Fatima/Lotus: this may sit better in a certifications.json (per confirmed scope, that file will be scaffolded) than in community.json — it's simultaneously a credential and a mentor role. Duplicating into both when the certifications file is filled would be reasonable; leaving as a community.json row for now with a strong curator_note. If AnitaB has a public 'Meet our mentors' page anywhere, that URL would upgrade this to verified."
+    },
+    {
+      "id": "community-nyu-poly-innovation-consultant-2012",
+      "type": "community-role",
+      "title": "Innovation Consultant (mentor), NYU Polytechnic School of Engineering",
+      "organization": "NYU Polytechnic School of Engineering",
+      "location": "Brooklyn, NY",
+      "date": "2012-09",
+      "year_start": 2012,
+      "year_end": 2014,
+      "description": "Innovation Consultant at NYU-Poly, mentoring a group of ~20 undergraduate students on innovation and entrepreneurship — one-on-one refinement of ideas, slide decks, and business models, plus prep for entrepreneurial competitions. Part of the NYU Greenhouse / NYU Entrepreneurial Institute programming.",
+      "topics": [
+        "mentorship",
+        "entrepreneurship",
+        "nyu",
+        "innovation"
+      ],
+      "verified": false,
+      "evidence_url": null,
+      "verification_status": "personal-record-only",
+      "curator_note": "Attribution: LinkedIn seed (Experience — 'General Engineering — Innovation Consultant, NYU–Poly, Sep 2012 – Dec 2014, Brooklyn, mentored a 20-student group on innovation and entrepreneurship') + CV. No public NYU-Poly innovation-consultant roster from that era is currently indexed. NYU's engineering.nyu.edu domain has post-2014 institutional pages (e.g. accreditation announcements) but no per-student-mentor listings from 2012–2014. Adjacent primary source that gives context: aaari.info/2014economicb/ (2014 CUNY Conference on Asian American Economic Empowerment) references 'the NYU-Poly Entrepreneurship and Innovation Association, a student organization that is bridging the gap between academia and entrepreneurship to streamline student ventures' — Fatima's role was adjacent to this ecosystem but she is not named on that page. Keeping personal-record-only. NYU-Poly Prototyping Fund 2013 grant (Heat Nomad / ThermoShake, per LinkedIn) is separately in the awards side of the research; if there's a Prototyping Fund awardees archive that page might name her adjacent to her mentor role and would upgrade this. Type kept as 'community-role' rather than 'program-committee' since it's a mentor role, not a conference role."
     }
   ]
 }
