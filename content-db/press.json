@@ -39,16 +39,139 @@
   ],
   "press": [
     {
+      "id": "press-talking-drupal-297",
+      "publication": "Talking Drupal",
+      "title": "Talking Drupal Episode 297",
+      "date": "2021-06-01",
+      "year": 2021,
+      "type": "podcast",
+      "byline": "Nic Laflin, John Picozzi, Stephen Cross (Talking Drupal hosts); Fatima Sarah Khalid (guest host); Tara King (guest)",
+      "description": "Fatima guest-hosts Talking Drupal for an episode on Diversity, Equity, and Inclusion in the workplace with guest Tara King. Topics: performative allyship vs. leadership accountability, retention (not just pipeline) as the DEI problem, the Drupal Diversity & Inclusion Working Group's playbook, and what to look for in an employer. Recorded during her Pantheon tenure.",
+      "url": "https://talkingdrupal.com/297",
+      "topics": [
+        "drupal",
+        "diversity-inclusion",
+        "leadership",
+        "pantheon-era"
+      ],
+      "verified": true,
+      "evidence_url": "https://talkingdrupal.com/297",
+      "wayback_url": null,
+      "audited_by": "audit-standin-for-soren"
+    },
+    {
+      "id": "press-c4c-meet-digital-drone-collective-2019",
+      "publication": "Code for Canada (Medium)",
+      "title": "Meet the Digital Drone Collective",
+      "date": "2019",
+      "year": 2019,
+      "type": "employer-blog",
+      "byline": "Jennifer Payne",
+      "screenshot": null,
+      "pullQuote": "We're the Digital Drone Collective, the Code for Canada fellowship team working with Transport Canada. The team is made up of Code for Canada fellows Andee (@andeepittmanux), Jen, and Fatima (@sugaroverflow), along with Jeannie (@JeannieEva9)...",
+      "description": "Team-introduction post for the Digital Drone Collective \u2014 Fatima's Code for Canada fellowship team embedded at Transport Canada. Written by teammate Jennifer Payne. Corresponds to LinkedIn press-card #2.",
+      "url": "https://medium.com/code-for-canada/meet-the-digital-drone-collective-42bc97b53ed7",
+      "topics": [
+        "code-for-canada",
+        "fellowship",
+        "civic-tech",
+        "transport-canada",
+        "drones"
+      ],
+      "verified": true,
+      "evidence_url": "https://medium.com/code-for-canada/meet-the-digital-drone-collective-42bc97b53ed7",
+      "wayback_url": null,
+      "audited_by": "audit-standin-for-soren"
+    },
+    {
+      "id": "press-wct-award-ceremony-video-2018",
+      "publication": "Women in Communications and Technology (YouTube)",
+      "title": "Fatima Khalid \u2014 Women in Communications and Technology Award",
+      "date": "2018-04-17",
+      "year": 2018,
+      "type": "video",
+      "byline": "WCT Canada",
+      "screenshot": null,
+      "pullQuote": null,
+      "description": "Video recording of Fatima's acceptance speech at the WCT Canada Rising Star Award ceremony in Ottawa on April 16, 2018 (uploaded April 17). Direct primary-source artifact for the Rising Star award, alongside the CBC + Londoner + Echidna coverage.",
+      "url": "https://www.youtube.com/watch?v=FS68AzJMzoE",
+      "topics": [
+        "awards",
+        "women-in-tech",
+        "digital-echidna",
+        "speaking"
+      ],
+      "verified": true,
+      "evidence_url": "https://www.youtube.com/watch?v=FS68AzJMzoE",
+      "wayback_url": null,
+      "audited_by": "audit-standin-for-soren"
+    },
+    {
+      "id": "press-lfp-earns-recognition-2018",
+      "publication": "London Free Press / The Londoner",
+      "title": "Web developer Fatima Khalid earns recognition for leadership in London's tech community",
+      "date": "2018-03-21",
+      "year": 2018,
+      "type": "news-feature",
+      "byline": "Janis Wallace",
+      "screenshot": null,
+      "pullQuote": "A rising star in London's digital creative sector isn't just developing websites; she's embracing a leadership role in the effort to attract more young women to careers in technology.",
+      "description": "Feature profile by Janis Wallace in the Postmedia local-Ontario network. Originally published on thelondoner.ca and now served from lfpress.com under the same slug. Covers Fatima's path from an NYC upbringing that encouraged tinkering with computers to her mentorship role at Digital Echidna and in London, Ontario's broader tech community.",
+      "url": "https://lfpress.com/2018/03/21/web-developer-fatima-khalid-earns-recognition-for-leadership-in-londons-tech-community",
+      "topics": [
+        "women-in-tech",
+        "digital-echidna",
+        "london-ontario",
+        "mentorship"
+      ],
+      "verified": true,
+      "evidence_url": "https://lfpress.com/2018/03/21/web-developer-fatima-khalid-earns-recognition-for-leadership-in-londons-tech-community",
+      "wayback_url": null,
+      "audited_by": "audit-standin-for-soren"
+    },
+    {
+      "id": "press-echidna-rising-star-2018",
+      "publication": "Digital Echidna Blog",
+      "title": "Fatima Khalid - A Rising Star Gets Recognized",
+      "date": "2018-03-13",
+      "year": 2018,
+      "type": "employer-blog",
+      "byline": null,
+      "screenshot": null,
+      "pullQuote": "We're thrilled to announce that Digital Echidna's Fatima Khalid is the recipient of the Women in Communications and Technology's Leadership Excellence Award \u2014 Rising Star!",
+      "description": "Digital Echidna's own announcement of the WCT 2018 Rising Star Award, published the same day as the CBC News piece. Not on the LinkedIn 11-card list but strong corroborating evidence for the Rising Star story; useful as a second attribution for the same award week.",
+      "url": "https://blog.echidna.ca/fatima-khalid-rising-star-gets-recognized",
+      "topics": [
+        "digital-echidna",
+        "women-in-tech",
+        "awards",
+        "diversity-inclusion"
+      ],
+      "verified": true,
+      "evidence_url": "https://blog.echidna.ca/fatima-khalid-rising-star-gets-recognized",
+      "wayback_url": "https://web.archive.org/web/20180317091701/https://blog.echidna.ca/fatima-khalid-rising-star-gets-recognized",
+      "audited_by": "audit-standin-for-soren"
+    },
+    {
       "id": "press-cbc-rising-star-2018",
       "publication": "CBC News",
       "title": "London woman wins award for making tech industry more inclusive",
       "date": "2018-03-13",
       "year": 2018,
-      "screenshot": null,
-      "pullQuote": null,
+      "type": "news-article",
+      "pullQuote": "Fatima Khalid of London company Digital Echidna was named 'Rising Star' of 2018 by Women in Communications and Technology, an organization dedicated to the advancement of women in the communications and technology industries.",
+      "description": "CBC News London profile of Fatima on the day the WCT 2018 Rising Star Award was announced. Frames her Digital Echidna work, path from NYU + Microsoft + City of Boston to London, ON, and her mentorship role in the local tech community.",
       "url": "https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417",
+      "topics": [
+        "diversity-inclusion",
+        "women-in-tech",
+        "digital-echidna",
+        "london-ontario"
+      ],
       "verified": true,
-      "evidence_url": "https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417"
+      "evidence_url": "https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417",
+      "wayback_url": null,
+      "audited_by": "audit-standin-for-soren"
     },
     {
       "id": "press-drupaleasy-podcast-205",
@@ -56,23 +179,134 @@
       "title": "DrupalEasy Podcast Episode 205",
       "date": "2018-02-12",
       "year": 2018,
-      "screenshot": null,
-      "pullQuote": null,
-      "url": null,
+      "type": "podcast",
+      "byline": "Mike Anello (host)",
+      "pullQuote": "Fatima Khalid (sugaroverflow), web developer with Digital Echidna, and DrupalCon Nashville track chair and sprint mentor joins Mike Anello to talk about how to be a first-time sprinter at a local Drupal event or a DrupalCon and how she came to be involved in the D&I working group.",
+      "description": "DrupalEasy Podcast interview with Fatima about her path into Drupal contribution sprints, her mentorship role for first-time sprinters, and her involvement in the Drupal Diversity & Inclusion Working Group. Recorded during her Digital Echidna tenure and shortly before DrupalCon Nashville 2018 (where she was DEI Track Chair).",
+      "url": "https://www.drupaleasy.com/podcast/2018/02/drupaleasy-podcast-205-fatima-khalid-first-time-sprinters-guide",
+      "topics": [
+        "drupal",
+        "diversity-inclusion",
+        "mentorship",
+        "digital-echidna"
+      ],
       "verified": true,
-      "evidence_url": null
+      "evidence_url": "https://www.drupaleasy.com/podcast/2018/02/drupaleasy-podcast-205-fatima-khalid-first-time-sprinters-guide",
+      "wayback_url": "https://web.archive.org/web/20240620192616/https://www.drupaleasy.com/podcast/2018/02/drupaleasy-podcast-205-fatima-khalid-first-time-sprinters-guide",
+      "audited_by": "audit-standin-for-soren"
     },
     {
-      "id": "press-talking-drupal-297",
-      "publication": "Talking Drupal",
-      "title": "Talking Drupal Episode 297",
-      "date": "2021",
-      "year": 2021,
+      "id": "press-cbc-london-inclusivity-2017",
+      "publication": "CBC News",
+      "title": "How London's tech industry is striving for inclusivity",
+      "date": "2017-08-09",
+      "year": 2017,
+      "type": "news-article",
+      "byline": "Hala Ghonaim",
+      "screenshot": null,
+      "pullQuote": "When I went to college, I was a little bit afraid about wearing the hijab and also being in computer science... Whenever I walked into a classroom, I was either the only girl or the only hijabi.",
+      "description": "CBC News London piece on London, Ontario's tech-sector diversity efforts, published while Fatima was Technical Lead at Digital Echidna and running the Drupal Diversity & Inclusion Working Group. This is the follow-up (or precursor) CBC piece flagged in the LinkedIn seed's press-cards list as item 6.",
+      "url": "https://www.cbc.ca/news/canada/london/london-tech-industry-ontario-inclusive-1.4239713",
+      "topics": [
+        "diversity-inclusion",
+        "london-ontario",
+        "tech-community"
+      ],
+      "verified": true,
+      "evidence_url": "https://www.cbc.ca/news/canada/london/london-tech-industry-ontario-inclusive-1.4239713",
+      "wayback_url": null,
+      "audited_by": "audit-standin-for-soren"
+    },
+    {
+      "id": "press-boston-stacking-the-team-2015",
+      "publication": "Boston.gov / City of Boston Digital Team",
+      "title": "Stacking the team for 2016",
+      "date": "2015-12",
+      "year": 2015,
+      "type": "employer-blog",
+      "byline": "City of Boston Digital Service",
+      "screenshot": null,
+      "pullQuote": "Fatima is our developer who valiantly juggles Drupal and ASP.NET...",
+      "description": "Year-end 2015 team-introduction post on the City of Boston Digital Team blog, framing the crew going into 2016. Names Fatima specifically for her Drupal + ASP.NET work. Corresponds to LinkedIn press-card #8.",
+      "url": "https://www.boston.gov/news/stacking-team-2016",
+      "topics": [
+        "city-of-boston",
+        "civic-tech",
+        "team"
+      ],
+      "verified": true,
+      "evidence_url": "https://web.archive.org/web/20170126043322/https://www.boston.gov/news/stacking-team-2016",
+      "wayback_url": "https://web.archive.org/web/20170126043322/https://www.boston.gov/news/stacking-team-2016",
+      "audited_by": "audit-standin-for-soren"
+    },
+    {
+      "id": "press-msny-whats-next-2015",
+      "publication": "Microsoft New York",
+      "title": "What's Next After Microsoft \u2014 Civic Tech Fellow Alumna Fatima Khalid",
+      "date": "2015-07-09",
+      "year": 2015,
+      "type": "employer-blog",
+      "byline": "MSNY Staff",
+      "screenshot": null,
+      "pullQuote": "Civic Graph, in a sense, taught me how to bring an idea, however challenging, to life.",
+      "description": "Follow-up interview after Fatima's Microsoft NY Civic Tech Fellowship ended in May 2015. Reflects on Civic Graph, what she learned during the fellowship, and her next steps.",
+      "url": "https://blogs.microsoft.com/newyork/2015/07/09/whats-next-after-microsoft-civic-tech-fellow-alumni-fatima-khalid/",
+      "topics": [
+        "microsoft",
+        "civic-tech",
+        "fellowship",
+        "civic-graph"
+      ],
+      "verified": true,
+      "evidence_url": "https://blogs.microsoft.com/newyork/2015/07/09/whats-next-after-microsoft-civic-tech-fellow-alumni-fatima-khalid/",
+      "wayback_url": null,
+      "audited_by": "audit-standin-for-soren"
+    },
+    {
+      "id": "press-msny-fellow-profile-2015",
+      "publication": "Microsoft New York",
+      "title": "Fellow Profile: Fatima Khalid",
+      "date": "2015-02-16",
+      "year": 2015,
+      "type": "employer-blog",
+      "byline": "MSNY Staff",
+      "screenshot": null,
+      "pullQuote": "I've been working with my team on setting roots in the Civic Tech community in NY and becoming a part of it as well.",
+      "description": "Microsoft New York's fellow-profile Q&A with Fatima during her Civic Tech Fellowship at Microsoft Technology & Civic Engagement (Jun 2014 \u2013 May 2015). Covers her Microsoft NY projects \u2014 including CivicGraph \u2014 and her involvement in the NYC civic-tech community.",
+      "url": "https://blogs.microsoft.com/newyork/2015/02/16/fellow-profile-fatima-khalid/",
+      "topics": [
+        "microsoft",
+        "civic-tech",
+        "fellowship",
+        "civic-graph"
+      ],
+      "verified": true,
+      "evidence_url": "https://blogs.microsoft.com/newyork/2015/02/16/fellow-profile-fatima-khalid/",
+      "wayback_url": null,
+      "audited_by": "audit-standin-for-soren"
+    },
+    {
+      "id": "press-msne-hubhacks-2014",
+      "publication": "Microsoft New England",
+      "title": "Microsoft New York Fellows Do Boston, Win HubHacks Challenge",
+      "date": "2014-08-12",
+      "year": 2014,
+      "type": "employer-blog",
+      "byline": "Lauren Metter",
       "screenshot": null,
       "pullQuote": null,
-      "url": null,
+      "description": "Microsoft New England blog post covering the HubHacks 2014 civic hackathon win by the Microsoft NY Civic Tech Fellows (Fatima Khalid and teammates), where they built a City of Boston Address Search on the SAM database using d3.js + Sass + Bootstrap + jQuery.",
+      "url": "https://blogs.microsoft.com/newengland/2014/08/12/microsoft-new-york-fellows-do-boston-win-hubhacks-challenge/",
+      "topics": [
+        "microsoft",
+        "civic-tech",
+        "hackathon",
+        "boston"
+      ],
       "verified": true,
-      "evidence_url": null
+      "evidence_url": "https://blogs.microsoft.com/newengland/2014/08/12/microsoft-new-york-fellows-do-boston-win-hubhacks-challenge/",
+      "wayback_url": null,
+      "audited_by": "audit-standin-for-soren"
     }
   ]
 }
