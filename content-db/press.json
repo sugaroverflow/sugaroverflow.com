@@ -3,38 +3,172 @@
     {
       "id": "award-devops-dozen-top-evangelist-2023",
       "title": "Top DevOps Evangelist",
-      "organization": "DevOps Dozen",
+      "organization": "DevOps Dozen (Techstrong Group / DevOps.com)",
+      "location": null,
+      "date": "2024-01",
       "year": 2023,
-      "date": "2023",
-      "citation": "Recognized as Top DevOps Evangelist in the DevOps Dozen 2023 awards.",
+      "type": "award",
+      "affiliation": "gitlab",
+      "description": "Named Top DevOps Evangelist in the DevOps Dozen 2023 Community Awards (announced Jan 2024), the annual DevOps community awards run by Techstrong Group / DevOps.com.",
+      "citation": "\"We have followed Fatima at GitLab for several years. She specializes in CI/CD, community building, and evangelizing AI-powered workflows. Her passion for open source and building more inclusive tech communities makes her a standout and an extremely worthy winner.\" — Alan Shimel, Techstrong Group Founder & CEO",
       "ceremonyPhoto": null,
-      "context": "DevOps Dozen annual awards recognizing top contributors to the DevOps community.",
+      "image": null,
+      "links": {
+        "winners": "https://devopsdozen.com/devops-dozen-2023-community-awards-winners/",
+        "honorees": "https://devops.com/meet-the-devops-dozen%C2%B2-2023-honorees/",
+        "finalists": "https://devopsdozen.com/devops-dozen-2023-community-award-finalists/"
+      },
       "verified": true,
-      "evidence_url": "https://devops.com/meet-the-devops-dozen%C2%B2-2023-honorees/"
+      "verification_status": "verified",
+      "evidence_url": "https://devopsdozen.com/devops-dozen-2023-community-awards-winners/",
+      "curator_note": "Live-fetched: devopsdozen.com winners page contains the Alan Shimel citation verbatim plus 'Fatima Sarah Khalid – ... Developer Evangelist at GitLab'. devops.com honorees page independently lists '6. Top DevOps Evangelist: Fatima Sarah Khalid, Developer Evangelist at GitLab'. content-db already has this row with evidence_url=devops.com; recommend adding the devopsdozen.com primary URL + the full citation. Note the year vs issue-date wording: it is the '2023' award, announced Jan 2024. content-db lists year:2023 which is correct."
     },
     {
       "id": "award-google-open-source-peer-bonus-2020",
       "title": "Google Open Source Peer Bonus",
-      "organization": "Google",
+      "organization": "Google (Open Source)",
+      "location": null,
+      "date": "2020-04",
       "year": 2020,
-      "date": "2020",
-      "citation": "Awarded Google Open Source Peer Bonus for contributions to open source.",
+      "type": "award",
+      "affiliation": "pantheon",
+      "description": "Recipient of a Google Open Source Peer Bonus in the 2020 Q1 cycle, which Google devoted to women in open source around International Women's Day 2020. Awarded for contributions to open source (Drupal project).",
+      "citation": null,
       "ceremonyPhoto": null,
-      "context": "Google Open Source Peer Bonus program recognizing external contributors to open source projects.",
+      "image": null,
+      "links": {
+        "announcement": "https://opensource.googleblog.com/2020/04/announcing-2020-first-quarter-google.html"
+      },
       "verified": true,
-      "evidence_url": null
+      "verification_status": "verified",
+      "evidence_url": "https://opensource.googleblog.com/2020/04/announcing-2020-first-quarter-google.html",
+      "curator_note": "FIXES A NULL: content-db currently has this award with evidence_url:null. The Google Open Source Blog post's raw HTML contains 'Fatima Sarah Khalid' in the winners list (confirmed via curl grep; the readability extractor drops the winners table, so a browser/raw-HTML check is how Soren should re-confirm). Page text confirms this cycle was the IWD-2020 women-in-open-source cycle, 56 winners / 17 countries. Recommend backfilling this evidence_url into content-db."
     },
     {
       "id": "award-wct-rising-star-2018",
-      "title": "WCT Canada Rising Star Award",
-      "organization": "Women in Communications and Technology Canada",
+      "title": "Rising Star — Leadership Excellence Award",
+      "organization": "Women in Communications and Technology (WCT) Canada",
+      "location": "Ottawa, Canada",
+      "date": "2018-04-16",
       "year": 2018,
-      "date": "2018",
-      "citation": "Rising Star Award recognising emerging women leaders in technology.",
+      "type": "award",
+      "affiliation": "digital-echidna",
+      "description": "Received the Women in Communications and Technology (WCT) Canada Rising Star, one of WCT's annual Leadership Excellence Awards, presented at the WCT gala in Ottawa on 16 Apr 2018. The Rising Star LEA recognizes a young person whose talent and leadership are evident early in their career. Awarded while at Digital Echidna (London, Ontario).",
+      "citation": "The Rising Star Leadership Excellence Award \"is presented to a young person whose talent and leadership abilities are evident early in their career.\"",
       "ceremonyPhoto": null,
-      "context": "Awarded by WCT Canada for contributions to technology and community.",
+      "image": null,
+      "links": {
+        "wct_official_wayback": "http://web.archive.org/web/20230324155855/https://wct-fct.com/en/wct-annual-leadership-awards-recognize-champions-closing-the-gender-gap",
+        "cbc_press": "https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417",
+        "ceremony_video": "https://www.youtube.com/watch?v=FS68AzJMzoE",
+        "employer_blog": "https://blog.echidna.ca/fatima-khalid-rising-star-gets-recognized"
+      },
       "verified": true,
-      "evidence_url": "https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417"
+      "verification_status": "verified-wayback",
+      "evidence_url": "http://web.archive.org/web/20230324155855/https://wct-fct.com/en/wct-annual-leadership-awards-recognize-champions-closing-the-gender-gap",
+      "curator_note": "UPGRADE: content-db currently cites only the CBC press URL for this award. The awarding org's OWN page (wct-fct.com) is a stronger primary source — its Wayback snapshot lists 'Rising Star, Fatima Khalid, Developer, Digital Echidna' among the LEA recipients (live page is JS-gated; Wayback renders the names, confirmed via grep). Also found: a YouTube acceptance-speech video (Apr 16, 2018 Ottawa) and the Digital Echidna employer announcement blog (both live). The full award name is 'Leadership Excellence Award — Rising Star'; content-db's short title is fine but the LEA framing is more accurate. Ceremony date 16 Apr 2018 is per the YouTube description; the *announcement* was 13 Mar 2018 (CBC + echidna blog)."
+    },
+    {
+      "id": "award-drupalcon-nashville-scholarship-2018",
+      "title": "DrupalCon Nashville Scholarship",
+      "organization": "Drupal Association",
+      "location": "Nashville, TN, USA",
+      "date": "2018",
+      "year": 2018,
+      "type": "scholarship",
+      "affiliation": "digital-echidna",
+      "description": "Recipient of a DrupalCon Nashville 2018 Grant & Scholarship from the Drupal Association, supporting community members to attend DrupalCon.",
+      "citation": null,
+      "ceremonyPhoto": null,
+      "image": null,
+      "links": {
+        "recipients_page": "https://events.drupal.org/nashville2018/grants-and-scholarships"
+      },
+      "verified": true,
+      "verification_status": "verified",
+      "evidence_url": "https://events.drupal.org/nashville2018/grants-and-scholarships",
+      "curator_note": "Live-fetched: the DrupalCon Nashville 2018 grants-and-scholarships page HTML lists 'Fatima Khalid - sugaroverflow' among recipients. Net-new to AWARDS (was on the seed's add-list). Note: distinct from the Nashville 2018 speaking slot and the DEI Track Chair role — three separate Nashville-2018 lines."
+    },
+    {
+      "id": "award-drupalcon-vienna-scholarship-2017",
+      "title": "DrupalCon Vienna Scholarship",
+      "organization": "Drupal Association",
+      "location": "Vienna, Austria",
+      "date": "2017-09",
+      "year": 2017,
+      "type": "scholarship",
+      "affiliation": "digital-echidna",
+      "description": "One of 12 Grant & Scholarship recipients welcomed to DrupalCon Vienna 2017 by the Drupal Association.",
+      "citation": null,
+      "ceremonyPhoto": null,
+      "image": null,
+      "links": {
+        "recipients_page": "https://events.drupal.org/vienna2017/grants-and-scholarships",
+        "welcome_news": "https://events.drupal.org/vienna2017/news/drupalcon-vienna-welcomes-12-grant-and-scholarship-recipients"
+      },
+      "verified": true,
+      "verification_status": "verified",
+      "evidence_url": "https://events.drupal.org/vienna2017/grants-and-scholarships",
+      "curator_note": "Live-fetched TWICE: both the Vienna 2017 grants page and the 'welcomes 12 recipients' news post list 'Fatima Khalid - sugaroverflow'. IMPORTANT: this is the SCHOLARSHIP, which is REAL. It is NOT the same as the quarantined Vienna 2017 'Imposter Monologues Vol.3' SPEAKING claim (Soren FAIL, Fatima-confirmed unrescuable). Do not let the speaking quarantine spill onto this scholarship."
+    },
+    {
+      "id": "award-drupalcon-seattle-scholarship-2019",
+      "title": "DrupalCon Seattle Scholarship",
+      "organization": "Drupal Association",
+      "location": "Seattle, WA, USA",
+      "date": "2019",
+      "year": 2019,
+      "type": "scholarship",
+      "affiliation": "code-for-canada",
+      "description": "Recipient of a DrupalCon Seattle 2019 scholarship from the Drupal Association, awarded to grow local Drupal community.",
+      "citation": "\"...they'll feel more comfortable being engaged. It's like paving the road for people who have barriers,\" wrote Fatima Khalid of Canada, whose scholarship is to grow local community.",
+      "ceremonyPhoto": null,
+      "image": null,
+      "links": {
+        "recipients_news": "https://events.drupal.org/seattle2019/news/first-look-drupalcon-seattle%E2%80%99s-scholarship-grant-recipients"
+      },
+      "verified": true,
+      "verification_status": "verified",
+      "evidence_url": "https://events.drupal.org/seattle2019/news/first-look-drupalcon-seattle%E2%80%99s-scholarship-grant-recipients",
+      "curator_note": "NET-NEW — not in the seed's awards add-list. Found while verifying the Drupal Association archives. Live-fetched: the Seattle 2019 'first look at scholarship & grant recipients' post quotes Fatima Khalid of Canada directly. Affiliation guessed as code-for-canada based on 2019 timeline (fellowship Sep 2018–Aug 2019); flag for Fatima to confirm employer-of-record. This is her THIRD DrupalCon scholarship (Vienna 2017, Nashville 2018, Seattle 2019) — a genuine pattern worth surfacing in the portfolio."
+    },
+    {
+      "id": "award-nyu-prototyping-fund-2013",
+      "title": "NYU Prototyping Fund Recipient",
+      "organization": "NYU Polytechnic School of Engineering (Greenhouse / NYU Entrepreneurial Institute)",
+      "location": "Brooklyn, NY, USA",
+      "date": "2013-09",
+      "year": 2013,
+      "type": "grant",
+      "affiliation": "nyu",
+      "description": "Awarded a $350 sponsorship from the NYU Entrepreneurial Fund to build the first prototype of Heat Nomad (formerly ThermoShake), a portable re-heatable heating unit, via the Greenhouse at NYU-Poly and the NYU Entrepreneurial Institute.",
+      "citation": null,
+      "ceremonyPhoto": null,
+      "image": null,
+      "links": {},
+      "verified": false,
+      "verification_status": "personal-record-only",
+      "evidence_url": null,
+      "curator_note": "No independent third-party source found. Only Fatima's own LinkedIn attests this (mirrored via scraper proxies, not a real NYU archive). The NYU MakerSpace / Prototyping Fund pages exist but do not list historical 2013 recipients and do not name her. Fatima confirmed this is real (2026-08-14, per scope doc). Empty evidence_url is honest — did NOT fabricate an NYU URL. If Fatima has a ThermoShake writeup/photo, that would upgrade this."
+    },
+    {
+      "id": "award-innovative-design-tournament-2012",
+      "title": "1st place, Innovative Design Tournament",
+      "organization": "NYU Polytechnic School of Engineering",
+      "location": "Brooklyn, NY, USA",
+      "date": "2012-04",
+      "year": 2012,
+      "type": "award",
+      "affiliation": "nyu",
+      "description": "Won 1st place in the Innovative Design Tournament at NYU Polytechnic School of Engineering for a portable re-heatable water bottle (the precursor to ThermoShake / Heat Nomad), with a business plan and prototype cost summary.",
+      "citation": null,
+      "ceremonyPhoto": null,
+      "image": null,
+      "links": {},
+      "verified": false,
+      "verification_status": "personal-record-only",
+      "evidence_url": null,
+      "curator_note": "No independent third-party source found (2012 student competition; no live archive names her). Only Fatima's LinkedIn attests it. Fatima confirmed real (2026-08-14, per scope doc). Empty evidence_url is honest. Chronologically the origin of the Heat Nomad/ThermoShake arc that the 2013 Prototyping Fund then funded."
     }
   ],
   "press": [
@@ -74,5 +208,8 @@
       "verified": true,
       "evidence_url": null
     }
-  ]
+  ],
+  "_meta": {
+    "last_updated": "2026-08-14"
+  }
 }
