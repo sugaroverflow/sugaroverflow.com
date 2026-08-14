@@ -1,0 +1,84 @@
+{
+  "category": "certifications",
+  "batch": "certifications-2026-08-14 (batch 1 — full category, scaffold fill)",
+  "gathered_by": "glyphie",
+  "gathered_at": "2026-08-14",
+  "source_of_truth": "research/seed/resume--fatimasarahkhalid.md + research/seed/linkedin-full-2026-08-14.md (L115-127 'Licenses & Certifications'). Category + empty scaffold (content-db/certifications.json = {\"certifications\":[]}) explicitly confirmed by Fatima 2026-08-14 (see RESEARCH-SCOPE.md 'New file certifications.json?').",
+  "scope_note": "Three certifications listed on Fatima's LinkedIn/CV, all Fatima-confirmed real. HONEST VERIFICATION STATE: all three ISSUING BODIES and PROGRAMS are independently web-verifiable (real orgs, real program pages, HTTP 200 today), but NONE has a public per-person credential-verify page reachable without an authenticated/JS-gated lookup — so each individual credential is 'personal-record-only' with the program page cited as corroborating context for WHAT the credential is. This is the honest ceiling for a private individual's certifications; empty/personal-record is honest, invented verify URLs are not. The Acquia Certification Registry (certification.acquia.com) is a live public verify tool but is a client-side JS app: a plain fetch of a name-query URL 404s; enumerating Fatima's specific record needs the browser tool (flagged below for Soren/browser follow-up).",
+  "coordination_note": "This is the certifications category batch. It does NOT touch the held programming.json batch (still gated on Lotus's rotation ping). Acquia cert relates chronologically to City of Boston tenure (2016) — cross-references projects.json boston-gov-drupal-migration but stays in its own category. Deep Atlas (2025) aligns with the current AI/agents era (Newspeak House fellowship, GitLab AI DevRel work). AnitaB mentor badge (2022) is ALSO surfaced as a personal-record-only row in community-2026-08-14.json (AnitaB mentor) — kept in both because it is simultaneously a credential (here) and a community/mentorship role (there); flag to Lotus at merge to avoid double-count in portfolio rendering.",
+  "candidates": [
+    {
+      "id": "deep-atlas-ai-ml-intensive-2025",
+      "title": "AI/ML Intensive for Software Engineers",
+      "issuer": "Deep Atlas",
+      "issued_date": "2025-03",
+      "year": 2025,
+      "credential_id": null,
+      "credential_url": null,
+      "description": "Cohort-based intensive program for professional software engineers picking up applied ML/AI. Per Deep Atlas: compresses months of advanced ML/AI study into weeks of immersive, cohort-based learning; built for engineers with several years of software experience. Aligns with Fatima's 2025 pivot into AI-assisted software development and multi-agent systems work.",
+      "topics": [
+        "artificial-intelligence",
+        "machine-learning",
+        "applied-ai",
+        "software-engineering"
+      ],
+      "skills_listed": [
+        "Artificial Intelligence (AI)",
+        "Machine Learning"
+      ],
+      "issuer_url": "https://www.deepatlas.ai/",
+      "evidence_url": "https://www.deepatlas.ai/",
+      "verified": false,
+      "verification_status": "personal-record-only",
+      "curator_note": "Issuer VERIFIED as a real org (deepatlas.ai, HTTP 200 2026-08-14; also on Hugging Face as DeepAtlasAI; in-person SF cohorts corroborated by Trustpilot reviews Nov 2025). Deep Atlas issues no public per-completer verify page (it is a private paid accelerator, ~$7k, cohort-based), so Fatima's individual completion is personal-record-only, sourced to her LinkedIn 'Licenses & Certifications' (issued Mar 2025). Program page cited as evidence for WHAT the credential is, not proof SHE holds it. Do NOT fabricate a credential_id or credential_url."
+    },
+    {
+      "id": "anitab-org-mentor-badge-2022",
+      "title": "AnitaB.org Mentor Badge",
+      "issuer": "AnitaB.org",
+      "issued_date": "2022-04",
+      "year": 2022,
+      "credential_id": "002",
+      "credential_url": null,
+      "description": "Mentor credential from AnitaB.org's mentorship program (a global nonprofit for women/underrepresented people in tech). Credential ID 002 indicates a very early cohort — a signal Fatima was among the program's first mentors.",
+      "topics": [
+        "mentorship",
+        "diversity-inclusion",
+        "women-in-tech",
+        "community"
+      ],
+      "issuer_url": "https://anitab.org/resources/mentorship/",
+      "evidence_url": "https://anitab.org/resources/mentorship/",
+      "verified": false,
+      "verification_status": "personal-record-only",
+      "curator_note": "Issuer + program VERIFIED real (anitab.org mentorship program, HTTP 200 2026-08-14; six-month premium-member mentorship benefit). The mentor badge is member-gated with no public per-person verify page, so credential ID '002' and the badge itself are personal-record-only, sourced to Fatima's LinkedIn (issued Apr 2022). The unusually low ID 002 is a genuine and interesting provenance detail worth preserving BUT is self-attested — flag as such. NOTE: this same credential ALSO appears as a personal-record-only mentorship-role row in community-2026-08-14.json ('AnitaB mentor'); coordinate at merge so it is not double-counted across certifications + community in the rendered portfolio (Lotus's call on canonical home; recommend certifications is canonical for the badge, community may cross-link)."
+    },
+    {
+      "id": "acquia-certified-developer-drupal-8-2016",
+      "title": "Acquia Certified Developer - Drupal 8",
+      "issuer": "Acquia",
+      "issued_date": "2016-05",
+      "year": 2016,
+      "credential_id": null,
+      "credential_url": null,
+      "description": "Acquia's foundational Drupal developer certification, validating skills across fundamental web concepts, site building, front-end (theming), and back-end (coding). Earned during Fatima's City of Boston tenure (boston.gov Drupal 7 migration, partnered with IDEO + Acquia).",
+      "topics": [
+        "drupal",
+        "web-development",
+        "php",
+        "certification"
+      ],
+      "issuer_url": "https://www.acquia.com/support/training-certification/acquia-certification/drupal-certification-track",
+      "registry_url": "https://certification.acquia.com/",
+      "evidence_url": "https://www.acquia.com/support/training-certification/acquia-certification/drupal-certification-track",
+      "verified": false,
+      "verification_status": "personal-record-only",
+      "curator_note": "Issuer, exam, and PUBLIC REGISTRY all VERIFIED real (acquia.com certification track pages + certification.acquia.com registry, both HTTP 200 2026-08-14). The registry is described as a public 'find and verify Acquia certified professionals' tool — this is the ONE credential here with a plausible route to a real per-person verify URL. BUT the registry is a client-side JS app: a plain fetch of a guessed name-query URL (?fname=Fatima&lname=Khalid) returned 404. Enumerating Fatima's actual record requires the OpenClaw browser tool against certification.acquia.com. FLAGGED FOR FOLLOW-UP (browser + Soren): if her registry record is found, this candidate can be PROMOTED from personal-record-only to verified-live with a real credential_url — the only one of the three with that upgrade path. Chronology cross-checks projects.json boston-gov-drupal-migration (2016, Boston, IDEO+Acquia). Issued May 2016 per LinkedIn."
+    }
+  ],
+  "followups": [
+    "BROWSER: load certification.acquia.com registry, search 'Fatima Khalid' / 'Fatima Sarah Khalid' — if a public record exists, promote acquia-certified-developer-drupal-8-2016 to verified-live with credential_url.",
+    "MERGE (Lotus): de-dup the AnitaB mentor badge between certifications.json (this batch, recommended canonical) and community.json (community-2026-08-14.json AnitaB row).",
+    "SOREN: confirm 'personal-record-only' is the acceptable ceiling for private individual certifications where only the issuing body/program is web-verifiable but no public per-person credential page exists."
+  ]
+}
