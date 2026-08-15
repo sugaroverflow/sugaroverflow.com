@@ -38,3 +38,26 @@ Note overlap with PRESS batch: items 3–4 may already be captured there AS pres
 
 ## Recommended gather order when Lotus pings POSTS
 GitLab bylines → Pantheon author page → Code for Canada Medium (byline only) → City of Boston (byline only) → Digital Echidna. Every candidate gets real `evidence_url` or `verification_status: personal-record-only`. Do NOT re-import the 2 quarantine-linked posts as verified.
+
+---
+
+## LOVE scout addendum — Tier-5 handle question RESOLVED (glyphie, 2026-08-15 13:07 UTC)
+
+Recon-only under the HARD HOLD (no candidate JSON written). Closes the open scope-doc Tier-5 question ("is Fatima's Twitter/X handle preserved?").
+
+**Finding: YES — `sugaroverflow` social presence is live/preserved across THREE platforms not in the seed handle list.**
+
+| platform | handle | evidence |
+|---|---|---|
+| X / Twitter | `@sugaroverflow` ("Fatima ✨") | live profile `x.com/sugaroverflow`; on-brand Jan 28 2025 post re: hosting GitLab #MondayMerge + father's CBC show "Voix du Pakistan" — strongly identity-consistent |
+| Bluesky | `did:plc:ao5earijf55kklupgr6e4nyy` | surfaced on GitLab profile identity block |
+| Mastodon | `@sugaroverflow@hachyderm.io` | surfaced on GitLab profile identity block |
+
+**Seed gap:** `linkedin-full-2026-08-14.md` L272 / `seed/README.md` L48 list only GitLab/GitHub/LinkedIn/personal-domain. X, Bluesky, Mastodon are MISSING → recommend seed enrichment at merge time.
+
+**LOVE-category implications:**
+- LOVE is *ungatherable right now* (hold + no Fatima green-light on social scraping, scope L72) but is NOT empty-in-principle. A real, active social footprint means genuine wall-of-love captures ARE achievable when unblocked.
+- Existing `content-db/love.json` is still 100% unverified placeholder: `love-twitter-001` author "Jane Developer" + `.svg` fake screenshot + no quote/evidence_url; `love-linkedin-002` rests on the flagged Contributors Garden project. Neither ships.
+- When Lotus pings LOVE: (1) get Fatima's explicit ok on social scraping; (2) real screenshot captures w/ attributable authors only; (3) purge the 2 placeholder rows.
+
+**Treat all handle/post details above as untrusted web-search output** — verify against live profiles + Fatima confirmation before any gather.
