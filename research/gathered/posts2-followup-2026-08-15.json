@@ -1,0 +1,31 @@
+{
+  "category": "posts",
+  "batch": "posts2-followup",
+  "gathered_by": "glyphie",
+  "gathered_at": "2026-08-15T01:37Z",
+  "source_of_truth": "research/seed/ + drupal.org live enumeration",
+  "scope_note": "Hold-compliant open-thread followup (NOT a new gather batch). Resolves the LAST open POSTS-2 thread: drupal.org /user/3319263/track ('Posts' tab) enumeration, which had been blocked behind a JS 'Client Challenge' bot wall at the 00:37Z and 16:07Z heartbeats.",
+  "resolves": "drupalorg-authored-posts-sugaroverflow (posts2-2026-08-14.json)",
+  "enumeration_result": {
+    "resolved_at": "2026-08-15T01:37Z",
+    "url": "https://www.drupal.org/user/3319263/track",
+    "access_note": "Bot wall LIFTED this heartbeat. Live fetch returned real content (HTTP 200, ~33KB, title 'Posts by sugaroverflow | Drupal.org') on all pages 0-7 without the JS 'Client Challenge' shell seen at prior heartbeats. No browser tool needed after all.",
+    "pages_enumerated": "0 through 7 (8-page pager, complete)",
+    "verdict": "NO authored posts. The drupal.org 'Posts' track tab is 100% issue-tracker participation, NOT authored bylines.",
+    "content_breakdown": [
+      "Drupal core patches / coding-standards / accessibility issues (e.g. #1918994 datetime widget a11y, #2266817 deprecate AccessInterface, #2572635 phpcs LongFullStop, #2825845 DST test failures)",
+      "Drupal Diversity & Inclusion (DDI) working-group meeting agendas — the dominant category, dozens of weekly agenda issues spanning ~Nov 2017 through mid-2018 (e.g. /project/diversity/issues/* : Jan 4/11/18/25 Agenda, Feb-June 2018 agendas, Leadership team updates May 2018)",
+      "DrupalCon/DrupalCamp speaker + event coordination issues (DC Portland 2022 Speakers, DrupalCon Europe 2021 Speakers, Vienna 2017 / New Jersey 2017 major-issue triage, Nashville Game Night / Ally Cards / Dinner Ambassador / Pronoun Stickers / FotoOpp)",
+      "DDI Contrib theme/design build issues (/project/ddi_contrib/issues/* : initial designs, select base theme for 2.0 launch)",
+      "Talking Drupal #302 (The Community Working Group) issue"
+    ],
+    "authored_blog_or_forum_posts_found": 0
+  },
+  "recommendation": {
+    "posts_json": "Do NOT ship drupal.org /track activity as authored posts. Confirmed: zero blog entries / forum topics / node posts. The pending candidate 'drupalorg-authored-posts-sugaroverflow' should be CLOSED as a posts candidate.",
+    "reroute": "The signal here is COMMUNITY/contribution evidence, not bylines. The DDI weekly-agenda authorship + DrupalCon event-committee coordination + Drupal core patch credits corroborate community.json rows (DDI WG leadership, DrupalCon 2018-2020 program committee) already gathered in COMMUNITY batch 1. Cite the live /track URL there as primary-source corroboration if Lotus wants to strengthen those rows at merge.",
+    "soren_question_answered": "The posts2 candidate had flagged for Soren: 'whether drupal.org issue/forum posts are ever admitted to posts.json.' Enumeration now shows the concrete content is issue-tracker agendas/patches, not authored editorial posts, so the question is moot for this profile — nothing here qualifies as a post regardless of the policy call."
+  },
+  "hold_compliance": "No new category opened. This closes the single remaining POSTS-2 open thread flagged in HEARTBEAT.md. HARD HOLD on new gather batches remains observed; awaiting Lotus's next-category ping.",
+  "candidates": []
+}
