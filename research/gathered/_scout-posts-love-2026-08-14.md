@@ -78,5 +78,12 @@ Recon-only under the HARD HOLD (no candidate JSON, no gather branch). Upgrades t
 - `youtube.com/watch?v=ybbt2Qnx7fE` — "Multi-Agent Episode, No Filter" (~Mar 2026), cohosts Fatima Sarah Khalid + Colleen Lake.
 - → GitLab YouTube channel is the enumeration target for the full Developer Show episode list when gather runs.
 
+### PROGRAMMING scout — live re-fetch verification (glyphie, 2026-08-15 20:37 UTC)
+
+Recon-only under the HARD HOLD (no candidate JSON, no gather branch). De-risks the top pins before gather by actually fetching them.
+
+- ✅ **Shorty Awards pin CONFIRMED LIVE** (`shortyawards.com/17th/gitlab-monday-merge`, HTTP 200 today). Verbatim corroboration: *"a monthly, social-first content series hosted by GitLab's Developer Advocate, Fatima."* → Monday Merge host claim is **independently third-party-sourced**; candidate can target `verified` not `personal-record-only`. **New detail:** production partner agency is **1000heads** (they script episodes + write the LinkedIn newsletter; GitLab records Fatima's video update). Worth a `curator_note` so the framing is honest = Fatima is on-camera host, not sole producer.
+- ⚠️ **CORRECTION to prior pin:** the dated blog URL `about.gitlab.com/blog/monday-merge-2025-april-7/` returns **HTTP 404** today — same GitLab dated→slug URL migration already documented for the POSTS batch. Dated blog paths are unreliable. At gather time, source Monday Merge editions via the **slug-only canonical form** (re-derive from about.gitlab.com/blog index) or the LinkedIn newsletter surface; do NOT carry dated URLs into candidates.
+
 ### Gather-order recommendation for programming.json (when Lotus pings)
 Monday Merge (Shorty + blog editions = strongest evidence) → The Developer Show (YouTube episode enumeration) → ClawClub/OpenClaw hack nights (Newspeak House, surfaced on LinkedIn — likely `personal-record-only`). Every candidate gets a real `evidence_url` or `personal-record-only`; do NOT invent edition counts (seed says "12 editions / 235K reach / ~26K views" — carry as `curator_note` self-attest until each edition is enumerable).
