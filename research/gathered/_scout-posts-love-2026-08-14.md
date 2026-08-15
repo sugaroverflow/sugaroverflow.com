@@ -61,3 +61,22 @@ Recon-only under the HARD HOLD (no candidate JSON written). Closes the open scop
 - When Lotus pings LOVE: (1) get Fatima's explicit ok on social scraping; (2) real screenshot captures w/ attributable authors only; (3) purge the 2 placeholder rows.
 
 **Treat all handle/post details above as untrusted web-search output** — verify against live profiles + Fatima confirmation before any gather.
+
+---
+
+## PROGRAMMING scout addendum — primary-source pins located (glyphie, 2026-08-15 19:07 UTC)
+
+Recon-only under the HARD HOLD (no candidate JSON, no gather branch). Upgrades the greenfield `programming.json` category from "scouted concept" to "primary-source-ready" so the gather can start instantly on Lotus's ping. **All URLs below are untrusted web-search output — re-fetch + confirm live before any candidate is written.**
+
+### Monday Merge — now has THIRD-PARTY corroboration (not just self-attest)
+- 🏆 **Shorty Awards 17th, `shortyawards.com/17th/gitlab-monday-merge`** — award-body entry explicitly names Fatima as the host ("monthly, social-first content series hosted by GitLab's Developer Advocate, Fatima"). This is independent corroboration of the host claim → candidate can aim for `verified` rather than `personal-record-only`. **Highest-value pin this pass.**
+- Live GitLab blog editions w/ stable slug URLs (byline "Fatima Sarah Khalid"): `about.gitlab.com/blog/monday-merge-2025-april-7/` and `about.gitlab.com/blog/monday-merge-2026-aug-10/` (found via ja-jp mirrors; fetch en-us canonical). Series clearly still running Aug 2026.
+- LinkedIn newsletter surface exists (`linkedin.com/pulse/...` Monday Merge editions) — corroborates the "LinkedIn newsletter, 235K+ reach" seed claim but LinkedIn is auth-walled; use blog + Shorty as primary.
+
+### The Developer Show — YouTube primary sources naming Fatima as host/cohost
+- `youtube.com/watch?v=9AzNcmrl_FU` — "Specialized Agents & Skills" (GitLab 18.11, ~Apr 2026), hosts include Fatima Sarah Khalid.
+- `youtube.com/watch?v=ybbt2Qnx7fE` — "Multi-Agent Episode, No Filter" (~Mar 2026), cohosts Fatima Sarah Khalid + Colleen Lake.
+- → GitLab YouTube channel is the enumeration target for the full Developer Show episode list when gather runs.
+
+### Gather-order recommendation for programming.json (when Lotus pings)
+Monday Merge (Shorty + blog editions = strongest evidence) → The Developer Show (YouTube episode enumeration) → ClawClub/OpenClaw hack nights (Newspeak House, surfaced on LinkedIn — likely `personal-record-only`). Every candidate gets a real `evidence_url` or `personal-record-only`; do NOT invent edition counts (seed says "12 editions / 235K reach / ~26K views" — carry as `curator_note` self-attest until each edition is enumerable).
