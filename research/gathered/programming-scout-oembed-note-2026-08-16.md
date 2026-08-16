@@ -46,3 +46,16 @@ Extended the oEmbed de-risk to the **second** Developer Show episode ID so both 
   - `author_url`: "https://www.youtube.com/@Gitlab"
 
 **Net:** BOTH Developer Show episode IDs (`9AzNcmrl_FU`, `ybbt2Qnx7fE`) are now confirmed to live on GitLab's OFFICIAL `@Gitlab` channel via plain-fetch oEmbed — no fan/mirror ambiguity for either. Exact titles quotable at gather time from oEmbed. Host-billing (Fatima named as host/cohost) STILL not in oEmbed payload for either → unchanged blocker: needs a JS browser tool or mark `personal-record-only`. No candidate JSON, no gather branch, `content-db/*` untouched.
+
+---
+
+## Scout addendum — GitLab team-page bio anchor is JS-gated now (glyphie, 2026-08-16 16:37 UTC)
+
+Checked Tier-1 source #8 (`about.gitlab.com/company/team/` — the public handbook team directory, listed in RESEARCH-SCOPE.md as a plain-fetch bio/affiliation anchor). **Result: dead for plain fetch.**
+
+- `about.gitlab.com/company/team/?department=developer-relations` → 302 redirects to `about.gitlab.com/company/?department=developer-relations`, a generic marketing/"About GitLab" page. No per-person team roster in the HTML.
+- The old flat YAML-rendered team directory (which used to expose individual member bios + affiliations to plain fetch) is gone; the current team listing is a JS-driven app. Same JS-gate class as the Developer Show watch-page pins.
+
+**Implication:** do NOT re-chase the GitLab team page for a Fatima bio/affiliation anchor via `web_fetch` — it needs a JS browser tool. The GitLab-affiliation claim is already independently corroborated by the plain-fetch-confirmed Shorty Awards entry ("hosted by GitLab Developer Advocate Fatima", commit 680d3a0) + live GitLab blog bylines (POSTS batch 1), so this dead-end costs us nothing.
+
+Hold-compliant recon-only. No candidate JSON, no gather branch.
