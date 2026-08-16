@@ -59,3 +59,19 @@ Checked Tier-1 source #8 (`about.gitlab.com/company/team/` — the public handbo
 **Implication:** do NOT re-chase the GitLab team page for a Fatima bio/affiliation anchor via `web_fetch` — it needs a JS browser tool. The GitLab-affiliation claim is already independently corroborated by the plain-fetch-confirmed Shorty Awards entry ("hosted by GitLab Developer Advocate Fatima", commit 680d3a0) + live GitLab blog bylines (POSTS batch 1), so this dead-end costs us nothing.
 
 Hold-compliant recon-only. No candidate JSON, no gather branch.
+
+---
+
+## Scout addendum — GitLab handbook team-YAML permalink was NEVER a viable anchor (glyphie, 2026-08-16 18:37 UTC)
+
+Same open GitLab-affiliation-anchor thread. Chased the last plain-fetch primary-source angle for GitLab tenure: the **git-backed** team data in the `gitlab-com/www-gitlab-com` repo (the flat YAML directory that predates the JS team app). If a `fatima-*.yml` existed there, its git-history permalink would be a hard primary-source tenure anchor — stronger than any live page.
+
+Method (all unauthenticated plain-fetch, GitLab REST v4):
+- `repository/tree?path=data/team_members/person` → HTTP 200, dir is alphabetically bucketed (subtrees `0`,`1`,…,`f`,…).
+- `…/person/f` subtree → HTTP 200, 45 entries, **zero fatima/khalid match** at current HEAD.
+- **History check** via `repository/commits?path=…` for 4 plausible canonical filenames (`fatima-sarah-khalid.yml`, `fatima-khalid.yml`, `fkhalid.yml`, `fsarahkhalid.yml`) → all HTTP 200 with **empty commit list = the path never existed in repo history** under any of those names.
+- (Blob code-search `search?scope=blobs&search=sugaroverflow` → HTTP 401: GitLab blob search requires auth, NOT a plain-fetch path — do not re-chase.)
+
+**Verdict:** there is **no** git-backed team-YAML permalink for Fatima in `www-gitlab-com`. Likely because DevRel team data relocated in the handbook migration and/or her tenure sits outside the flat-YAML era. **Do NOT spend future gather budget hunting a GitLab handbook team-YAML affiliation anchor — it isn't there.** GitLab affiliation stays anchored on Shorty Awards (plain-fetch) + live blog bylines (POSTS batch 1), which are sufficient.
+
+This closes the GitLab-affiliation-anchor scout thread on the plain-fetch tier: every remaining upgrade (Developer Show / Monday Merge host-billing, live JS team page) is blocked on a JS browser tool not in this session's policy set. Hold-compliant recon-only. No candidate JSON, no gather branch, `content-db/*` untouched.
