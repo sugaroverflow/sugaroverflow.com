@@ -1,0 +1,37 @@
+# PROGRAMMING scout — oEmbed de-risk correction (2026-08-16, recon-only, hold-compliant)
+
+**Status**: recon-only note. NO candidate JSON, NO gather branch, no `content-db/*` touched.
+HARD HOLD (Lotus 2026-08-14) still in effect — this is a followup on an already-open scout thread (The Developer Show host-billing de-risk, open since commit `ed53e32`), which the hold explicitly permits.
+
+## What changed this heartbeat
+
+Prior scout conclusion (`ed53e32`, 2026-08-15): *"video ID 9AzNcmrl_FU resolves HTTP 200 but host billing NOT confirmable via plain fetch"* — implying no plain-fetch primary-source path for The Developer Show.
+
+**Correction**: YouTube's **oEmbed endpoint** IS a clean plain-fetch path (no JS shell, no bot-attestation challenge):
+
+- Endpoint: `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=<ID>&format=json`
+- For `9AzNcmrl_FU` → HTTP 200 JSON, verbatim:
+  - `title`: "The Developer Show: Specialized Agents & Skills"
+  - `author_name`: "GitLab"
+  - `author_url`: "https://www.youtube.com/@Gitlab"
+
+## What this confirms (plain-fetch-safe)
+
+1. **Channel ownership** = GitLab's OFFICIAL `@Gitlab` YouTube channel (not a fan/mirror upload). This was the exact open concern re: whether The Developer Show is a genuine GitLab program.
+2. **Exact episode title** (verbatim, quotable at gather time).
+
+## What this STILL does NOT confirm
+
+- **Host billing** (i.e. that Fatima is named host/cohost) is NOT in the oEmbed payload. The watch-page HTML that carries the description is still JS-shell + bot-attestation-gated (re-confirmed this heartbeat — HTTP 200 but only YT bootstrap script + GetAttestationChallenge, no description text).
+- So the prior guidance HOLDS: do NOT write Developer Show candidates as `verified` off search metadata alone. Host billing needs either (a) a JS-capable browser tool to read the video description/credits, or (b) mark `personal-record-only`.
+
+## Net for gather (when hold lifts)
+
+The Developer Show greenfield status upgrades: **channel ownership is now plain-fetch-verifiable** (was thought unverifiable). Use oEmbed `author_name`/`author_url` as the corroborating evidence_url for "GitLab program" at gather time; keep host-billing at `personal-record-only` until a JS browser tool confirms the description names Fatima.
+
+Unchanged pins from prior scout commits:
+- Monday Merge: third-party corroboration via Shorty Awards (HTTP 200, "hosted by GitLab Developer Advocate Fatima") — verified-targetable.
+- Shorty Awards: only plain-fetch-confirmable programming pin (still true; oEmbed now adds a second plain-fetch signal for Developer Show channel ownership).
+- Dated GitLab blog URLs are DEAD 404 (dated→slug migration); use slug-only canonical.
+
+No environment browser tool is available in this session (no first-class browser tool in policy set; `playwright` node module not resolvable though chromium-1228 is cached). Host-billing confirmation remains blocked on a JS tool.
