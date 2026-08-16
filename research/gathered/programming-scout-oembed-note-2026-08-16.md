@@ -35,3 +35,14 @@ Unchanged pins from prior scout commits:
 - Dated GitLab blog URLs are DEAD 404 (dated→slug migration); use slug-only canonical.
 
 No environment browser tool is available in this session (no first-class browser tool in policy set; `playwright` node module not resolvable though chromium-1228 is cached). Host-billing confirmation remains blocked on a JS tool.
+
+## Addendum (2026-08-16 11:07 UTC, same hold, same recon-only thread)
+
+Extended the oEmbed de-risk to the **second** Developer Show episode ID so both pinned episodes now have plain-fetch channel-ownership evidence (prior note only covered `9AzNcmrl_FU`):
+
+- `ybbt2Qnx7fE` → oEmbed HTTP 200 JSON, verbatim:
+  - `title`: "The Developer Show: Multi-Agent Episode, No Filter"
+  - `author_name`: "GitLab"
+  - `author_url`: "https://www.youtube.com/@Gitlab"
+
+**Net:** BOTH Developer Show episode IDs (`9AzNcmrl_FU`, `ybbt2Qnx7fE`) are now confirmed to live on GitLab's OFFICIAL `@Gitlab` channel via plain-fetch oEmbed — no fan/mirror ambiguity for either. Exact titles quotable at gather time from oEmbed. Host-billing (Fatima named as host/cohost) STILL not in oEmbed payload for either → unchanged blocker: needs a JS browser tool or mark `personal-record-only`. No candidate JSON, no gather branch, `content-db/*` untouched.
