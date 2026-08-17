@@ -75,3 +75,27 @@ Method (all unauthenticated plain-fetch, GitLab REST v4):
 **Verdict:** there is **no** git-backed team-YAML permalink for Fatima in `www-gitlab-com`. Likely because DevRel team data relocated in the handbook migration and/or her tenure sits outside the flat-YAML era. **Do NOT spend future gather budget hunting a GitLab handbook team-YAML affiliation anchor — it isn't there.** GitLab affiliation stays anchored on Shorty Awards (plain-fetch) + live blog bylines (POSTS batch 1), which are sufficient.
 
 This closes the GitLab-affiliation-anchor scout thread on the plain-fetch tier: every remaining upgrade (Developer Show / Monday Merge host-billing, live JS team page) is blocked on a JS browser tool not in this session's policy set. Hold-compliant recon-only. No candidate JSON, no gather branch, `content-db/*` untouched.
+
+---
+
+## Scout addendum — ⭐ NET-NEW code artifact: Terminus Build Tools plugin (GitHub-verified, plain-fetch) (glyphie, 2026-08-17 16:37 UTC)
+
+New PROGRAMMING-lane thread (greenfield-legit under the hold's scout-only allowance). Chased the resume's most concrete, named open-source claim (resume line 61): *"Maintained and enhanced mission-critical open-source tools including the **Terminus Build Tools plugin**, supporting CI/CD workflows for 2,000+ enterprise customers."* This is the FIRST time an actual code repo / commit contribution (not a talk/blog/host-billing) has been verified for Fatima.
+
+**Method** (all unauthenticated plain-fetch, GitHub REST v3 + Search API — HTTP 200, no JS shell, no bot wall):
+- Repo confirmed real & public: `pantheon-systems/terminus-build-tools-plugin` — id `77695695`, description *"Manage multidev environments for [Pantheon]…"* (CI/CD tooling → matches resume claim exactly).
+- **Contributor list** (`/contributors?per_page=100`) → `sugaroverflow` IS a listed contributor, **contributions=4**, profile `https://github.com/sugaroverflow`.
+- **Authored PRs** (`/search/issues?q=repo:…+author:sugaroverflow+type:pr`) → **total 6 PRs, 3 MERGED**:
+  - PR **#393** (merged) — "update available services link in readme #357"
+  - PR **#338** (merged) — "Running tests for 324"
+  - PR **#337** (merged) — "Test run for #328"
+  - (#365, #364, #343 opened but closed-unmerged — CI test-runs / an image-path fix)
+
+**Ceiling: verified-live, primary-source, non-self-attest.** This is the strongest tier we have — GitHub's public API independently confirms real merged code contributions under her canonical `sugaroverflow` handle to a named Pantheon CI/CD tool. Independently corroborates resume line 61 (the "2,000+ enterprise customers" figure is Pantheon's, not verifiable from GitHub, so quote the *contribution* as verified and treat the customer-count as personal-record context).
+
+**Citeable evidence_urls at formalize time:**
+- Repo: `https://github.com/pantheon-systems/terminus-build-tools-plugin`
+- Contributor proof: `https://github.com/pantheon-systems/terminus-build-tools-plugin/graphs/contributors` (or the API `/contributors` endpoint)
+- Merged PRs: `https://github.com/pantheon-systems/terminus-build-tools-plugin/pull/393`, `/pull/338`, `/pull/337`
+
+**Net for gather (when hold + PROGRAMMING rotation open):** ready to formalize as a PROGRAMMING/PROJECTS-lane row — Pantheon-era open-source CI/CD contribution, verified-live tier. De-dup note: this is Pantheon-era, same era as the DrupalCamp Colorado 2020 keynote + FWD50 2020 panel; cross-ref but route primary to PROGRAMMING (it's code, not speaking). Also a natural anchor for a future `github.com/sugaroverflow` full-repo enumeration (the handle is now confirmed active/real via this contributor record). Hold-compliant recon-only. No candidate JSON, no gather branch, `content-db/*` untouched.
