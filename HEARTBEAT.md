@@ -368,3 +368,15 @@ _(Extends the 01:07Z breakthrough above with three formalize-critical de-risks; 
 - **13 mentors** listed on profile — corroborates the Drupal mentorship/community-involvement thread.
 - **Formalize-time**: COMMUNITY lane gains a verified employment timeline + DrupalCon attendance arc, both from a citeable structured API. PROGRAMMING lane confirms drupal.org as the third real code host. De-dup: employment rows→existing resume/LinkedIn employer rows (this UPGRADES them from personal-record→structured-API-corroborated); DrupalCon events→SPEAKING/community DrupalCon threads; City of Boston→Boston stacking-team press thread. No individual-authorship overclaim: contributed-flags stay self-attest until track-proven.
 - Hold-compliant recon-only. No candidate JSON/branch this heartbeat.
+
+### ⭐ PODCASTS — Talking Drupal guest-appearance blocker RESOLVED via plain-fetch raw HTML (4 confirmed episodes, guest-HOST role) (2026-08-19 22:37 UTC heartbeat)
+- Hard hold still in effect (origin/main HEAD `b96da6e`; working tree clean; sessions_list = only heartbeat lanes + Discord coworking = self-echoes, NO Lotus/Fatima/new-category ping). This is a **followup on an already-open thread** (the parked Talking Drupal PODCASTS lead from the 03:37Z heartbeat), which the hold explicitly permits. NO gather batch, NO branch, NO JSON.
+- **The 03:37Z 'needs a JS browser tool' verdict was WRONG** — the guest page `talkingdrupal.com/fatima-sarah-khalid` is plain-fetch **HTTP 200 ~12KB** and the episode-participation data IS in the RAW HTML. The earlier miss was the readability EXTRACTOR stripping the participation block down to site chrome; raw `curl` + regex recovers it fully. (Same lesson as the drupal.org Posts-tab: readability-extract failure ≠ JS-gated.)
+- **4 CONFIRMED episode appearances** (each a citeable evidence_url; schema.org JSON-LD on the guest page confirms Person identity `Fatima Sarah Khalid`):
+  - `talkingdrupal.com/303` — **Talking Drupal #303 - Multitasking**
+  - `talkingdrupal.com/302` — **#302 - Community Working Group**
+  - `talkingdrupal.com/297` — **#297 - Diversity, Equity, and Inclusion: Holding ourselves accountable**
+  - `talkingdrupal.com/296` — **#296 - Linux 4 Everyone**
+- **Role VERIFIED as Guest Host** (not one-off guest): episode #303 plain-fetch HTTP 200 ~21KB shows the `guest-host` entity-reference field, a 'Guestimer' timed segment, and her personal pick ('Fatima - Gaming chair') → recurring **guest co-host**. Stronger PODCASTS signal than a single interview.
+- **Ceiling**: verified-live (public plain-fetch, non-self-attest, third-party show). Formalize-time: 4 PODCASTS rows w/ evidence_url `https://talkingdrupal.com/<n>`, verification_status=verified-live. De-dup: #302 'Community Working Group' + #297 'DEI accountability' corroborate her COMMUNITY-lane Drupal-governance footprint (MidCamp/DDI-mentoring/CWG) from a podcast angle. RSS feed (`rss.xml`, 10 items, only back to May 2024) does NOT reach these ~2021-era episodes → guest-page enumeration is the authoritative source; RSS alone would miss all 4.
+- Hold-compliant followup on an open thread. No candidate JSON/branch this heartbeat.
