@@ -6,6 +6,14 @@ the page is a rolling/rotating surface likely to change before a public archive
 personal-record backstop only; a public archive citation is still preferred at
 formalize time. De-dup / route to the proper category file when formalizing.
 
+**TIER LABELING (read before citing at formalize/merge time):** these files are
+`personal-record / self-captured content backstop` tier — self-captured, not
+third-party-hosted. Do NOT read a file here as the PRIMARY citation for a fact.
+The *fact's* tier is earned by its own live/public source (e.g. the live
+Newspeak House roster naming her = **org-verified**); the local file only insures
+the evidence chain against loss while a public archive is pending. Keep the two
+separate: fact-tier ≠ backstop-file-tier.
+
 ## newspeak-house-fellowship-2026-08-20.html
 - Source: https://newspeak.house/fellowship (plain-fetch HTTP 200, ~64KB), captured 2026-08-20 05:37Z heartbeat.
 - Why preserved: rolling roster page. Prior Wayback caps (Apr/Jun 2026) do NOT contain
