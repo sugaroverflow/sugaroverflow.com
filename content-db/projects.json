@@ -35,53 +35,6 @@
       "curator_note": "2026-08-14 autonomous merge-time correction (Lotus, endorsed by Glyphie+Soren PROJECTS batch 1 audit): GitLab API for sugaroverflow/contributors-garden returned HTTP 404 Project Not Found, and demo domain contributors.garden failed DNS resolution. Dead repo/demo links stripped; verified downgraded to false and verification_status to needs-evidence pending a real repo/deployed URL/stream VOD from Fatima."
     },
     {
-      "id": "tanuki-airlines",
-      "slug": "tanuki-airlines",
-      "title": "Tanuki Airlines Demo",
-      "description": "Full-stack demo showing GitLab-powered CI/CD and AI-assisted workflows for enterprise DevSecOps.",
-      "contentType": "project",
-      "date": "2023-07-10",
-      "year": 2023,
-      "image": "/images/thumbnails/tanuki-airlines.svg",
-      "affiliation": ["gitlab"],
-      "tech": ["React", "GitLab", "Kubernetes", "Terraform"],
-      "links": {
-        "demo": "https://tanuki-airlines.example.com",
-        "repo": "https://gitlab.com/sugaroverflow/tanuki-airlines"
-      },
-      "topics": ["devrel", "demo", "ci-cd"],
-      "featured": true,
-      "verified": false,
-      "evidence_url": null,
-      "verification_status": "inferred",
-      "confidence": "low",
-      "curator_note": "Demo URL is a placeholder. Repo unverified. Flagged by portfolio-researcher."
-    },
-    {
-      "id": "civic-signal-map",
-      "slug": "civic-signal-map",
-      "title": "Civic Signal Map",
-      "description": "Interactive map that tracks how AI and compute policy proposals move through civic institutions and who influences them.",
-      "contentType": "project",
-      "date": "2024-08-01",
-      "year": 2024,
-      "image": "/images/thumbnails/civic-signal-map.svg",
-      "affiliation": ["newspeak"],
-      "tech": ["Svelte", "Node.js", "Mapbox"],
-      "links": {
-        "demo": "https://civic-signal-map.example.com",
-        "repo": "https://gitlab.com/sugaroverflow/civic-signal-map"
-      },
-      "topics": ["governance", "research", "data-viz"],
-      "featured": false,
-      "deepDiveSlug": "civic-signal-map",
-      "verified": false,
-      "evidence_url": null,
-      "verification_status": "inferred",
-      "confidence": "low",
-      "curator_note": "No external evidence found. Flagged by portfolio-researcher."
-    },
-    {
       "id": "drone-companion-app",
       "slug": "drone-companion-app",
       "title": "Drone Companion App",
@@ -90,12 +43,21 @@
       "date": "2018",
       "year": 2018,
       "image": null,
-      "affiliation": ["personal"],
-      "tech": ["React", "Node.js"],
+      "affiliation": [
+        "personal"
+      ],
+      "tech": [
+        "React",
+        "Node.js"
+      ],
       "links": {
         "repo": "https://github.com/sugaroverflow/drone-companion-app"
       },
-      "topics": ["civic-tech", "government", "open-source"],
+      "topics": [
+        "civic-tech",
+        "government",
+        "open-source"
+      ],
       "featured": false,
       "verified": true,
       "evidence_url": "https://github.com/sugaroverflow/drone-companion-app",
@@ -110,12 +72,20 @@
       "date": "2020",
       "year": 2020,
       "image": null,
-      "affiliation": ["personal"],
-      "tech": ["PHP"],
+      "affiliation": [
+        "personal"
+      ],
+      "tech": [
+        "PHP"
+      ],
       "links": {
         "repo": "https://github.com/pantheon-systems/terminus-build-tools-plugin"
       },
-      "topics": ["open-source", "ci-cd", "php"],
+      "topics": [
+        "open-source",
+        "ci-cd",
+        "php"
+      ],
       "featured": false,
       "verified": true,
       "evidence_url": "https://github.com/pantheon-systems/terminus-build-tools-plugin",
@@ -130,12 +100,18 @@
       "date": "2016",
       "year": 2016,
       "image": null,
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "tech": [],
       "links": {
         "repo": "https://github.com/CityOfBoston/Boston311"
       },
-      "topics": ["civic-tech", "open-source", "government"],
+      "topics": [
+        "civic-tech",
+        "open-source",
+        "government"
+      ],
       "featured": false,
       "verified": true,
       "evidence_url": "https://github.com/CityOfBoston/Boston311",
@@ -150,12 +126,18 @@
       "date": "2016",
       "year": 2016,
       "image": null,
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "tech": [],
       "links": {
         "repo": "https://github.com/18F/analytics.usa.gov"
       },
-      "topics": ["civic-tech", "open-source", "government"],
+      "topics": [
+        "civic-tech",
+        "open-source",
+        "government"
+      ],
       "featured": false,
       "verified": true,
       "evidence_url": "https://github.com/18F/analytics.usa.gov",
