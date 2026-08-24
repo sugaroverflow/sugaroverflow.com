@@ -10,9 +10,15 @@
       "year": 2024,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Pantheon Office Hours livestream on managing WordPress code with GitLab.",
-      "topics": ["wordpress", "gitlab", "ci-cd"],
+      "topics": [
+        "wordpress",
+        "gitlab",
+        "ci-cd"
+      ],
       "links": {},
       "image": null,
       "featured": false,
@@ -30,9 +36,15 @@
       "year": 2024,
       "type": "keynote",
       "contentType": "talk",
-      "affiliation": ["gitlab"],
+      "affiliation": [
+        "gitlab"
+      ],
       "description": "Keynote on human–AI collaboration in modern DevSecOps workflows and what it means for developer experience.",
-      "topics": ["ai", "devrel", "developer-experience"],
+      "topics": [
+        "ai",
+        "devrel",
+        "developer-experience"
+      ],
       "links": {
         "slides": "https://example.com/slides",
         "video": "https://example.com/video"
@@ -55,9 +67,15 @@
       "year": 2024,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Shared frameworks for running education cohorts and workshop series that help developers adopt AI responsibly.",
-      "topics": ["devrel", "ai", "education"],
+      "topics": [
+        "devrel",
+        "ai",
+        "education"
+      ],
       "links": {
         "slides": "https://example.com/devrel-summit-slides"
       },
@@ -79,9 +97,15 @@
       "year": 2023,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Talk on allyship and the power of intentional choices in open source communities.",
-      "topics": ["open-source", "diversity-inclusion", "community"],
+      "topics": [
+        "open-source",
+        "diversity-inclusion",
+        "community"
+      ],
       "links": {},
       "image": null,
       "featured": false,
@@ -99,9 +123,13 @@
       "year": 2023,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Speaker at All Things Open 2023.",
-      "topics": ["open-source"],
+      "topics": [
+        "open-source"
+      ],
       "links": {},
       "image": null,
       "featured": false,
@@ -120,9 +148,15 @@
       "year": 2023,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Talk on technical debt — its costs, causes, and how teams can address it thoughtfully.",
-      "topics": ["devops", "technical-debt", "engineering"],
+      "topics": [
+        "devops",
+        "technical-debt",
+        "engineering"
+      ],
       "links": {},
       "image": null,
       "featured": false,
@@ -133,22 +167,28 @@
     {
       "id": "all-things-open-2022",
       "slug": "all-things-open-2022",
-      "title": "All Things Open 2022",
+      "title": "Lessons Learned Leading an OSS Diversity Team",
       "event": "All Things Open",
       "location": "Raleigh, NC",
       "date": "2022",
       "year": 2022,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
-      "description": "Speaker at All Things Open 2022.",
-      "topics": ["open-source"],
+      "affiliation": [
+        "gitlab"
+      ],
+      "description": "Talk at All Things Open 2022 (Raleigh, NC) as Developer Evangelist at GitLab. Session title recovered via Wayback snapshot of the 2022 ATO schedule; Fatima confirmed via personal attestation 2026-08-14.",
+      "topics": [
+        "community",
+        "diversity-inclusion",
+        "open-source"
+      ],
       "links": {},
       "image": null,
       "featured": false,
-      "verified": false,
-      "evidence_url": null,
-      "verification_status": "inferred",
+      "verified": true,
+      "evidence_url": "https://2022.allthingsopen.org/speakers/fatima-sarah-khalid/",
+      "verification_status": "verified-fatima-attested",
       "curator_note": "Title TBC per researcher findings."
     },
     {
@@ -161,9 +201,15 @@
       "year": 2021,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "A reflective talk sharing lessons learned for developers earlier in their careers.",
-      "topics": ["community", "career", "open-source"],
+      "topics": [
+        "community",
+        "career",
+        "open-source"
+      ],
       "links": {},
       "image": null,
       "featured": false,
@@ -181,14 +227,82 @@
       "year": 2020,
       "type": "keynote",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "pantheon"
+      ],
       "description": "Keynote on the power of intentional choices in open source community participation.",
-      "topics": ["drupal", "community", "diversity-inclusion"],
-      "links": {},
+      "topics": [
+        "drupal",
+        "community",
+        "diversity-inclusion"
+      ],
+      "links": {
+        "session": "https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid"
+      },
       "image": null,
       "featured": false,
       "verified": true,
-      "evidence_url": null,
+      "evidence_url": "https://2020.drupalcampcolorado.org/sessions/keynote-given-choices-we-have-fatima-khalid",
+      "verification_status": "verified"
+    },
+    {
+      "id": "drupalcon-na-2021-javascript-ate-the-web",
+      "slug": "drupalcon-na-2021-javascript-ate-the-web",
+      "title": "JavaScript Ate the Web: Key Lessons for the Drupal Community",
+      "event": "DrupalCon North America 2021",
+      "location": "remote",
+      "date": "2021-04-16",
+      "year": 2021,
+      "type": "panel",
+      "contentType": "talk",
+      "affiliation": [
+        "pantheon"
+      ],
+      "description": "Fireside-chat panel where a group of leading JavaScript and Decoupled Drupal experts discuss the opportunities and pitfalls of greater reliance on JavaScript. Fatima appeared on the panel alongside Sally Young and Ben Morss, moderated by Steve Persch.",
+      "topics": [
+        "drupal",
+        "javascript",
+        "decoupled",
+        "open-source"
+      ],
+      "links": {
+        "blog": "https://www.drupal.org/association/supporters/blog/javascript-ate-the-web-key-lessons-for-the-drupal-community",
+        "wrap_up": "https://events.drupal.org/northamerica2021/news/drupalcon-north-america-wrap.html"
+      },
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://www.drupal.org/association/supporters/blog/javascript-ate-the-web-key-lessons-for-the-drupal-community",
+      "verification_status": "verified"
+    },
+    {
+      "id": "fwd50-2020-where-are-they-now-past-fellows",
+      "slug": "fwd50-2020-where-are-they-now-past-fellows",
+      "title": "Where Are They Now? Past Fellows",
+      "event": "FWD50 2020 (Code for Canada Showcase)",
+      "location": "remote",
+      "date": "2020-11-09",
+      "year": 2020,
+      "type": "panel",
+      "contentType": "talk",
+      "affiliation": [
+        "personal"
+      ],
+      "description": "Code for Canada Showcase session at FWD50 where fellowship alumni share firsthand how the program impacted their careers and their commitment to the common good. Fatima appeared as a Code for Canada Developer Fellow (2018) embedded with Transport Canada.",
+      "topics": [
+        "civic-tech",
+        "code-for-canada",
+        "fellowship",
+        "government"
+      ],
+      "links": {
+        "speaker": "https://www.fwd50.com/speaker/445/fatima-sarah-khalid",
+        "session": "https://www.fwd50.com/session/448/where-are-they-now-past-fellows"
+      },
+      "image": null,
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://www.fwd50.com/speaker/445/fatima-sarah-khalid",
       "verification_status": "verified"
     },
     {
@@ -201,9 +315,15 @@
       "year": 2019,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Talk on the Code for Canada Fellowship program and civic technology work.",
-      "topics": ["civic-tech", "fellowship", "government"],
+      "topics": [
+        "civic-tech",
+        "fellowship",
+        "government"
+      ],
       "links": {},
       "image": null,
       "featured": false,
@@ -221,9 +341,15 @@
       "year": 2019,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Object-oriented programming concepts explained through a Pokemon lens.",
-      "topics": ["drupal", "oop", "php"],
+      "topics": [
+        "drupal",
+        "oop",
+        "php"
+      ],
       "links": {},
       "image": null,
       "featured": false,
@@ -241,9 +367,15 @@
       "year": 2019,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Talk on diversity and inclusion efforts and building a stronger Drupal community.",
-      "topics": ["drupal", "diversity-inclusion", "community"],
+      "topics": [
+        "drupal",
+        "diversity-inclusion",
+        "community"
+      ],
       "links": {},
       "image": null,
       "featured": false,
@@ -261,9 +393,15 @@
       "year": 2019,
       "type": "keynote",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Keynote on the responsibilities of developers beyond writing code.",
-      "topics": ["drupal", "community", "diversity-inclusion"],
+      "topics": [
+        "drupal",
+        "community",
+        "diversity-inclusion"
+      ],
       "links": {},
       "image": null,
       "featured": false,
@@ -281,29 +419,15 @@
       "year": 2018,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Object-oriented programming concepts explained through a Pokemon journey narrative.",
-      "topics": ["drupal", "oop", "php"],
-      "links": {},
-      "image": null,
-      "featured": false,
-      "verified": true,
-      "evidence_url": null,
-      "verification_status": "verified"
-    },
-    {
-      "id": "drupalcon-vienna-2017-imposter",
-      "slug": "drupalcon-vienna-2017-imposter",
-      "title": "The Imposter Monologues, Vol. 3",
-      "event": "DrupalCon Vienna 2017",
-      "location": "Vienna, Austria",
-      "date": "2017-09-26",
-      "year": 2017,
-      "type": "talk",
-      "contentType": "talk",
-      "affiliation": ["personal"],
-      "description": "Third installment of the Imposter Monologues series on imposter syndrome in tech.",
-      "topics": ["drupal", "community", "imposter-syndrome"],
+      "topics": [
+        "drupal",
+        "oop",
+        "php"
+      ],
       "links": {},
       "image": null,
       "featured": false,
@@ -321,14 +445,22 @@
       "year": 2017,
       "type": "talk",
       "contentType": "talk",
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "description": "Second installment of the Imposter Monologues series on imposter syndrome in tech.",
-      "topics": ["drupal", "community", "imposter-syndrome"],
-      "links": {},
+      "topics": [
+        "drupal",
+        "community",
+        "imposter-syndrome"
+      ],
+      "links": {
+        "session": "https://events.drupal.org/baltimore2017/sessions/imposter-monologues-part-ii"
+      },
       "image": null,
       "featured": false,
       "verified": true,
-      "evidence_url": null,
+      "evidence_url": "https://events.drupal.org/baltimore2017/sessions/imposter-monologues-part-ii",
       "verification_status": "verified"
     }
   ],
