@@ -19,8 +19,8 @@ for deletion, not a candidate for rescue.
 
 ### From `projects.json`
 
-- **`tanuki-airlines`** — GitLab Tanuki Airlines Demo. Demo URL is `tanuki-airlines.example.com` (placeholder). Repo unverified. May be real work but the row is entirely placeholder.
-- **`civic-signal-map`** — placeholder Newspeak-branded project. Demo URL is `civic-signal-map.example.com`. No external evidence.
+- **`tanuki-airlines`** — ✅ **Confirmed hallucination 2026-08-24 by Fatima**. Demo URL was placeholder `tanuki-airlines.example.com`; GitLab repo 404'd on API. Row **removed** from `content-db/projects.json` on `research/merge-projects-2026-08-14` (commit `7fcc1bb`). Not for restoration.
+- **`civic-signal-map`** — ✅ **Confirmed hallucination 2026-08-24 by Fatima**. Demo URL was placeholder `civic-signal-map.example.com`; no external evidence anywhere. Row **removed** from `content-db/projects.json` on `research/merge-projects-2026-08-14` (commit `7fcc1bb`). Not for restoration.
 - **`contributors-garden`** — marked `verified: true` but only evidence_url is a GitLab repo link Fatima's own row asserts — needs an independent verification that the project + livestream + `contributors.garden` domain exist.
 
 ### From `posts.json`
