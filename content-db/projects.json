@@ -9,65 +9,30 @@
       "date": "2024-11-15",
       "year": 2024,
       "image": "/images/thumbnails/contributors-garden.svg",
-      "affiliation": ["gitlab", "personal"],
-      "tech": ["JavaScript", "HTML5 Canvas", "GCP Cloud Run", "GitLab CI/CD"],
-      "links": {
-        "demo": "https://contributors.garden",
-        "repo": "https://gitlab.com/sugaroverflow/contributors-garden"
-      },
-      "topics": ["devrel", "community", "live-coding"],
+      "affiliation": [
+        "gitlab",
+        "personal"
+      ],
+      "tech": [
+        "JavaScript",
+        "HTML5 Canvas",
+        "GCP Cloud Run",
+        "GitLab CI/CD"
+      ],
+      "links": {},
+      "topics": [
+        "devrel",
+        "community",
+        "live-coding"
+      ],
       "featured": true,
       "deepDiveSlug": "building-contributors-garden",
-      "verified": true,
+      "verified": false,
       "evidence_url": "https://gitlab.com/sugaroverflow/contributors-garden",
-      "verification_status": "verified"
-    },
-    {
-      "id": "tanuki-airlines",
-      "slug": "tanuki-airlines",
-      "title": "Tanuki Airlines Demo",
-      "description": "Full-stack demo showing GitLab-powered CI/CD and AI-assisted workflows for enterprise DevSecOps.",
-      "contentType": "project",
-      "date": "2023-07-10",
-      "year": 2023,
-      "image": "/images/thumbnails/tanuki-airlines.svg",
-      "affiliation": ["gitlab"],
-      "tech": ["React", "GitLab", "Kubernetes", "Terraform"],
-      "links": {
-        "demo": "https://tanuki-airlines.example.com",
-        "repo": "https://gitlab.com/sugaroverflow/tanuki-airlines"
-      },
-      "topics": ["devrel", "demo", "ci-cd"],
-      "featured": true,
-      "verified": false,
-      "evidence_url": null,
-      "verification_status": "inferred",
-      "confidence": "low",
-      "curator_note": "Demo URL is a placeholder. Repo unverified. Flagged by portfolio-researcher."
-    },
-    {
-      "id": "civic-signal-map",
-      "slug": "civic-signal-map",
-      "title": "Civic Signal Map",
-      "description": "Interactive map that tracks how AI and compute policy proposals move through civic institutions and who influences them.",
-      "contentType": "project",
-      "date": "2024-08-01",
-      "year": 2024,
-      "image": "/images/thumbnails/civic-signal-map.svg",
-      "affiliation": ["newspeak"],
-      "tech": ["Svelte", "Node.js", "Mapbox"],
-      "links": {
-        "demo": "https://civic-signal-map.example.com",
-        "repo": "https://gitlab.com/sugaroverflow/civic-signal-map"
-      },
-      "topics": ["governance", "research", "data-viz"],
-      "featured": false,
-      "deepDiveSlug": "civic-signal-map",
-      "verified": false,
-      "evidence_url": null,
-      "verification_status": "inferred",
-      "confidence": "low",
-      "curator_note": "No external evidence found. Flagged by portfolio-researcher."
+      "verification_status": "needs-evidence",
+      "audited_by": "soren",
+      "audit_date": "2026-08-14",
+      "curator_note": "2026-08-14 autonomous merge-time correction (Lotus, endorsed by Glyphie+Soren PROJECTS batch 1 audit): GitLab API for sugaroverflow/contributors-garden returned HTTP 404 Project Not Found, and demo domain contributors.garden failed DNS resolution. Dead repo/demo links stripped; verified downgraded to false and verification_status to needs-evidence pending a real repo/deployed URL/stream VOD from Fatima."
     },
     {
       "id": "drone-companion-app",
@@ -78,12 +43,21 @@
       "date": "2018",
       "year": 2018,
       "image": null,
-      "affiliation": ["personal"],
-      "tech": ["React", "Node.js"],
+      "affiliation": [
+        "personal"
+      ],
+      "tech": [
+        "React",
+        "Node.js"
+      ],
       "links": {
         "repo": "https://github.com/sugaroverflow/drone-companion-app"
       },
-      "topics": ["civic-tech", "government", "open-source"],
+      "topics": [
+        "civic-tech",
+        "government",
+        "open-source"
+      ],
       "featured": false,
       "verified": true,
       "evidence_url": "https://github.com/sugaroverflow/drone-companion-app",
@@ -98,12 +72,20 @@
       "date": "2020",
       "year": 2020,
       "image": null,
-      "affiliation": ["personal"],
-      "tech": ["PHP"],
+      "affiliation": [
+        "personal"
+      ],
+      "tech": [
+        "PHP"
+      ],
       "links": {
         "repo": "https://github.com/pantheon-systems/terminus-build-tools-plugin"
       },
-      "topics": ["open-source", "ci-cd", "php"],
+      "topics": [
+        "open-source",
+        "ci-cd",
+        "php"
+      ],
       "featured": false,
       "verified": true,
       "evidence_url": "https://github.com/pantheon-systems/terminus-build-tools-plugin",
@@ -118,12 +100,18 @@
       "date": "2016",
       "year": 2016,
       "image": null,
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "tech": [],
       "links": {
         "repo": "https://github.com/CityOfBoston/Boston311"
       },
-      "topics": ["civic-tech", "open-source", "government"],
+      "topics": [
+        "civic-tech",
+        "open-source",
+        "government"
+      ],
       "featured": false,
       "verified": true,
       "evidence_url": "https://github.com/CityOfBoston/Boston311",
@@ -138,16 +126,288 @@
       "date": "2016",
       "year": 2016,
       "image": null,
-      "affiliation": ["personal"],
+      "affiliation": [
+        "personal"
+      ],
       "tech": [],
       "links": {
         "repo": "https://github.com/18F/analytics.usa.gov"
       },
-      "topics": ["civic-tech", "open-source", "government"],
+      "topics": [
+        "civic-tech",
+        "open-source",
+        "government"
+      ],
       "featured": false,
       "verified": true,
       "evidence_url": "https://github.com/18F/analytics.usa.gov",
       "verification_status": "verified"
+    },
+    {
+      "id": "civicgraph-io",
+      "slug": "civicgraph-io",
+      "title": "Civic Graph (CivicGraph.io)",
+      "description": "Collaborative directory and data visualization platform mapping the connections and impact across the civic-technology community. Built during Fatima's Microsoft Civic Tech Fellowship in New York.",
+      "contentType": "project",
+      "date": "2015",
+      "year": 2015,
+      "image": null,
+      "affiliation": [
+        "microsoft",
+        "personal"
+      ],
+      "tech": [
+        "JavaScript",
+        "d3.js",
+        "Node.js",
+        "Metro UI"
+      ],
+      "links": {
+        "repo": "https://github.com/MicrosoftTCE/civic-graph-node",
+        "wayback": "https://web.archive.org/web/20150507033636/http://civicgraph.io/"
+      },
+      "topics": [
+        "civic-tech",
+        "data-viz",
+        "open-source"
+      ],
+      "featured": true,
+      "verified": true,
+      "evidence_url": "https://github.com/MicrosoftTCE/civic-graph-node",
+      "verification_status": "verified",
+      "curator_note": "STRONGEST attribution in this batch. GitHub contributor API for MicrosoftTCE/civic-graph-node (org: Microsoft Technology & Civic Engagement; repo created 2014-10-29, JavaScript, description 'Civic Graph - Visualization Tool') lists 'sugaroverflow' as the TOP contributor with 15 commits. Fatima also appears on MicrosoftTCE org repos civic-graph-UI / civic-graph-API family. civicgraph.io is dead now (HTTP 404) but Wayback CDX confirms clean status-200 snapshots across 2015 (2015-03-22, 04-06, 05-07, 06-07, 07-08); the 2015-05-07 replay renders a Microsoft-branded Civic Graph landing (Flash/SWF era, hence Ruffle player wrapper). Press corroboration: the Microsoft NY alumna interview (Soren-verified in PRESS batch, https://blogs.microsoft.com/newyork/2015/07/09/whats-next-after-microsoft-civic-tech-fellow-alumni-fatima-khalid/) quotes Fatima on Civic Graph. Tech stack (d3.js + Metro UI) is per Fatima's own LinkedIn seed. Note d3.js not yet independently confirmed against source at code level; homepage tech is a personal-record claim while the repo authorship is fully verified.",
+      "audited_by": "soren",
+      "audit_date": "2026-08-14"
+    },
+    {
+      "id": "hubhacks-boston-address-search-2014",
+      "slug": "hubhacks-boston-address-search",
+      "title": "HubHacks Boston 2014 — City of Boston Address Search (SAM)",
+      "description": "Hackathon-winning tool built at HubHacks Boston 2014: an address search interface over the City of Boston's SAM (Street Address Management) database. Fatima and fellow Ken Chan's team won their challenge.",
+      "contentType": "project",
+      "date": "2014-08",
+      "year": 2014,
+      "image": null,
+      "affiliation": [
+        "microsoft",
+        "personal"
+      ],
+      "tech": [
+        "d3.js",
+        "Sass",
+        "Bootstrap",
+        "jQuery"
+      ],
+      "links": {
+        "press": "https://blogs.microsoft.com/newengland/2014/08/12/microsoft-new-york-fellows-do-boston-win-hubhacks-challenge/"
+      },
+      "topics": [
+        "civic-tech",
+        "hackathon",
+        "data-viz"
+      ],
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://blogs.microsoft.com/newengland/2014/08/12/microsoft-new-york-fellows-do-boston-win-hubhacks-challenge/",
+      "verification_status": "verified",
+      "curator_note": "Microsoft New England blog post (HTTP 200 live at gather; Soren verified the body in the PRESS batch as press-msne-hubhacks-2014) names 'Fatima Sarah Khalid and Ken Chan' as the Microsoft NY fellows whose team won their HubHacks challenge, and notes 'Fatima filled in the gaps for the final design.' Byline Lauren Metter (Aug 12, 2014). The SAM/address-search framing and tech stack (d3.js + Sass + Bootstrap + jQuery) come from Fatima's LinkedIn seed; the WIN and Fatima's participation are press-verified. No public repo located for the hackathon build itself. This is a project entry; the same source also underpins a press row -> cross-linked, not duplicated.",
+      "audited_by": "soren",
+      "audit_date": "2026-08-14"
+    },
+    {
+      "id": "betanyc-preschool-search-2014",
+      "slug": "betanyc-preschool-search",
+      "title": "BetaNYC Civic Hack Day — NYC DOE PreSchool Search",
+      "description": "Civic hack-day contribution: a search tool for NYC Department of Education preschool listings built on the Google Maps API, produced at a BetaNYC Civic Hack Day.",
+      "contentType": "project",
+      "date": "2014",
+      "year": 2014,
+      "image": null,
+      "affiliation": [
+        "personal"
+      ],
+      "tech": [
+        "JavaScript",
+        "Google Maps API"
+      ],
+      "links": {},
+      "topics": [
+        "civic-tech",
+        "hackathon"
+      ],
+      "featured": false,
+      "verified": false,
+      "evidence_url": null,
+      "verification_status": "personal-record-only",
+      "curator_note": "From Fatima's LinkedIn seed (line 65) and the scope doc's newly-visible CV items. No public repo or press mention located under github.com/sugaroverflow or in a BetaNYC archive during this pass. Keeping as personal-record-only with a null evidence_url per the honesty rule. Soren/Fatima: if there is a BetaNYC event writeup or a repo I missed, this upgrades cleanly. Otherwise Fatima's call whether a personal-record hackathon contribution belongs in the public portfolio.",
+      "audited_by": "soren",
+      "audit_date": "2026-08-14"
+    },
+    {
+      "id": "boston-gov-drupal-migration",
+      "slug": "boston-gov-drupal-migration",
+      "title": "Boston.gov — Drupal Redesign & Migration",
+      "description": "As a Software Developer in the City of Boston's Department of Innovation & Technology, Fatima worked on the redesign and migration of boston.gov to Drupal (partnering with IDEO and Acquia) and on the pilot.boston.gov launch, improving constituent access to city services.",
+      "contentType": "project",
+      "date": "2016",
+      "year": 2016,
+      "image": null,
+      "affiliation": [
+        "city-of-boston",
+        "personal"
+      ],
+      "tech": [
+        "Drupal",
+        "PHP",
+        "ASP.NET"
+      ],
+      "links": {
+        "repo": "https://github.com/sugaroverflow/boston.gov",
+        "upstream": "https://github.com/CityOfBoston/boston.gov-d7",
+        "press": "https://web.archive.org/web/20170126043322/https://www.boston.gov/news/stacking-team-2016"
+      },
+      "topics": [
+        "civic-tech",
+        "government",
+        "drupal",
+        "open-source"
+      ],
+      "featured": true,
+      "verified": true,
+      "evidence_url": "https://github.com/sugaroverflow/boston.gov",
+      "verification_status": "verified",
+      "curator_note": "github.com/sugaroverflow/boston.gov is a live fork (parent: CityOfBoston/boston.gov-d7), 'The official repository of Boston.gov', PHP, created 2017-01-07 -> confirms Fatima's hands-on involvement with the boston.gov Drupal codebase. Press corroboration Soren verified in PRESS batch: the City of Boston 'Stacking the team for 2016' post (Wayback 2017-01-26) reads 'Fatima is our developer who valiantly juggles Drupal and ASP.NET' -> hence ASP.NET in the tech list. IDEO+Acquia partnership and pilot.boston.gov are from Fatima's CV seed (resume line 87-90); the Drupal codebase involvement is repo-verified. NOTE potential overlap with existing content-db 'boston-311' row (that is a distinct, separately-verified Boston311 repo) -> this is net-new, not a dupe, but Lotus should confirm they read as two projects.",
+      "audited_by": "soren",
+      "audit_date": "2026-08-14"
+    },
+    {
+      "id": "digital-drone-collective-landing",
+      "slug": "digital-drone-collective",
+      "title": "Digital Drone Collective — Landing Site",
+      "description": "Landing page for the Digital Drone Collective, the Code for Canada fellowship team (with Andee Pittman, Jen, Jeannie) embedded at Transport Canada working on drone/RPAS regulation tooling.",
+      "contentType": "project",
+      "date": "2018",
+      "year": 2018,
+      "image": null,
+      "affiliation": [
+        "code-for-canada",
+        "personal"
+      ],
+      "tech": [
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "Pug",
+        "Materialize",
+        "Azure"
+      ],
+      "links": {
+        "repo": "https://github.com/sugaroverflow/digital-drone-collective",
+        "press": "https://medium.com/code-for-canada/meet-the-digital-drone-collective-42bc97b53ed7"
+      },
+      "topics": [
+        "civic-tech",
+        "government",
+        "open-source"
+      ],
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://github.com/sugaroverflow/digital-drone-collective",
+      "verification_status": "verified",
+      "curator_note": "github.com/sugaroverflow/digital-drone-collective: 'Landing page for the Digital Drone Collective', JavaScript, created 2018-11-05, homepage http://digitaldronecollective.com -> repo-verified, owned by Fatima. Sibling repo github.com/sugaroverflow/code4ca-sprint-challenge-drones (created 2018-10-16, 'Code for Canada sprint challenge - drones', homepage c4c-sprint-drones.herokuapp.com) further corroborates the drone work. The C4C Medium team-intro post (press-c4c-meet-digital-drone-collective, Soren-noted the in-body quote names 'Fatima (@sugaroverflow)' with teammates) corroborates. Complements the EXISTING content-db 'drone-companion-app' row (a separate, already-verified repo) -> net-new sibling project, not a dupe. Note: DEMO URL STRIPPED per Soren's audit — http://digitaldronecollective.com fails DNS resolution today (curl HTTP 000 / 'Could not resolve host'), so it is not shipped as a live link; re-add only if the domain is restored or a Wayback snapshot is found. Tech stack tightened to the repo README (Node/Express/Pug/Materialize, deployed to Azure) which Soren confirmed live rather than generic 'JavaScript'.",
+      "audited_by": "soren",
+      "audit_date": "2026-08-14"
+    },
+    {
+      "id": "transport-canada-site-search",
+      "slug": "transport-canada-site-search",
+      "title": "Transport Canada Site Search Tool",
+      "description": "A site-search tool built during Fatima's Code for Canada / Transport Canada fellowship that reportedly achieved 40,000+ hits in its first month, improving how the public found RPAS/drone regulatory information.",
+      "contentType": "project",
+      "date": "2019",
+      "year": 2019,
+      "image": null,
+      "affiliation": [
+        "code-for-canada",
+        "personal"
+      ],
+      "tech": [],
+      "links": {},
+      "topics": [
+        "civic-tech",
+        "government",
+        "search"
+      ],
+      "featured": false,
+      "verified": false,
+      "evidence_url": null,
+      "verification_status": "personal-record-only",
+      "curator_note": "From Fatima's CV seed (resume line 70: 'a Site Search tool that achieved 40,000+ hits in its first month'). No public repo cleanly maps to it: github.com/sugaroverflow/aircraftmap exists but was created 2016-04-21 (pre-fellowship, pushed once same day) so it is NOT this tool -- deliberately NOT attributing aircraftmap here to avoid misattribution. Keeping as personal-record-only with null evidence and the 40k metric flagged as an unverifiable self-reported figure. Soren/Fatima: if a Transport Canada / c4c repo or a gc.ca archive exists, this upgrades.",
+      "audited_by": "soren",
+      "audit_date": "2026-08-14"
+    },
+    {
+      "id": "kubecon-eu-2023-demo",
+      "slug": "kubecon-eu-2023",
+      "title": "KubeCon EU 2023 — GitLab Code Challenge",
+      "description": "Fatima's fork of the GitLab KubeCon EU 2023 Code Challenge (forked from gitlab-code-challenge/kubecon-eu-2023), with her challenge materials.",
+      "contentType": "project",
+      "date": "2023",
+      "year": 2023,
+      "image": null,
+      "affiliation": [
+        "gitlab"
+      ],
+      "tech": [],
+      "links": {
+        "repo": "https://gitlab.com/sugaroverflow/kubecon-eu-2023"
+      },
+      "topics": [
+        "devrel",
+        "demo",
+        "kubernetes"
+      ],
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://gitlab.com/sugaroverflow/kubecon-eu-2023",
+      "verification_status": "verified",
+      "curator_note": "Enumerated live from GitLab API GET /users/10366266/projects -> real public project 'kubecon-eu-2023' (created 2023-04-12), owner user 'Fatima Sarah Khalid' (id 10366266). This is a net-new, repo-verified GitLab-era artifact. Soren's API check confirmed it is FORKED from gitlab-code-challenge/kubecon-eu-2023 (created 2023-04-12, namespace 'Fatima Sarah Khalid'), so wording tightened from 'demo / materials Fatima built' to 'GitLab Code Challenge fork' — the fork proves participation but NOT original demo authorship. If Fatima confirms she authored a demo on top of the challenge, this can upgrade. Could alternatively be filed under speaking-support rather than projects -- Lotus/Fatima taxonomy call.",
+      "audited_by": "soren",
+      "audit_date": "2026-08-14"
+    },
+    {
+      "id": "boston-digital-team-case-studies-2016",
+      "slug": "boston-digital-team-case-studies",
+      "title": "City of Boston — Digital Team Case Studies: Web Development (Public Notices)",
+      "description": "As a Software Developer in Boston's Department of Innovation & Technology, Fatima worked on the launch of the public-notices section of Boston.gov — a five-week engagement with the City Law Department, City Clerk staff, and the Massachusetts Attorney General's office to design, build, test, and launch it. Documented in the City of Boston Digital Service's own Digital Team case-study page.",
+      "contentType": "project",
+      "date": "2016",
+      "year": 2016,
+      "image": null,
+      "affiliation": [
+        "city-of-boston",
+        "personal"
+      ],
+      "tech": [
+        "Drupal",
+        "PHP"
+      ],
+      "links": {
+        "case_study": "https://www.boston.gov/departments/boston-digital-service/digital-team-case-studies-web-development"
+      },
+      "topics": [
+        "civic-tech",
+        "government",
+        "drupal",
+        "case-study"
+      ],
+      "featured": false,
+      "verified": true,
+      "evidence_url": "https://www.boston.gov/departments/boston-digital-service/digital-team-case-studies-web-development",
+      "verification_status": "verified-fatima-attested",
+      "audited_by": "soren",
+      "audit_date": "2026-08-14",
+      "curator_note": "Originally gathered in PRESS batch 1 as press-boston-digital-team-case-studies-2016. Audit-standin deferred to Fatima on taxonomy (press vs project); Fatima confirmed 2026-08-14 that it should be reclassified to PROJECTS. Standin's live-fetch check was HTTP 200 and the pullQuote (\"Over the course of five weeks, the Digital Team worked with the City Law Department, City Clerk staff, and Massachusetts Attorney General's office to design, build, test, and launch a section of Boston.gov dedicated to public notices.\") was the case-study body text. audited_by set to soren per Fatima's attestation."
     }
   ]
 }

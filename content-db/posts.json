@@ -1,40 +1,113 @@
 {
   "posts": [
     {
-      "id": "building-contributors-garden",
-      "slug": "2024-11-15-building-contributors-garden",
-      "title": "Building Contributors Garden: Community-Driven Development",
-      "description": "How we built a collaborative pixel art garden live on stream, and what I learned about community engagement.",
-      "contentType": "deep-dive",
-      "date": "2024-11-15",
-      "affiliation": ["gitlab", "personal"],
-      "topics": ["devrel", "community", "live-coding"],
-      "featured": true,
-      "file": "2024-11-15-building-contributors-garden.mdx"
+      "id": "gitlab-comparing-static-site-generators-2022",
+      "slug": "comparing-static-site-generators",
+      "title": "How to choose the right static site generator",
+      "description": "A guide comparing dynamic vs. static sites and how to choose among the major static site generators. Authored during her GitLab Developer Evangelist tenure.",
+      "contentType": "tutorial",
+      "date": "2022-04-18",
+      "year": 2022,
+      "affiliation": [
+        "gitlab"
+      ],
+      "topics": [
+        "frontend",
+        "community",
+        "open-source",
+        "static-sites"
+      ],
+      "featured": false,
+      "byline": "Fatima Sarah Khalid",
+      "external_url": "https://about.gitlab.com/blog/comparing-static-site-generators/"
     },
     {
-      "id": "devrel-summit-notes",
-      "slug": "2024-10-20-devrel-summit-notes",
-      "title": "DevRel Summit 2024: Field Notes",
-      "description": "Quick observations from three days of talks, hallway conversations, and emerging patterns in developer advocacy.",
-      "contentType": "field-notes",
-      "date": "2024-10-20",
-      "affiliation": ["personal"],
-      "topics": ["devrel", "conferences"],
+      "id": "gitlab-can-chatgpt-resolve-gitlab-issues-2022",
+      "slug": "can-chatgpt-resolve-gitlab-issues",
+      "title": "Testing ChatGPT: Can it solve a GitLab issue?",
+      "description": "An early hands-on test of ChatGPT (launched Nov 30, 2022) attempting to resolve a real GitLab issue.",
+      "contentType": "tutorial",
+      "date": "2022-12-15",
+      "year": 2022,
+      "affiliation": [
+        "gitlab"
+      ],
+      "topics": [
+        "ai",
+        "tutorial",
+        "community",
+        "contributors",
+        "devops"
+      ],
       "featured": false,
-      "file": "2024-10-20-devrel-summit-notes.mdx"
+      "byline": "John Coghlan, Fatima Sarah Khalid",
+      "external_url": "https://about.gitlab.com/blog/can-chatgpt-resolve-gitlab-issues/"
     },
     {
-      "id": "ai-governance-layers",
-      "slug": "2025-01-10-ai-governance-layers",
-      "title": "Mapping AI Governance: Three Layers",
-      "description": "Progress update on research into how compute access, infrastructure, and policy create governance layers.",
-      "contentType": "research-update",
-      "date": "2025-01-10",
-      "affiliation": ["newspeak"],
-      "topics": ["ai-policy", "governance", "political-tech"],
+      "id": "gitlab-benefits-of-corporate-shadow-programs-2023",
+      "slug": "benefits-of-corporate-shadow-programs",
+      "title": "Shadow programs give employees a peek into leadership roles",
+      "description": "On the value of corporate shadow programs for career growth and understanding leadership.",
+      "contentType": "essay",
+      "date": "2023-07-17",
+      "year": 2023,
+      "affiliation": [
+        "gitlab"
+      ],
+      "topics": [
+        "careers",
+        "growth",
+        "inside-gitlab",
+        "culture"
+      ],
       "featured": false,
-      "file": "2025-01-10-ai-governance-layers.mdx"
+      "byline": "Fatima Sarah Khalid",
+      "external_url": "https://about.gitlab.com/blog/benefits-of-corporate-shadow-programs/"
+    },
+    {
+      "id": "gitlab-building-a-text-adventure-cplusplus-2023",
+      "slug": "building-a-text-adventure-using-cplusplus-and-code-suggestions",
+      "title": "Explore the Dragon Realm: Building a C++ adventure game with AI",
+      "description": "A hands-on tutorial building a C++ text-adventure game using GitLab Duo Code Suggestions, framed around learning a new language by immersion.",
+      "contentType": "tutorial",
+      "date": "2023-08-24",
+      "year": 2023,
+      "affiliation": [
+        "gitlab"
+      ],
+      "topics": [
+        "ai",
+        "devsecops",
+        "tutorial",
+        "cplusplus",
+        "code-suggestions"
+      ],
+      "featured": false,
+      "byline": "Fatima Sarah Khalid",
+      "external_url": "https://about.gitlab.com/blog/building-a-text-adventure-using-cplusplus-and-code-suggestions/"
+    },
+    {
+      "id": "gitlab-develop-cpp-unit-testing-catch2-junit-2024",
+      "slug": "develop-c-unit-testing-with-catch2-junit-and-gitlab-ci",
+      "title": "Develop C++ unit testing with Catch2, JUnit, and GitLab CI",
+      "description": "A tutorial on setting up C++ unit testing with Catch2 and JUnit reporting inside GitLab CI.",
+      "contentType": "tutorial",
+      "date": "2024-07-02",
+      "year": 2024,
+      "affiliation": [
+        "gitlab"
+      ],
+      "topics": [
+        "tutorial",
+        "testing",
+        "ci",
+        "ai",
+        "devsecops",
+        "cplusplus"
+      ],
+      "featured": false,
+      "byline": "Fatima Sarah Khalid",
+      "external_url": "https://about.gitlab.com/blog/develop-c-unit-testing-with-catch2-junit-and-gitlab-ci/"
     },
     {
       "id": "civic-signal-map",
@@ -43,11 +116,155 @@
       "description": "How I'm mapping AI policy momentum across civic institutions to spot windows of opportunity faster.",
       "contentType": "deep-dive",
       "date": "2024-08-01",
-      "affiliation": ["newspeak"],
-      "topics": ["governance", "data-viz", "research"],
+      "affiliation": [
+        "newspeak"
+      ],
+      "topics": [
+        "governance",
+        "data-viz",
+        "research"
+      ],
       "featured": false,
       "file": "2024-08-01-civic-signal-map.mdx"
+    },
+    {
+      "id": "devrel-summit-notes",
+      "slug": "2024-10-20-devrel-summit-notes",
+      "title": "DevRel Summit 2024: Field Notes",
+      "description": "Quick observations from three days of talks, hallway conversations, and emerging patterns in developer advocacy.",
+      "contentType": "field-notes",
+      "date": "2024-10-20",
+      "affiliation": [
+        "personal"
+      ],
+      "topics": [
+        "devrel",
+        "conferences"
+      ],
+      "featured": false,
+      "file": "2024-10-20-devrel-summit-notes.mdx"
+    },
+    {
+      "id": "gitlab-5-things-linkedin-live-security-deep-dive-2024",
+      "slug": "5-things-to-know-from-our-linkedin-live-security-deep-dive",
+      "title": "5 things to know from our LinkedIn Live Security Deep Dive",
+      "description": "A recap of key takeaways from a GitLab LinkedIn Live broadcast focused on security.",
+      "contentType": "recap",
+      "date": "2024-10-28",
+      "year": 2024,
+      "affiliation": [
+        "gitlab"
+      ],
+      "topics": [
+        "ai",
+        "security",
+        "webcast",
+        "devsecops",
+        "community"
+      ],
+      "featured": false,
+      "byline": "Fatima Sarah Khalid",
+      "external_url": "https://about.gitlab.com/blog/5-things-to-know-from-our-linkedin-live-security-deep-dive/"
+    },
+    {
+      "id": "building-contributors-garden",
+      "slug": "2024-11-15-building-contributors-garden",
+      "title": "Building Contributors Garden: Community-Driven Development",
+      "description": "How we built a collaborative pixel art garden live on stream, and what I learned about community engagement.",
+      "contentType": "deep-dive",
+      "date": "2024-11-15",
+      "affiliation": [
+        "gitlab",
+        "personal"
+      ],
+      "topics": [
+        "devrel",
+        "community",
+        "live-coding"
+      ],
+      "featured": true,
+      "file": "2024-11-15-building-contributors-garden.mdx"
+    },
+    {
+      "id": "gitlab-icymi-ai-security-developer-community-2024",
+      "slug": "icymi-key-ai-and-security-insights-from-our-developer-community",
+      "title": "ICYMI: Key AI and security insights from our developer community",
+      "description": "A roundup of five highlights from GitLab's November LinkedIn Live broadcast with field CTOs, developer advocates, and community leaders.",
+      "contentType": "recap",
+      "date": "2024-12-05",
+      "year": 2024,
+      "affiliation": [
+        "gitlab"
+      ],
+      "topics": [
+        "ai",
+        "security",
+        "community",
+        "tutorial"
+      ],
+      "featured": false,
+      "byline": "Fatima Sarah Khalid",
+      "external_url": "https://about.gitlab.com/blog/icymi-key-ai-and-security-insights-from-our-developer-community/"
+    },
+    {
+      "id": "ai-governance-layers",
+      "slug": "2025-01-10-ai-governance-layers",
+      "title": "Mapping AI Governance: Three Layers",
+      "description": "Progress update on research into how compute access, infrastructure, and policy create governance layers.",
+      "contentType": "research-update",
+      "date": "2025-01-10",
+      "affiliation": [
+        "newspeak"
+      ],
+      "topics": [
+        "ai-policy",
+        "governance",
+        "political-tech"
+      ],
+      "featured": false,
+      "file": "2025-01-10-ai-governance-layers.mdx"
+    },
+    {
+      "id": "gitlab-co-create-program-customers-collaborating-2025",
+      "slug": "the-co-create-program-how-customers-are-collaborating-to-build-gitlab",
+      "title": "The Co-Create Program: How customers are collaborating to build GitLab",
+      "description": "On GitLab's Co-Create Program and how customers like Thales, Scania, and Kitware partner with GitLab engineers to contribute features. Notes 800+ community members made 3,000+ contributions in the past year.",
+      "contentType": "essay",
+      "date": "2025-01-30",
+      "year": 2025,
+      "affiliation": [
+        "gitlab"
+      ],
+      "topics": [
+        "contributors",
+        "open-source",
+        "customers",
+        "community"
+      ],
+      "featured": false,
+      "byline": "Fatima Sarah Khalid",
+      "external_url": "https://about.gitlab.com/blog/the-co-create-program-how-customers-are-collaborating-to-build-gitlab/"
+    },
+    {
+      "id": "gitlab-duo-agentic-chat-web-ui-2025",
+      "slug": "get-started-with-gitlab-duo-agentic-chat-in-the-web-ui",
+      "title": "Get started with GitLab Duo Agentic Chat in the web UI",
+      "description": "A getting-started guide for GitLab Duo Agentic Chat in the web UI, building on GitLab Duo Chat. Co-authored with Daniel Helfand.",
+      "contentType": "tutorial",
+      "date": "2025-08-11",
+      "year": 2025,
+      "affiliation": [
+        "gitlab"
+      ],
+      "topics": [
+        "ai",
+        "ci-cd",
+        "gitlab-duo",
+        "tutorial"
+      ],
+      "featured": false,
+      "byline": "Fatima Sarah Khalid, Daniel Helfand",
+      "external_url": "https://about.gitlab.com/blog/get-started-with-gitlab-duo-agentic-chat-in-the-web-ui/"
     }
   ]
 }
-
