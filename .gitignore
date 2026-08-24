@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# private portfolio research exports (X/LinkedIn/etc)
+# Anything in seed/private/ stays local. Do NOT commit.
+research/seed/private/
+
